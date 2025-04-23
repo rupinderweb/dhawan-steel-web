@@ -110,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .card:hover {
   transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 8px 40px 0 rgba(30, 41, 59, 0.16), 0 2px 18px 0 rgba(184,115,51,0.11);
+  box-shadow: 0 8px 40px 0 rgba(30,41,59,0.16), 0 2px 18px 0 rgba(184,115,51,0.11);
 }
 
 /* Feature icon */
@@ -209,10 +209,8 @@ main {
 
 /* Reset styles that might be breaking layout */
 #root {
-  max-width: none;
-  margin: 0;
   padding: 0;
-  text-align: left;
+  max-width: none;
 }
 
 img {

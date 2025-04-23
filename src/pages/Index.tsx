@@ -1,68 +1,107 @@
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 const Index = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <>
-      {/* HERO BANNER */}
-      <section style={{
-        position: "relative",
-        minHeight: 480,
-        width: "100%",
-        height: "60vh",
-        backgroundColor: "#1E293B",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center"
-      }}>
-        <img alt="Steel background" style={{
-          objectFit: "cover",
-          width: "100%",
-          height: "100%",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          zIndex: 0,
-          filter: "brightness(0.55)"
-        }} src="/lovable-uploads/763a0708-5779-482d-88a0-75fbfb72e671.png" />
-        <div className="container hero-overlay-content" style={{
-          position: "relative",
-          zIndex: 2,
-          color: "#fff",
-          textAlign: "left",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          height: "100%"
-        }}>
-          <h1 className="display-4 fw-bolder mb-4" style={{
-            color: "#fff",
-            textShadow: "0 3px 16px rgba(30,41,59,0.45)"
-          }}>
-            Delivering Quality Steel Solutions Across India
-          </h1>
-          <p className="lead mb-5" style={{
-            color: "#c7c9d1",
-            fontWeight: 500
-          }}>
-            Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
-          </p>
-          <div className="d-flex flex-wrap gap-3">
-            <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
-              background: "#B87333",
-              border: "none",
-              color: "#fff"
-            }}>
-              Explore Our Products
-            </Link>
-            <Link to="/services" className="btn btn-light btn-lg px-4 py-3 fw-semibold" style={{
-              borderWidth: 2,
-              borderColor: "#B87333",
-              color: "#B87333",
-              background: "#fff"
-            }}>
-              Learn About Our Services
-            </Link>
+      {/* HERO BANNER with Parallax */}
+      <section className="relative min-h-[90vh] w-full flex items-center justify-start overflow-hidden">
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            transform: `translateY(${scrollY * 0.5}px)`,
+          }}
+        >
+          <img
+            alt="Steel manufacturing facility"
+            className="w-full h-full object-cover"
+            style={{
+              filter: "brightness(0.3)"
+            }}
+            src="/lovable-uploads/763a0708-5779-482d-88a0-75fbfb72e671.png"
+          />
+        </div>
+        
+        <div className="container relative z-10 mx-auto px-4 pt-20">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center bg-copper/20 backdrop-blur-sm text-copper px-4 py-2 rounded-full mb-6">
+              <span className="text-sm font-semibold tracking-wider">WELCOME TO DHAWAN ISPAT UDYOG</span>
+            </div>
+            
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              Delivering Quality <br />
+              <span className="text-copper">Steel Solutions</span><br />
+              Across India
+            </h1>
+            
+            <p className="text-lg text-white/80 mb-8 max-w-xl">
+              Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
+            </p>
+            
+            <div className="flex flex-wrap gap-4">
+              <Link
+                to="/products"
+                className="bg-copper hover:bg-copper/90 text-white px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105"
+              >
+                Explore Our Products
+              </Link>
+              <Link
+                to="/services"
+                className="bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-full font-semibold transition-all transform hover:scale-105"
+              >
+                Learn About Our Services
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        {/* Feature Icons */}
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/50 to-transparent">
+          <div className="container mx-auto px-4 py-8">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+              <div className="text-center text-white">
+                <div className="bg-copper/20 backdrop-blur-sm p-4 rounded-full w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                  <Package size={24} />
+                </div>
+                <p className="text-sm font-medium">Quality Materials</p>
+              </div>
+              <div className="text-center text-white">
+                <div className="bg-copper/20 backdrop-blur-sm p-4 rounded-full w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                  <Globe size={24} />
+                </div>
+                <p className="text-sm font-medium">Nationwide Service</p>
+              </div>
+              <div className="text-center text-white">
+                <div className="bg-copper/20 backdrop-blur-sm p-4 rounded-full w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                  <Factory size={24} />
+                </div>
+                <p className="text-sm font-medium">Advanced Processing</p>
+              </div>
+              <div className="text-center text-white">
+                <div className="bg-copper/20 backdrop-blur-sm p-4 rounded-full w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                  <Search size={24} />
+                </div>
+                <p className="text-sm font-medium">Expert Analysis</p>
+              </div>
+              <div className="text-center text-white">
+                <div className="bg-copper/20 backdrop-blur-sm p-4 rounded-full w-16 h-16 mx-auto mb-3 flex items-center justify-center">
+                  <Award size={24} />
+                </div>
+                <p className="text-sm font-medium">Certified Quality</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
