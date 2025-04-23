@@ -1,5 +1,6 @@
+
 import { Link } from 'react-router-dom';
-import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
+import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake, Target, Eye, Diamond } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
@@ -513,7 +514,7 @@ const Index = () => {
                 <div className="col-md-6">
                   <div className="sustainability-item">
                     <div className="icon-circle">
-                      <target className="icon-style" />
+                      <Target className="icon-style" />
                     </div>
                     <h4 className="fw-bold mb-2">Our Mission</h4>
                     <p className="text-steel">
@@ -525,7 +526,7 @@ const Index = () => {
                 <div className="col-md-6">
                   <div className="sustainability-item">
                     <div className="icon-circle">
-                      <eye className="icon-style" />
+                      <Eye className="icon-style" />
                     </div>
                     <h4 className="fw-bold mb-2">Our Vision</h4>
                     <p className="text-steel">
@@ -537,7 +538,7 @@ const Index = () => {
                 <div className="col-12">
                   <div className="sustainability-item">
                     <div className="icon-circle">
-                      <diamond className="icon-style" />
+                      <Diamond className="icon-style" />
                     </div>
                     <h4 className="fw-bold mb-2">Our Value</h4>
                     <p className="text-steel">
