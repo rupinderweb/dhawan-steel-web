@@ -5,36 +5,57 @@ import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users,
 const Index = () => {
   return (
     <>
-      {/* Hero Banner */}
-      <section className="hero-section">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6">
-              <h1 className="display-4 fw-bold mb-4">Delivering Quality Steel Solutions Across India</h1>
-              <p className="lead mb-5">Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.</p>
-              <div className="d-flex flex-wrap gap-3">
-                <Link to="/products" className="btn btn-lg btn-light px-4 py-3 fw-semibold">
-                  Explore Our Products
-                </Link>
-                <Link to="/services" className="btn btn-lg btn-outline-light px-4 py-3">
-                  Learn About Our Services
-                </Link>
-              </div>
-            </div>
-            <div className="col-lg-6 d-none d-lg-block">
-              <img 
-                src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
-                alt="Steel Industry" 
-                className="img-fluid rounded shadow"
-                style={{ objectFit: 'cover', height: '450px', width: '100%' }}
-              />
-            </div>
+      {/* HERO BANNER */}
+      <section style={{ position: "relative", minHeight: 480, width: "100%", height: "60vh", backgroundColor: "#1E293B", display: "flex", alignItems: "center", justifyContent: "center" }}>
+        <img
+          src="https://images.unsplash.com/photo-1548795471-796b0ba49cb2?auto=format&fit=crop&w=1500&q=80"
+          alt="Steel background"
+          style={{
+            objectFit: "cover",
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            zIndex: 0,
+            filter: "brightness(0.55)"
+          }}
+        />
+        <div className="container hero-overlay-content" style={{
+          position: "relative",
+          zIndex: 2,
+          color: "#fff",
+          textAlign: "left",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          height: "100%",
+        }}>
+          <h1 className="display-4 fw-bolder mb-4" style={{ color: "#fff", textShadow: "0 3px 16px rgba(30,41,59,0.45)" }}>
+            Delivering Quality Steel Solutions Across India
+          </h1>
+          <p className="lead mb-5" style={{ color: "#c7c9d1", fontWeight: 500 }}>
+            Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
+          </p>
+          <div className="d-flex flex-wrap gap-3">
+            <Link
+              to="/products"
+              className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich"
+              style={{ background: "#B87333", border: "none", color: "#fff" }}>
+              Explore Our Products
+            </Link>
+            <Link
+              to="/services"
+              className="btn btn-light btn-lg px-4 py-3 fw-semibold"
+              style={{
+                borderWidth: 2,
+                borderColor: "#B87333",
+                color: "#B87333",
+                background: "#fff"
+              }}>
+              Learn About Our Services
+            </Link>
           </div>
-        </div>
-        <div className="position-absolute bottom-0 start-0 w-100">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#ffffff" fillOpacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,224C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-          </svg>
         </div>
       </section>
 

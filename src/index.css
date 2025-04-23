@@ -1,102 +1,114 @@
-/* Import Bootstrap */
-@import 'bootstrap/dist/css/bootstrap.min.css';
 
-/* Custom Variables */
+/* Import Inter Font from Google Fonts as a high-quality, Gilroy-like alternative */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+/* Root Color Variables for quick reference */
 :root {
-  --primary-color: #1a4b84;
-  --secondary-color: #343a40;
-  --accent-color: #f77f00;
-  --light-gray: #f8f9fa;
-  --dark-gray: #6c757d;
-  --white: #ffffff;
-  --black: #212529;
+  --steel-gray: #4B5563;
+  --midnight-blue: #1E293B;
+  --copper: #B87333;
+  --industrial-silver: #9CA3AF;
+  --background-default: #F3F4F6;
+  --white: #FFFFFF;
+  --font-gilroy: 'Gilroy', 'Inter', 'Segoe UI', 'Arial', sans-serif;
 }
 
-/* Global Styles */
+/* Set font globally */
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--black);
+  font-family: var(--font-gilroy);
+  color: var(--midnight-blue);
+  background: var(--background-default);
   line-height: 1.6;
 }
 
+/* Headline styles */
 h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-gilroy);
+  font-weight: 900;
+  color: var(--midnight-blue);
+  letter-spacing: 0.02em;
+}
+
+/* Button styles - primary = midnight blue, accent = copper */
+.btn-primary, .btn.btn-primary {
+  background-color: var(--midnight-blue);
+  border-color: var(--midnight-blue);
+  color: var(--white);
   font-weight: 700;
+  font-family: var(--font-gilroy);
+  transition: background 0.18s, border 0.18s;
 }
 
-/* Custom Buttons */
-.btn-primary {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
+.btn-primary:hover, .btn.btn-primary:hover {
+  background-color: var(--copper);
+  border-color: var(--copper);
+  color: var(--white);
 }
 
-.btn-primary:hover {
-  background-color: #0f3866;
-  border-color: #0f3866;
+/* Accent/secondary buttons (copper/white text, copper border) */
+.btn-accent, .btn.btn-accent {
+  background-color: var(--copper);
+  color: var(--white);
+  border: none;
 }
 
-.btn-secondary {
-  background-color: var(--white);
-  border-color: var(--primary-color);
-  color: var(--primary-color);
+.btn-accent:hover, .btn.btn-accent:hover {
+  background-color: #985c28;
+  color: var(--white);
 }
 
-.btn-secondary:hover {
-  background-color: #e9ecef;
-  border-color: var(--primary-color);
-  color: var(--primary-color);
+/* Light and muted buttons */
+.btn-light, .btn.btn-light {
+  background: var(--white);
+  border: 2px solid var(--midnight-blue);
+  color: var(--midnight-blue);
+  font-weight: 600;
 }
 
-/* Section Styles */
-.section {
+.btn-light:hover, .btn.btn-light:hover {
+  background: var(--industrial-silver);
+  border-color: var(--copper);
+  color: var(--midnight-blue);
+}
+
+/* General section background overrides */
+.section, .section-sm {
   padding: 80px 0;
-}
-
-.section-sm {
-  padding: 40px 0;
+  background: none;
 }
 
 .bg-light {
-  background-color: var(--light-gray);
+  background-color: var(--background-default) !important;
 }
 
-/* Hero Section */
-.hero-section {
-  background-color: var(--primary-color);
-  color: var(--white);
-  padding: 120px 0;
-  position: relative;
-  overflow: hidden;
+.bg-primary {
+  background-color: var(--midnight-blue) !important;
+}
+
+.text-accent {
+  color: var(--copper) !important;
+}
+
+.border-accent {
+  border-color: var(--copper) !important;
 }
 
 /* Card Styles */
 .card {
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
+  background: var(--white);
+  box-shadow: 0 4px 32px 0 rgba(30, 41, 59, 0.08), 0 1.5px 9px 0 rgba(184, 115, 51, 0.08);
+  border-radius: 1.25rem;
   border: none;
   margin-bottom: 20px;
+  transition: box-shadow 0.2s, transform 0.16s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 8px 40px 0 rgba(30, 41, 59, 0.16), 0 2px 18px 0 rgba(184,115,51,0.11);
 }
 
-/* Footer */
-.footer {
-  background-color: var(--secondary-color);
-  color: var(--white);
-  padding: 60px 0 20px;
-}
-
-/* Utility Classes */
-.text-accent {
-  color: var(--accent-color);
-}
-
-.border-accent {
-  border-color: var(--accent-color) !important;
-}
-
+/* Feature icon */
 .feature-icon {
   display: inline-flex;
   align-items: center;
@@ -104,8 +116,56 @@ h1, h2, h3, h4, h5, h6 {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: rgba(26, 75, 132, 0.1);
-  color: var(--primary-color);
-  font-size: 1.5rem;
+  background-color: var(--industrial-silver, #9CA3AF);
+  color: var(--midnight-blue);
+  font-size: 1.8rem;
   margin-bottom: 20px;
+  box-shadow: 0 2px 6px 0 rgba(30,41,59,0.07);
 }
+
+/* Footer */
+.footer {
+  background-color: var(--midnight-blue);
+  color: var(--white);
+  padding: 60px 0 20px;
+  font-family: var(--font-gilroy);
+}
+
+/* Utilities */
+.shadow-rich {
+  box-shadow: 0 4px 32px 0 rgba(30,41,59,0.08), 0 1.5px 9px 0 rgba(184,115,51,0.08);
+}
+
+.text-copper {
+  color: var(--copper);
+}
+
+.bg-silver {
+  background: var(--industrial-silver);
+}
+
+.bg-steel {
+  background: var(--steel-gray);
+  color: var(--white);
+}
+
+.hero-blur {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+@media (min-width: 992px) {
+  .hero-overlay-content {
+    max-width: 520px;
+    padding-left: 40px;
+    padding-top: 40px;
+  }
+}
+
+/* Responsive font fixes */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.4rem;
+  }
+}
+
