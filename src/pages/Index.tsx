@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake, Target, Eye, Diamond } from 'lucide-react';
+import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
@@ -494,64 +494,82 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Sustainability Commitment - Greener Steel Section */}
-      <section className="section-sm bg-gradient-to-b from-gray-50 to-white py-12">
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div className="space-y-6">
-              <div className="max-w-xl">
-                <h2 className="text-4xl font-bold mb-4 text-copper">
-                  Greener Steel,<br />
-                  Brighter Future
-                </h2>
-                
-                <p className="text-lg text-steel mb-8">
-                  At the heart of our sustainability mission is a commitment to eco-friendly steel production and recycling. 
-                  We empower industries with sustainable solutions that reduce environmental impact.
+      {/* Sustainability Commitment (ENHANCED) */}
+      <section className="section-sm py-0 sustainability-attractive">
+        <div className="container px-0">
+          <div className="row g-0 align-items-center flex-lg-row flex-column-reverse">
+            <div className="col-lg-6 col-12" style={{ position: "relative", zIndex: 2 }}>
+              <div
+                className="p-5 rounded-4 shadow-rich sustainability-card"
+                style={{
+                  background: "rgba(255,255,255, 0.97)",
+                  marginTop: 32,
+                  marginBottom: 32,
+                  boxShadow: "0 8px 32px rgba(30, 41, 59, 0.16)"
+                }}
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=cover&w=500&q=80"
+                  alt="Recycling Metal"
+                  className="rounded-circle float-end ms-3 mb-2 d-none d-md-block"
+                  style={{
+                    width: 80,
+                    height: 80,
+                    objectFit: "cover",
+                    border: "4px solid var(--copper)",
+                    boxShadow: "0 0px 12px 0 rgba(184,115,51,0.14)"
+                  }}
+                />
+                <div className="feature-icon mb-3 mx-0" style={{
+                  background: "var(--copper)",
+                  color: "#fff",
+                  width: 64,
+                  height: 64
+                }}>
+                  <Leaf size={36} />
+                </div>
+                <h3 className="fw-bold mb-2 sustainability-headline">
+                  Greener Steel, Brighter Future
+                </h3>
+                <p className="lead mb-2 sustainability-text" style={{ color: "var(--steel-gray)", fontWeight: 500 }}>
+                  Our commitment extends beyond steel — we champion <span className="text-copper fw-semibold">recycling</span> and <span style={{ color: "var(--midnight-blue)" }}>repurposing</span> for a cleaner tomorrow.
                 </p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="sustainability-card">
-                  <div className="icon-circle-modern">
-                    <Target className="h-6 w-6 text-white" />
-                  </div>
-                  <h4 className="text-xl font-bold mb-2">Our Mission</h4>
-                  <p className="text-steel">Transform steel production through sustainable practices and innovative recycling solutions.</p>
-                </div>
-
-                <div className="sustainability-card">
-                  <div className="icon-circle-modern">
-                    <Eye className="h-6 w-6 text-white" />
-                  </div>
-                  <h4 className="text-xl font-bold mb-2">Our Vision</h4>
-                  <p className="text-steel">Lead the industry in environmental stewardship and sustainable metal processing.</p>
-                </div>
-
-                <div className="sustainability-card md:col-span-2">
-                  <div className="icon-circle-modern">
-                    <Diamond className="h-6 w-6 text-white" />
-                  </div>
-                  <h4 className="text-xl font-bold mb-2">Our Value</h4>
-                  <p className="text-steel">Commitment to sustainability, innovation, and responsible resource management in every process.</p>
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <Link to="/contact" className="btn btn-copper btn-lg px-4 py-3">
-                  Let's Work Together
-                </Link>
+                <ul className="list-unstyled mb-0 mt-3" style={{ fontSize: "1.13rem" }}>
+                  <li className="mb-2 d-flex align-items-center">
+                    <Recycle className="me-2 text-success" size={22} />
+                    <span>Over 10,000 tons recycled each year</span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-center">
+                    <Package className="me-2 text-primary" size={22} />
+                    <span>Materials repurposed for new journeys</span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-center">
+                    <Users className="me-2 text-copper" size={22} />
+                    <span>Partnered with eco-conscious industries</span>
+                  </li>
+                </ul>
               </div>
             </div>
-            
-            <div className="relative">
-              <div className="sustainability-image-wrapper-modern">
-                <img
-                  src="https://images.unsplash.com/photo-1581093458791-9d42e3f8c3d2"
-                  alt="Sustainable Steel Production"
-                  className="sustainability-modern-image"
-                />
-              </div>
+            <div className="col-lg-6 col-12 sustainability-img-col" style={{ position: 'relative', minHeight: 400 }}>
+              <img
+                src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=cover&w=1200&q=80"
+                alt="Green manufacturing with recycled steel"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  minHeight: 400,
+                  objectFit: 'cover',
+                  borderRadius: "1.25rem",
+                  filter: "brightness(0.80) contrast(1.04)"
+                }}
+                className="shadow-rich"
+              />
+              <div style={{
+                position: "absolute",
+                inset: 0,
+                background: "linear-gradient(120deg,rgba(76,175,80,0.09) 0%,rgba(30,41,59,0.14) 60%,rgba(183,115,51,0.09) 100%)",
+                borderRadius: "1.25rem"
+              }} />
             </div>
           </div>
         </div>
