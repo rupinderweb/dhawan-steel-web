@@ -1,46 +1,47 @@
 
 import { Link } from 'react-router-dom';
-import { Phone } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-midnight-blue/95 to-copper/95 backdrop-blur-sm">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <Link className="text-white text-xl font-bold" to="/">
-            Dhawan Ispat Udyog
-          </Link>
-          
-          <div className="hidden md:flex items-center space-x-8">
-            <Link className="text-white/90 hover:text-white transition-colors" to="/">Home</Link>
-            <Link className="text-white/90 hover:text-white transition-colors" to="/about">About</Link>
-            <Link className="text-white/90 hover:text-white transition-colors" to="/products">Products</Link>
-            <Link className="text-white/90 hover:text-white transition-colors" to="/services">Services</Link>
-            <Link className="text-white/90 hover:text-white transition-colors" to="/gallery">Gallery</Link>
-            <Link className="text-white/90 hover:text-white transition-colors" to="/contact">Contact</Link>
-          </div>
-
-          <div className="hidden md:flex items-center gap-4">
-            <div className="flex items-center text-white">
-              <Phone size={18} className="mr-2" />
-              <span>+91 98XXX XXXXX</span>
-            </div>
-            <Link 
-              to="/contact" 
-              className="bg-copper text-white px-4 py-2 rounded-full hover:bg-copper/90 transition-colors"
-            >
-              Get In Touch
-            </Link>
-          </div>
-
-          <button 
-            className="md:hidden text-white p-2"
-            aria-label="Toggle menu"
-          >
-            <svg className="w-6 h-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-          </button>
+    <nav className="navbar navbar-expand-lg navbar-dark sticky-top" style={{
+      backgroundColor: 'var(--midnight-blue)'
+    }}>
+      <div className="container">
+        <Link className="navbar-brand fw-bold" to="/">
+          Dhawan Ispat Udyog
+        </Link>
+        <button 
+          className="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNav" 
+          aria-controls="navbarNav" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/about">About</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/products">Products</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/services">Services</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/gallery">Gallery</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contact">Contact</Link>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
