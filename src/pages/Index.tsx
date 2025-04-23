@@ -79,73 +79,116 @@ const Index = () => {
       </section>
 
       {/* About Dhawan Ispat Udyog */}
-      <section className="section">
+      <section className="section position-relative overflow-hidden">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6 mb-5 mb-lg-0">
-              <h2 className="fw-bold mb-4">About Dhawan Ispat Udyog</h2>
-              <p className="lead mb-4">
-                Dhawan Ispat Udyog began with a single yard and a clear mission—to provide high-quality steel and metal solutions. Today, with two fully equipped yards and state-of-the-art processing facilities, we cater to industries across India, sourcing both domestically and internationally. Our commitment to quality control, chemical analysis, and customized processing makes us a reliable partner in your supply chain.
-              </p>
-              <div className="row mt-5">
-                <div className="col-md-6 mb-4">
-                  <div className="d-flex align-items-center">
-                    <div className="feature-icon me-3">
-                      <Building size={28} />
-                    </div>
-                    <div>
-                      <h5 className="fw-semibold mb-0">Established in 2008</h5>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 mb-4">
-                  <div className="d-flex align-items-center">
-                    <div className="feature-icon me-3">
-                      <Factory size={28} />
-                    </div>
+          <div className="row align-items-center">
+            <div className="col-lg-6 position-relative mb-5 mb-lg-0">
+              {/* Experience Badge */}
+              <div className="position-absolute" style={{
+                left: "-20px",
+                top: "50px",
+                zIndex: 2,
+                background: "#B87333",
+                padding: "1.5rem",
+                borderRadius: "1rem",
+                color: "white",
+                boxShadow: "0 8px 32px rgba(184,115,51,0.14)"
+              }}>
+                <Building size={28} className="mb-2" />
+                <h5 className="mb-0 fw-bold">Since 2008</h5>
+                <p className="mb-0 small">15+ Years of Excellence</p>
+              </div>
+
+              {/* Main Image */}
+              <div className="position-relative" style={{
+                borderRadius: "2rem",
+                overflow: "hidden",
+                boxShadow: "0 8px 32px rgba(30,41,59,0.12)"
+              }}>
+                <img 
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+                  alt="Steel Processing Facility" 
+                  style={{
+                    width: "100%",
+                    height: "500px",
+                    objectFit: "cover"
+                  }}
+                />
+              </div>
+
+              {/* Secondary Image */}
+              <div className="position-absolute" style={{
+                right: "-40px",
+                bottom: "-40px",
+                width: "250px",
+                height: "250px",
+                borderRadius: "1.5rem",
+                overflow: "hidden",
+                boxShadow: "0 8px 32px rgba(30,41,59,0.12)",
+                border: "4px solid white"
+              }}>
+                <img 
+                  src="https://images.unsplash.com/photo-1533613220915-609f661a6fe1"
+                  alt="Steel Production"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover"
+                  }}
+                />
+              </div>
+            </div>
+
+            <div className="col-lg-6 ps-lg-5">
+              <div className="mb-4">
+                <span className="text-copper fw-semibold mb-2 d-block" style={{
+                  fontSize: "0.95rem",
+                  letterSpacing: "0.05em"
+                }}>ABOUT US</span>
+                <h2 className="fw-bold mb-4" style={{ fontSize: "2.5rem" }}>About Dhawan Ispat Udyog</h2>
+                <p className="lead text-muted mb-4">
+                  Dhawan Ispat Udyog began with a single yard and a clear mission—to provide high-quality steel and metal solutions. Today, with two fully equipped yards and state-of-the-art processing facilities, we cater to industries across India.
+                </p>
+              </div>
+
+              <div className="row g-4">
+                <div className="col-md-6">
+                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-light">
+                    <Factory size={24} className="text-copper" />
                     <div>
                       <h5 className="fw-semibold mb-0">Two advanced yards</h5>
+                      <p className="mb-0 small text-muted">Fully equipped facilities</p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 mb-4">
-                  <div className="d-flex align-items-center">
-                    <div className="feature-icon me-3">
-                      <Package size={28} />
-                    </div>
+                <div className="col-md-6">
+                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-light">
+                    <Package size={24} className="text-copper" />
                     <div>
-                      <h5 className="fw-semibold mb-0">Diverse material range</h5>
+                      <h5 className="fw-semibold mb-0">Diverse materials</h5>
+                      <p className="mb-0 small text-muted">Comprehensive range</p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 mb-4">
-                  <div className="d-flex align-items-center">
-                    <div className="feature-icon me-3">
-                      <Globe size={28} />
-                    </div>
+                <div className="col-md-6">
+                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-light">
+                    <Globe size={24} className="text-copper" />
                     <div>
                       <h5 className="fw-semibold mb-0">Global procurement</h5>
+                      <p className="mb-0 small text-muted">International sourcing</p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-6 mb-4">
-                  <div className="d-flex align-items-center">
-                    <div className="feature-icon me-3">
-                      <Users size={28} />
-                    </div>
+                <div className="col-md-6">
+                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-light">
+                    <Users size={24} className="text-copper" />
                     <div>
                       <h5 className="fw-semibold mb-0">Nationwide service</h5>
+                      <p className="mb-0 small text-muted">Pan-India presence</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="col-lg-6">
-              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Steel Processing Facility" className="img-fluid rounded shadow" style={{
-                height: '450px',
-                width: '100%',
-                objectFit: 'cover'
-              }} />
             </div>
           </div>
         </div>
