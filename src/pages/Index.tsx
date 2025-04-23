@@ -7,62 +7,73 @@ const Index = () => {
       {/* HERO BANNER */}
       <section style={{
         position: "relative",
-        minHeight: 480,
+        minHeight: 600,
         width: "100%",
-        height: "60vh",
+        height: "75vh",
         backgroundColor: "#1E293B",
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        padding: "2rem"
       }}>
-        <img alt="Steel background" style={{
-          objectFit: "cover",
+        <div style={{
+          position: "relative",
           width: "100%",
           height: "100%",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          zIndex: 0,
-          filter: "brightness(0.55)"
-        }} src="/lovable-uploads/763a0708-5779-482d-88a0-75fbfb72e671.png" />
-        <div className="container hero-overlay-content" style={{
-          position: "relative",
-          zIndex: 2,
-          color: "#fff",
-          textAlign: "left",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          height: "100%"
+          borderRadius: "24px",
+          overflow: "hidden",
+          boxShadow: "0 8px 32px rgba(30,41,59,0.12)"
         }}>
-          <h1 className="display-4 fw-bolder mb-4" style={{
+          <img alt="Steel background" style={{
+            objectFit: "cover",
+            width: "100%",
+            height: "100%",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            zIndex: 0,
+            filter: "brightness(0.55)"
+          }} src="/lovable-uploads/763a0708-5779-482d-88a0-75fbfb72e671.png" />
+          <div className="container hero-overlay-content" style={{
+            position: "relative",
+            zIndex: 2,
             color: "#fff",
-            textShadow: "0 3px 16px rgba(30,41,59,0.45)"
+            textAlign: "left",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            height: "100%",
+            padding: "3rem"
           }}>
-            Delivering Quality Steel Solutions Across India
-          </h1>
-          <p className="lead mb-5" style={{
-            color: "#c7c9d1",
-            fontWeight: 500
-          }}>
-            Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
-          </p>
-          <div className="d-flex flex-wrap gap-3">
-            <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
-              background: "#B87333",
-              border: "none",
-              color: "#fff"
+            <h1 className="display-4 fw-bolder mb-4" style={{
+              color: "#fff",
+              textShadow: "0 3px 16px rgba(30,41,59,0.45)"
             }}>
-              Explore Our Products
-            </Link>
-            <Link to="/services" className="btn btn-light btn-lg px-4 py-3 fw-semibold" style={{
-              borderWidth: 2,
-              borderColor: "#B87333",
-              color: "#B87333",
-              background: "#fff"
+              Delivering Quality Steel Solutions Across India
+            </h1>
+            <p className="lead mb-5" style={{
+              color: "#c7c9d1",
+              fontWeight: 500
             }}>
-              Learn About Our Services
-            </Link>
+              Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
+            </p>
+            <div className="d-flex flex-wrap gap-3">
+              <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
+                background: "#B87333",
+                border: "none",
+                color: "#fff"
+              }}>
+                Explore Our Products
+              </Link>
+              <Link to="/services" className="btn btn-light btn-lg px-4 py-3 fw-semibold" style={{
+                borderWidth: 2,
+                borderColor: "#B87333",
+                color: "#B87333",
+                background: "#fff"
+              }}>
+                Learn About Our Services
+              </Link>
+            </div>
           </div>
         </div>
       </section>
