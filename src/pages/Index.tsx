@@ -1,58 +1,64 @@
-
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box } from 'lucide-react';
-
 const Index = () => {
-  return (
-    <>
+  return <>
       {/* HERO BANNER */}
-      <section style={{ position: "relative", minHeight: 480, width: "100%", height: "60vh", backgroundColor: "#1E293B", display: "flex", alignItems: "center", justifyContent: "center" }}>
-        <img
-          src="https://images.unsplash.com/photo-1548795471-796b0ba49cb2?auto=format&fit=crop&w=1500&q=80"
-          alt="Steel background"
-          style={{
-            objectFit: "cover",
-            width: "100%",
-            height: "100%",
-            position: "absolute",
-            top: 0,
-            left: 0,
-            zIndex: 0,
-            filter: "brightness(0.55)"
-          }}
-        />
+      <section style={{
+      position: "relative",
+      minHeight: 480,
+      width: "100%",
+      height: "60vh",
+      backgroundColor: "#1E293B",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center"
+    }}>
+        <img alt="Steel background" style={{
+        objectFit: "cover",
+        width: "100%",
+        height: "100%",
+        position: "absolute",
+        top: 0,
+        left: 0,
+        zIndex: 0,
+        filter: "brightness(0.55)"
+      }} src="/lovable-uploads/763a0708-5779-482d-88a0-75fbfb72e671.png" />
         <div className="container hero-overlay-content" style={{
-          position: "relative",
-          zIndex: 2,
+        position: "relative",
+        zIndex: 2,
+        color: "#fff",
+        textAlign: "left",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        height: "100%"
+      }}>
+          <h1 className="display-4 fw-bolder mb-4" style={{
           color: "#fff",
-          textAlign: "left",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          height: "100%",
+          textShadow: "0 3px 16px rgba(30,41,59,0.45)"
         }}>
-          <h1 className="display-4 fw-bolder mb-4" style={{ color: "#fff", textShadow: "0 3px 16px rgba(30,41,59,0.45)" }}>
             Delivering Quality Steel Solutions Across India
           </h1>
-          <p className="lead mb-5" style={{ color: "#c7c9d1", fontWeight: 500 }}>
+          <p className="lead mb-5" style={{
+          color: "#c7c9d1",
+          fontWeight: 500
+        }}>
             Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
           </p>
           <div className="d-flex flex-wrap gap-3">
-            <Link
-              to="/products"
-              className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich"
-              style={{ background: "#B87333", border: "none", color: "#fff" }}>
+            <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
+            background: "#B87333",
+            border: "none",
+            color: "#fff"
+          }}>
               Explore Our Products
             </Link>
-            <Link
-              to="/services"
-              className="btn btn-light btn-lg px-4 py-3 fw-semibold"
-              style={{
-                borderWidth: 2,
-                borderColor: "#B87333",
-                color: "#B87333",
-                background: "#fff"
-              }}>
+            <Link to="/services" className="btn btn-light btn-lg px-4 py-3 fw-semibold" style={{
+            borderWidth: 2,
+            borderColor: "#B87333",
+            color: "#B87333",
+            background: "#fff"
+          }}>
               Learn About Our Services
             </Link>
           </div>
@@ -122,12 +128,11 @@ const Index = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <img 
-                src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
-                alt="Steel Processing Facility" 
-                className="img-fluid rounded shadow" 
-                style={{ height: '450px', width: '100%', objectFit: 'cover' }}
-              />
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Steel Processing Facility" className="img-fluid rounded shadow" style={{
+              height: '450px',
+              width: '100%',
+              objectFit: 'cover'
+            }} />
             </div>
           </div>
         </div>
@@ -328,13 +333,20 @@ const Index = () => {
       </section>
 
       {/* Partap Iron & Steel */}
-      <section className="section-sm" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="section-sm" style={{
+      backgroundColor: '#f8f9fa'
+    }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto">
               <div className="p-4 text-center">
-                <h4 className="fw-bold mb-3" style={{ color: '#6c757d' }}>Partap Iron & Steel Rolling Mills</h4>
-                <p className="mb-0" style={{ color: '#6c757d', fontWeight: '300' }}>
+                <h4 className="fw-bold mb-3" style={{
+                color: '#6c757d'
+              }}>Partap Iron & Steel Rolling Mills</h4>
+                <p className="mb-0" style={{
+                color: '#6c757d',
+                fontWeight: '300'
+              }}>
                   Partap Iron & Steel Rolling Mills, part of our group since 1997, manufactures MS Bars & Angles at Khanna, Punjab. 
                   Known for thin-section steel production, Partap supports industries across India with precision-crafted steel products.
                 </p>
@@ -365,8 +377,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default Index;
