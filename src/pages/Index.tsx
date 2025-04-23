@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf } from 'lucide-react';
+import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -316,96 +316,144 @@ const Index = () => {
       </section>
 
       {/* Sustainability Commitment */}
-      <section className="section-sm" style={{
+      <section className="section-sm py-0" style={{
         position: "relative",
-        minHeight: 340,
+        minHeight: 400,
         width: "100%",
-        padding: 0,
         overflow: "hidden"
       }}>
-        <img
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=cover&w=1200&q=80"
-          alt="Trees and water for sustainability"
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            zIndex: 1,
-            filter: "brightness(0.55) blur(0.5px)"
-          }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background: "linear-gradient(120deg, rgba(76,175,80,0.25) 0%, rgba(30,41,59,0.35) 60%, rgba(183,115,51,0.25) 100%)",
-            zIndex: 2,
-            pointerEvents: "none"
-          }}
-        />
-        <div className="container" style={{
-          position: "relative",
-          zIndex: 3
-        }}>
-          <div className="row align-items-center justify-content-center">
-            <div className="col-lg-8 mx-auto">
+        <div className="container px-0">
+          <div className="row g-0 align-items-center flex-lg-row flex-column-reverse">
+            <div className="col-lg-6 col-12" style={{ position: "relative", zIndex: 2 }}>
               <div
-                className="p-5 rounded-4 text-center shadow-rich"
+                className="p-5 rounded-4 shadow-rich"
                 style={{
-                  background: "rgba(255,255,255,0.82)",
-                  backdropFilter: "blur(2px)",
-                  WebkitBackdropFilter: "blur(2px)",
-                  boxShadow: "0 8px 32px 0 rgba(30, 41, 59, 0.14)"
+                  background: "rgba(255,255,255, 0.92)",
+                  marginTop: 32,
+                  marginBottom: 32,
+                  boxShadow: "0 8px 32px rgba(30, 41, 59, 0.16)"
                 }}
               >
-                <div className="feature-icon mx-auto mb-4" style={{
+                <div className="feature-icon mb-3 mx-0" style={{
                   background: "var(--copper)",
-                  color: "var(--white)",
-                  boxShadow: "0 2px 10px 0 rgba(184,115,51,0.12)",
-                  width: 72,
-                  height: 72
+                  color: "#fff",
+                  width: 64,
+                  height: 64
                 }}>
                   <Leaf size={36} />
                 </div>
-                <h3 className="fw-bold mb-2" style={{
+                <h3 className="fw-bold mb-3" style={{
                   color: "var(--midnight-blue)",
-                  fontSize: "2.2rem",
+                  fontSize: "2rem",
                   letterSpacing: 0.3
                 }}>
                   Sustainability Commitment
                 </h3>
-                <p className="lead mb-0" style={{ color: "var(--steel-gray)", fontWeight: 500 }}>
-                  We are committed to <span className="text-copper fw-semibold">recycling</span> and <span style={{ color: "var(--midnight-blue)" }}>repurposing steel and metals</span>,
-                  contributing to the circular economy and reducing industrial waste for a greener tomorrow.
+                <p className="lead mb-2" style={{ color: "var(--steel-gray)", fontWeight: 500 }}>
+                  We are dedicated to <span className="text-copper fw-semibold">recycling</span> and <span style={{ color: "var(--midnight-blue)" }}>repurposing metals</span> for a greener future.
                 </p>
+                <ul className="list-unstyled mb-0 mt-3" style={{ fontSize: "1.1rem" }}>
+                  <li className="mb-2 d-flex align-items-center">
+                    <Recycle className="me-2 text-success" size={22} />
+                    <span>Over 10,000 tons recycled annually</span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-center">
+                    <Package className="me-2 text-primary" size={22} />
+                    <span>Materials repurposed for new life</span>
+                  </li>
+                  <li className="mb-2 d-flex align-items-center">
+                    <Users className="me-2 text-copper" size={22} />
+                    <span>Partnered with eco-conscious clients</span>
+                  </li>
+                </ul>
               </div>
+            </div>
+            <div className="col-lg-6 col-12" style={{ position: 'relative', minHeight: 400 }}>
+              <img
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=cover&w=1200&q=80"
+                alt="Sustainable landscape"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  minHeight: 400,
+                  objectFit: 'cover',
+                  filter: "brightness(0.74)"
+                }}
+                className="rounded-4"
+              />
+              <div style={{
+                position: "absolute",
+                inset: 0,
+                background: "linear-gradient(120deg, rgba(76,175,80,0.10) 0%, rgba(30,41,59,0.18) 60%, rgba(183,115,51,0.10) 100%)",
+                borderRadius: "1.25rem"
+              }} />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Partap Iron & Steel */}
+      {/* Credibility / Partap Iron & Steel Rolling Mills */}
       <section className="section-sm" style={{
         backgroundColor: '#f8f9fa'
       }}>
         <div className="container">
-          <div className="row">
-            <div className="col-lg-8 mx-auto">
-              <div className="p-4 text-center">
-                <h4 className="fw-bold mb-3" style={{
-                  color: '#6c757d'
-                }}>Partap Iron & Steel Rolling Mills</h4>
-                <p className="mb-0" style={{
-                  color: '#6c757d',
-                  fontWeight: '300'
+          <div className="row align-items-center flex-lg-row flex-column-reverse">
+            <div className="col-lg-7">
+              <div className="mb-4">
+                <h2 className="fw-bold mb-3" style={{ color: "#B87333", fontSize: "2.1rem" }}>
+                  <span className="me-2 align-middle">
+                    <Factory size={32} className="text-copper" />
+                  </span>
+                  Partap Iron & Steel Rolling Mills
+                </h2>
+                <p className="lead" style={{
+                  color: "#6c757d"
                 }}>
-                  Partap Iron & Steel Rolling Mills, part of our group since 1997, manufactures MS Bars & Angles at Khanna, Punjab. 
-                  Known for thin-section steel production, Partap supports industries across India with precision-crafted steel products.
+                  Since <span className="fw-semibold text-copper">1997</span>, Partap Iron & Steel Rolling Mills has been at the forefront of steel manufacturing in Khanna, Punjab.<br />
+                  Renowned for thin-section steel precision, our products bolster industries nationwide.
                 </p>
               </div>
+              <div className="d-flex flex-wrap gap-4 mt-3">
+                <div className="d-flex align-items-center gap-3">
+                  <span className="bg-white shadow-rich rounded-3 p-3 d-inline-flex">
+                    <Award size={28} className="text-copper" />
+                  </span>
+                  <div>
+                    <span className="fw-bold d-block" style={{ color: "#1E293B" }}>Trusted since 1997</span>
+                    <span className="text-muted small">Years of steelmaking excellence</span>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-3">
+                  <span className="bg-white shadow-rich rounded-3 p-3 d-inline-flex">
+                    <BadgeCheck size={28} className="text-success" />
+                  </span>
+                  <div>
+                    <span className="fw-bold d-block" style={{ color: "#1E293B" }}>Certified Precision</span>
+                    <span className="text-muted small">IS:1786/MS standards</span>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center gap-3">
+                  <span className="bg-white shadow-rich rounded-3 p-3 d-inline-flex">
+                    <Handshake size={28} className="text-primary" />
+                  </span>
+                  <div>
+                    <span className="fw-bold d-block" style={{ color: "#1E293B" }}>Nationwide Trust</span>
+                    <span className="text-muted small">Reliable supply partner</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5 mb-4 mb-lg-0">
+              <img
+                src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?auto=format&fit=cover&w=700&q=80"
+                alt="Partap Iron & Steel Rolling Mills"
+                className="img-fluid rounded-4 shadow-rich"
+                style={{
+                  width: "100%",
+                  height: 320,
+                  objectFit: "cover"
+                }}
+              />
             </div>
           </div>
         </div>
