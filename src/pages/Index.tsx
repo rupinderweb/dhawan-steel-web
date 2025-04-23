@@ -332,7 +332,7 @@ const Index = () => {
       </section>
 
       {/* Our Services */}
-      <section className="section">
+      <section className="section bg-light">
         <div className="container">
           <div className="row mb-5">
             <div className="col-lg-6 mx-auto text-center">
@@ -340,48 +340,79 @@ const Index = () => {
               <p className="lead">We offer comprehensive steel processing and supply chain solutions.</p>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-6 col-lg-3 mb-4">
-              <div className="card h-100 border-0 rounded-4 text-center p-4">
-                <div className="card-body">
-                  <div className="feature-icon mx-auto">
-                    <Search size={28} />
+          <div className="row g-4">
+            {/* Chemical Analysis Service */}
+            <div className="col-md-6 mb-4">
+              <div className="service-card position-relative overflow-hidden rounded-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1581093458791-9d42e3f8c3d2?auto=format&fit=crop&w=800&q=80"
+                  alt="Chemical Analysis"
+                  className="w-100 h-100 object-cover"
+                  style={{ height: "400px" }}
+                />
+                <div className="service-overlay">
+                  <div className="service-content">
+                    <div className="service-category mb-2">Material Testing</div>
+                    <h3 className="service-title mb-2">Chemical Analysis & Quality Control</h3>
+                    <p className="service-description">Comprehensive composition analysis for quality assurance.</p>
                   </div>
-                  <h4 className="card-title fw-bold mb-3">Chemical Analysis</h4>
-                  <p className="card-text">Comprehensive composition analysis for quality assurance.</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4">
-              <div className="card h-100 border-0 rounded-4 text-center p-4">
-                <div className="card-body">
-                  <div className="feature-icon mx-auto">
-                    <List size={28} />
+
+            {/* Material Grading Service */}
+            <div className="col-md-6 mb-4">
+              <div className="service-card position-relative overflow-hidden rounded-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+                  alt="Material Grading"
+                  className="w-100 h-100 object-cover"
+                  style={{ height: "400px" }}
+                />
+                <div className="service-overlay">
+                  <div className="service-content">
+                    <div className="service-category mb-2">Material Processing</div>
+                    <h3 className="service-title mb-2">Expert Material Grading</h3>
+                    <p className="service-description">Expert segregation and grading of various metals.</p>
                   </div>
-                  <h4 className="card-title fw-bold mb-3">Material Grading</h4>
-                  <p className="card-text">Expert segregation and grading of various metals.</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4">
-              <div className="card h-100 border-0 rounded-4 text-center p-4">
-                <div className="card-body">
-                  <div className="feature-icon mx-auto">
-                    <Wrench size={28} />
+
+            {/* Torch Cutting Service */}
+            <div className="col-md-6 mb-4">
+              <div className="service-card position-relative overflow-hidden rounded-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=80"
+                  alt="Torch Cutting"
+                  className="w-100 h-100 object-cover"
+                  style={{ height: "400px" }}
+                />
+                <div className="service-overlay">
+                  <div className="service-content">
+                    <div className="service-category mb-2">Precision Cutting</div>
+                    <h3 className="service-title mb-2">Advanced Torch Cutting</h3>
+                    <p className="service-description">Precision cutting for customized size requirements.</p>
                   </div>
-                  <h4 className="card-title fw-bold mb-3">Torch Cutting</h4>
-                  <p className="card-text">Precision cutting for customized size requirements.</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3 mb-4">
-              <div className="card h-100 border-0 rounded-4 text-center p-4">
-                <div className="card-body">
-                  <div className="feature-icon mx-auto">
-                    <Settings size={28} />
+
+            {/* Rolling & Forging Service */}
+            <div className="col-md-6 mb-4">
+              <div className="service-card position-relative overflow-hidden rounded-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80"
+                  alt="Rolling & Forging"
+                  className="w-100 h-100 object-cover"
+                  style={{ height: "400px" }}
+                />
+                <div className="service-overlay">
+                  <div className="service-content">
+                    <div className="service-category mb-2">Metal Processing</div>
+                    <h3 className="service-title mb-2">Rolling & Forging Solutions</h3>
+                    <p className="service-description">Advanced processes for material transformation.</p>
                   </div>
-                  <h4 className="card-title fw-bold mb-3">Rolling & Forging</h4>
-                  <p className="card-text">Advanced processes for material transformation.</p>
                 </div>
               </div>
             </div>
