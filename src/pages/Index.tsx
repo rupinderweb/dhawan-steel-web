@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
+import { Card, CardContent } from "@/components/ui/card";
 
 const Index = () => {
   return (
@@ -207,104 +208,118 @@ const Index = () => {
           {/* First row - 4 products */}
           <div className="row g-4 mb-4">
             <div className="col-lg-3 col-md-6">
-              <div className="card h-100 hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1605557202601-033f0a0f3752"
-                  alt="MS Ingots"
-                  className="h-48 w-full object-cover rounded-t-lg"
-                />
-                <div className="card-body p-4">
+              <Card className="h-100 hover:shadow-xl transition-shadow">
+                <div className="h-48 w-full overflow-hidden rounded-t-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1605557202601-033f0a0f3752"
+                    alt="MS Ingots"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-4">
                   <h4 className="text-xl font-semibold mb-2 text-copper">MS Ingots</h4>
                   <p className="text-gray-600">High-quality mild steel ingots for various industrial applications.</p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
             
             <div className="col-lg-3 col-md-6">
-              <div className="card h-100 hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1533613220915-609f661a6fe1"
-                  alt="Billets"
-                  className="h-48 w-full object-cover rounded-t-lg"
-                />
-                <div className="card-body p-4">
+              <Card className="h-100 hover:shadow-xl transition-shadow">
+                <div className="h-48 w-full overflow-hidden rounded-t-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1533613220915-609f661a6fe1"
+                    alt="Billets"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-4">
                   <h4 className="text-xl font-semibold mb-2 text-copper">Billets</h4>
                   <p className="text-gray-600">Premium steel billets for construction and manufacturing.</p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
             
             <div className="col-lg-3 col-md-6">
-              <div className="card h-100 hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1517897719686-983b325fb3d3"
-                  alt="Ship Breaking Materials"
-                  className="h-48 w-full object-cover rounded-t-lg"
-                />
-                <div className="card-body p-4">
+              <Card className="h-100 hover:shadow-xl transition-shadow">
+                <div className="h-48 w-full overflow-hidden rounded-t-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1517897719686-983b325fb3d3"
+                    alt="Ship Breaking Materials"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-4">
                   <h4 className="text-xl font-semibold mb-2 text-copper">Ship Breaking Materials</h4>
                   <p className="text-gray-600">Recycled marine-grade metals from ship dismantling.</p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
             
             <div className="col-lg-3 col-md-6">
-              <div className="card h-100 hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1534959513142-2fe19c7f44d0"
-                  alt="Stainless Steel"
-                  className="h-48 w-full object-cover rounded-t-lg"
-                />
-                <div className="card-body p-4">
+              <Card className="h-100 hover:shadow-xl transition-shadow">
+                <div className="h-48 w-full overflow-hidden rounded-t-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1534959513142-2fe19c7f44d0"
+                    alt="Stainless Steel"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-4">
                   <h4 className="text-xl font-semibold mb-2 text-copper">Stainless Steel</h4>
                   <p className="text-gray-600">Premium grade stainless steel for durability and corrosion resistance.</p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
           
           {/* Second row - 3 products */}
           <div className="row g-4">
             <div className="col-lg-4 col-md-6">
-              <div className="card h-100 hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1589923188900-85f945e76bde"
-                  alt="MS Scrap"
-                  className="h-48 w-full object-cover rounded-t-lg"
-                />
-                <div className="card-body p-4">
+              <Card className="h-100 hover:shadow-xl transition-shadow">
+                <div className="h-48 w-full overflow-hidden rounded-t-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1589923188900-85f945e76bde"
+                    alt="MS Scrap"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-4">
                   <h4 className="text-xl font-semibold mb-2 text-copper">MS Scrap</h4>
                   <p className="text-gray-600">Quality mild steel scrap materials for recycling and reprocessing.</p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
             
             <div className="col-lg-4 col-md-6">
-              <div className="card h-100 hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1584264514664-1ce88a419b28"
-                  alt="Low Alloy Steel"
-                  className="h-48 w-full object-cover rounded-t-lg"
-                />
-                <div className="card-body p-4">
+              <Card className="h-100 hover:shadow-xl transition-shadow">
+                <div className="h-48 w-full overflow-hidden rounded-t-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1584264514664-1ce88a419b28"
+                    alt="Low Alloy Steel"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-4">
                   <h4 className="text-xl font-semibold mb-2 text-copper">Low Alloy Steel</h4>
                   <p className="text-gray-600">Specialized low alloy steel for specific industrial needs.</p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
             
             <div className="col-lg-4 col-md-6">
-              <div className="card h-100 hover:shadow-xl transition-shadow">
-                <img 
-                  src="https://images.unsplash.com/photo-1578835187647-2a37a85683b7"
-                  alt="Aluminium"
-                  className="h-48 w-full object-cover rounded-t-lg"
-                />
-                <div className="card-body p-4">
+              <Card className="h-100 hover:shadow-xl transition-shadow">
+                <div className="h-48 w-full overflow-hidden rounded-t-lg">
+                  <img 
+                    src="https://images.unsplash.com/photo-1578835187647-2a37a85683b7"
+                    alt="Aluminium"
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <CardContent className="p-4">
                   <h4 className="text-xl font-semibold mb-2 text-copper">Aluminium</h4>
                   <p className="text-gray-600">Lightweight and versatile aluminium products for various applications.</p>
-                </div>
-              </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
           

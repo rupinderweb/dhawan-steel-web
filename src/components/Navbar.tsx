@@ -3,9 +3,10 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark sticky-top" style={{
+    <nav className="navbar navbar-expand-lg navbar-dark" style={{
       backgroundColor: 'var(--midnight-blue)',
-      padding: '0.5rem 0'  // Reduced vertical padding
+      padding: '0.5rem 0',  // Reduced vertical padding
+      marginTop: 0 // Remove white space on top
     }}>
       <div className="container">
         <Link className="navbar-brand fw-bold" to="/">
