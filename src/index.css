@@ -20,6 +20,14 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+/* Set up proper spacing for main content */
+main {
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Headline styles */
@@ -160,6 +168,32 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-backdrop-filter: blur(3px);
 }
 
+/* Hero section specific styles */
+.hero-section {
+  height: 100vh;
+  position: relative;
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0.4) 100%);
+}
+
+/* Fix for containers */
+.container, 
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Responsive container fixes */
 @media (min-width: 992px) {
   .hero-overlay-content {
     max-width: 520px;

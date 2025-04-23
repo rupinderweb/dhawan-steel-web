@@ -4,7 +4,7 @@ import { Phone } from 'lucide-react';
 
 const Navbar = () => {
   return (
-    <nav className="fixed w-full z-50 bg-gradient-to-r from-midnight-blue/95 to-copper/95 backdrop-blur-sm">
+    <nav className="fixed top-0 w-full z-50 bg-gradient-to-r from-midnight-blue/95 to-copper/95 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link className="text-white text-xl font-bold" to="/">
