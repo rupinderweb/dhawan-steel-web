@@ -1,4 +1,3 @@
-
 /* Import Inter Font from Google Fonts as a high-quality, Gilroy-like alternative */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
@@ -227,4 +226,131 @@ img {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.cta-card-outer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* will overlap footer with negative margin */
+  z-index: 20;
+  margin-bottom: -120px; /* Overlap over the footer */
+  margin-top: 64px;
+}
+
+.cta-card {
+  background: var(--copper);
+  color: #fff;
+  border-radius: 2rem;
+  min-width: 320px;
+  max-width: 640px;
+  width: 100%;
+  padding: 2.5rem 2rem 2.5rem 2rem;
+  box-shadow: 0 8px 32px rgba(184,115,51,0.14), 0 2px 12px 0 rgba(30,41,59,0.08);
+  text-align: center;
+  position: relative;
+}
+
+.cta-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-headline {
+  font-size: 2.1rem;
+  font-weight: 900;
+  margin-bottom: 0.75rem;
+  color: #fff;
+  letter-spacing: 0.04em;
+  text-shadow: 0 2px 24px rgba(46, 34, 8, 0.16);
+}
+
+.cta-subtitle {
+  font-size: 1.15rem;
+  color: #fffbe3;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 1px 4px rgba(46, 34, 8, 0.06);
+}
+
+.cta-btn {
+  background: #fff !important;
+  color: var(--copper) !important;
+  border: none !important;
+  font-weight: 700;
+  font-size: 1.12rem;
+  padding: 0.75rem 2rem !important;
+  margin-top: 8px;
+  border-radius: 999px;
+  box-shadow: 0 4px 22px 0 rgba(184,115,51,0.13);
+  transition: all 0.16s;
+}
+
+.cta-btn:hover, .cta-btn:focus {
+  background: #fde1d3 !important;
+  color: #b87333 !important;
+  text-decoration: none;
+  transform: translateY(-2px) scale(1.03);
+}
+
+@media (max-width: 576px) {
+  .cta-card {
+    padding: 2rem 1rem;
+    min-width: unset;
+    font-size: 1rem;
+  }
+  .cta-headline {
+    font-size: 1.4rem;
+  }
+}
+
+.footer {
+  position: relative;
+  z-index: 9;
+}
+
+/* Improved Sustainability section styles */
+.sustainability-attractive .sustainability-card {
+  border: 2px solid var(--copper);
+  background: rgba(255,252,245, 0.97);
+  box-shadow: 0 8px 32px 0 rgba(184,115,51,0.08);
+}
+.sustainability-attractive .sustainability-headline {
+  color: var(--copper);
+  font-size: 2rem;
+  letter-spacing: 0.03em;
+}
+.sustainability-attractive .sustainability-text {
+  color: var(--steel-gray);
+}
+
+/* Credibility Section Styles */
+.credibility-section .credibility-card {
+  position: relative;
+  z-index: 2;
+  border: 2.5px solid #fde1d3;
+  margin-top: 12px;
+}
+
+.credibility-section .cred-image-container {
+  position: relative;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.credibility-section .cred-badge {
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  /* Overflows on image for visual emphasis */
+}
+
+.badge.bg-copper {
+  background: var(--copper) !important;
+  color: #fff !important;
+  font-size: 0.98rem;
 }
