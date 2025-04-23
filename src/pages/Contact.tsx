@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
@@ -48,7 +47,7 @@ const Contact = () => {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-primary text-white py-5">
+      <section className="bg-copper text-white py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">

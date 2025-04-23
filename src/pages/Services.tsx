@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Search, List, Wrench, Settings, Truck, Recycle, ArrowRight, Package, Leaf, Shield } from 'lucide-react';
 
@@ -6,7 +5,7 @@ const Services = () => {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-primary text-white py-5">
+      <section className="bg-copper text-white py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
@@ -120,25 +119,25 @@ const Services = () => {
                 <div className="row g-3">
                   <div className="col-md-6">
                     <div className="d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span>
+                      <span className="me-2 text-copper">✓</span>
                       <p className="mb-0">Round Bars (multiple diameters)</p>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span>
+                      <span className="me-2 text-copper">✓</span>
                       <p className="mb-0">Flat Bars (various dimensions)</p>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span>
+                      <span className="me-2 text-copper">✓</span>
                       <p className="mb-0">Custom Profiles</p>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span>
+                      <span className="me-2 text-copper">✓</span>
                       <p className="mb-0">Angles & Channels</p>
                     </div>
                   </div>
@@ -148,7 +147,7 @@ const Services = () => {
                   <p className="mb-4">
                     Through our sister concern, Partap Iron & Steel Rolling Mills, we have developed expertise in producing the thinnest angles available in India, catering to specialized industrial requirements.
                   </p>
-                  <Link to="/contact" className="btn btn-primary">
+                  <Link to="/contact" className="btn btn-accent">
                     Request Custom Rolling Services <ArrowRight size={18} className="ms-2" />
                   </Link>
                 </div>
@@ -402,7 +401,7 @@ const Services = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="section-sm bg-primary text-white">
+      <section className="section-sm bg-copper text-white">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">

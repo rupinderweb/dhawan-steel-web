@@ -1,11 +1,10 @@
-
 import { Link } from 'react-router-dom';
 
 const Gallery = () => {
   return (
     <>
       {/* Page Header */}
-      <section className="bg-primary text-white py-5">
+      <section className="bg-copper text-white py-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
@@ -355,7 +354,7 @@ const Gallery = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="section-sm bg-primary text-white">
+      <section className="section-sm bg-copper text-white">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
