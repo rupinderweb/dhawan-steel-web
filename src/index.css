@@ -19,6 +19,8 @@ body {
   color: var(--midnight-blue);
   background: var(--background-default);
   line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 /* Headline styles */
@@ -176,12 +178,53 @@ h1, h2, h3, h4, h5, h6 {
 /* Fix for main padding that might be causing layout issues */
 main {
   padding: 0;
+  overflow-x: hidden;
 }
 
-/* Reset App.css styles that might be conflicting with Bootstrap */
+/* Navbar specific fixes */
+.navbar {
+  z-index: 1030;
+}
+
+.navbar-brand {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--industrial-silver) !important;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.nav-link:hover, 
+.nav-link:focus, 
+.nav-link.active {
+  color: var(--white) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--industrial-silver);
+}
+
+/* Reset styles that might be breaking layout */
 #root {
   max-width: none;
   margin: 0;
   padding: 0;
   text-align: left;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Fix bootstrap and tailwind conflicts */
+.container, 
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
