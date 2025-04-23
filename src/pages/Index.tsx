@@ -146,110 +146,115 @@ const Index = () => {
           <div className="row mb-5">
             <div className="col-lg-6 mx-auto text-center">
               <h2 className="fw-bold mb-3">Our Materials</h2>
-              <p className="lead">High-quality ferrous and non-ferrous materials sourced from trusted suppliers globally.</p>
+              <p className="lead">High-quality materials sourced from trusted suppliers globally.</p>
             </div>
           </div>
+          
+          {/* First row - 4 products */}
+          <div className="row g-4 mb-4">
+            <div className="col-lg-3 col-md-6">
+              <div className="card h-100 hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1605557202601-033f0a0f3752"
+                  alt="MS Ingots"
+                  className="h-48 w-full object-cover"
+                />
+                <div className="card-body">
+                  <h4 className="text-xl font-semibold text-copper">MS Ingots</h4>
+                  <p className="text-gray-600 mt-2">High-quality mild steel ingots for various industrial applications.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-lg-3 col-md-6">
+              <div className="card h-100 hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1533613220915-609f661a6fe1"
+                  alt="Billets"
+                  className="h-48 w-full object-cover"
+                />
+                <div className="card-body">
+                  <h4 className="text-xl font-semibold text-copper">Billets</h4>
+                  <p className="text-gray-600 mt-2">Premium steel billets for construction and manufacturing.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-lg-3 col-md-6">
+              <div className="card h-100 hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1517897719686-983b325fb3d3"
+                  alt="Ship Breaking Materials"
+                  className="h-48 w-full object-cover"
+                />
+                <div className="card-body">
+                  <h4 className="text-xl font-semibold text-copper">Ship Breaking Materials</h4>
+                  <p className="text-gray-600 mt-2">Recycled marine-grade metals from ship dismantling.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-lg-3 col-md-6">
+              <div className="card h-100 hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1534959513142-2fe19c7f44d0"
+                  alt="Stainless Steel"
+                  className="h-48 w-full object-cover"
+                />
+                <div className="card-body">
+                  <h4 className="text-xl font-semibold text-copper">Stainless Steel</h4>
+                  <p className="text-gray-600 mt-2">Premium grade stainless steel for durability and corrosion resistance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Second row - 3 products */}
           <div className="row g-4">
-            <div className="col-lg-6 mb-4">
-              <div className="card border-0 rounded-4 shadow-rich h-100 overflow-hidden">
-                <div className="row g-0 h-100">
-                  <div className="col-md-6">
-                    <img 
-                      src="https://images.unsplash.com/photo-1605557202601-033f0a0f3752?auto=format&fit=crop&w=800&q=80" 
-                      alt="MS Ingots and Billets"
-                      className="h-100 w-100 object-cover"
-                      style={{ minHeight: "300px" }}
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body p-4">
-                      <h4 className="card-title fw-bold mb-4 text-copper">Ferrous Materials</h4>
-                      <ul className="list-unstyled mb-0">
-                        <li className="mb-3 d-flex align-items-center">
-                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </span>
-                          MS Ingots
-                        </li>
-                        <li className="mb-3 d-flex align-items-center">
-                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </span>
-                          Billets
-                        </li>
-                        <li className="mb-3 d-flex align-items-center">
-                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </span>
-                          MS Scrap
-                        </li>
-                        <li className="mb-3 d-flex align-items-center">
-                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </span>
-                          Ship Breaking Materials
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="card h-100 hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1589923188900-85f945e76bde"
+                  alt="MS Scrap"
+                  className="h-48 w-full object-cover"
+                />
+                <div className="card-body">
+                  <h4 className="text-xl font-semibold text-copper">MS Scrap</h4>
+                  <p className="text-gray-600 mt-2">Quality mild steel scrap materials for recycling and reprocessing.</p>
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 mb-4">
-              <div className="card border-0 rounded-4 shadow-rich h-100 overflow-hidden">
-                <div className="row g-0 h-100">
-                  <div className="col-md-6">
-                    <img 
-                      src="https://images.unsplash.com/photo-1534959513142-2fe19c7f44d0?auto=format&fit=crop&w=800&q=80" 
-                      alt="Stainless Steel and Aluminum"
-                      className="h-100 w-100 object-cover"
-                      style={{ minHeight: "300px" }}
-                    />
-                  </div>
-                  <div className="col-md-6">
-                    <div className="card-body p-4">
-                      <h4 className="card-title fw-bold mb-4 text-copper">Non-Ferrous Materials</h4>
-                      <ul className="list-unstyled mb-0">
-                        <li className="mb-3 d-flex align-items-center">
-                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </span>
-                          Stainless Steel Scrap
-                        </li>
-                        <li className="mb-3 d-flex align-items-center">
-                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </span>
-                          Low Alloy Steel Scrap
-                        </li>
-                        <li className="mb-3 d-flex align-items-center">
-                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                              <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                          </span>
-                          Aluminium Scrap
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            
+            <div className="col-lg-4 col-md-6">
+              <div className="card h-100 hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1584264514664-1ce88a419b28"
+                  alt="Low Alloy Steel"
+                  className="h-48 w-full object-cover"
+                />
+                <div className="card-body">
+                  <h4 className="text-xl font-semibold text-copper">Low Alloy Steel</h4>
+                  <p className="text-gray-600 mt-2">Specialized low alloy steel for specific industrial needs.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-lg-4 col-md-6">
+              <div className="card h-100 hover:shadow-xl transition-shadow">
+                <img 
+                  src="https://images.unsplash.com/photo-1578835187647-2a37a85683b7"
+                  alt="Aluminium"
+                  className="h-48 w-full object-cover"
+                />
+                <div className="card-body">
+                  <h4 className="text-xl font-semibold text-copper">Aluminium</h4>
+                  <p className="text-gray-600 mt-2">Lightweight and versatile aluminium products for various applications.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="text-center mt-4">
+          
+          <div className="text-center mt-5">
             <Link to="/products" className="btn btn-copper btn-lg">
               View All Products <ArrowRight size={18} className="ms-2" />
             </Link>
