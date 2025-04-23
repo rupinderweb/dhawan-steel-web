@@ -137,6 +137,51 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 160px; /* Increased to accommodate overlapping CTA card */
 }
 
+/* Industries We Serve Section Styles */
+.industry-card {
+  background: var(--white);
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  padding: 2rem;
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 32px rgba(184,115,51,0.12);
+}
+
+.industry-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #22C55E;
+  margin-bottom: 1.5rem;
+}
+
+.industry-icon {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.industry-title {
+  color: var(--midnight-blue);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.industry-description {
+  color: var(--steel-gray);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
 /* Utilities */
 .shadow-rich {
   box-shadow: 0 4px 32px 0 rgba(30,41,59,0.08), 0 1.5px 9px 0 rgba(184,115,51,0.08);

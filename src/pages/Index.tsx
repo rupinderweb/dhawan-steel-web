@@ -434,45 +434,60 @@ const Index = () => {
               <p className="lead">Our quality materials support a wide range of industrial applications.</p>
             </div>
           </div>
-          <div className="row g-4">
-            <div className="col-md-4 mb-4">
-              <div className="text-center p-4">
-                <div className="feature-icon mx-auto">
-                  <Wrench size={28} />
+          <div className="row g-4 justify-content-center">
+            <div className="col-lg-3 col-md-6">
+              <div className="text-center industry-card p-4">
+                <div className="industry-icon-wrapper">
+                  <span className="industry-icon">
+                    <Wrench className="h-8 w-8" />
+                  </span>
                 </div>
-                <h4 className="mt-4">Hardware</h4>
+                <h4 className="industry-title">01. Hardware</h4>
+                <p className="industry-description">
+                  Premium hardware solutions for diverse applications
+                </p>
               </div>
             </div>
-            <div className="col-md-4 mb-4">
-              <div className="text-center p-4">
-                <div className="feature-icon mx-auto">
-                  <Wind size={28} />
+            
+            <div className="col-lg-3 col-md-6">
+              <div className="text-center industry-card p-4">
+                <div className="industry-icon-wrapper">
+                  <span className="industry-icon">
+                    <Wind className="h-8 w-8" />
+                  </span>
                 </div>
-                <h4 className="mt-4">Air Coolers</h4>
+                <h4 className="industry-title">02. Air Coolers</h4>
+                <p className="industry-description">
+                  Quality materials for cooling systems
+                </p>
               </div>
             </div>
-            <div className="col-md-4 mb-4">
-              <div className="text-center p-4">
-                <div className="feature-icon mx-auto">
-                  <Square size={28} />
+            
+            <div className="col-lg-3 col-md-6">
+              <div className="text-center industry-card p-4">
+                <div className="industry-icon-wrapper">
+                  <span className="industry-icon">
+                    <Square className="h-8 w-8" />
+                  </span>
                 </div>
-                <h4 className="mt-4">Frames</h4>
+                <h4 className="industry-title">03. Frames</h4>
+                <p className="industry-description">
+                  Durable frame solutions for structural needs
+                </p>
               </div>
             </div>
-            <div className="col-md-6 mb-4">
-              <div className="text-center p-4">
-                <div className="feature-icon mx-auto">
-                  <Box size={28} />
+            
+            <div className="col-lg-3 col-md-6">
+              <div className="text-center industry-card p-4">
+                <div className="industry-icon-wrapper">
+                  <span className="industry-icon">
+                    <Box className="h-8 w-8" />
+                  </span>
                 </div>
-                <h4 className="mt-4">Trunks</h4>
-              </div>
-            </div>
-            <div className="col-md-6 mb-4">
-              <div className="text-center p-4">
-                <div className="feature-icon mx-auto">
-                  <Wrench size={28} />
-                </div>
-                <h4 className="mt-4">Tooling</h4>
+                <h4 className="industry-title">04. Trunks</h4>
+                <p className="industry-description">
+                  Reliable storage and transport solutions
+                </p>
               </div>
             </div>
           </div>
