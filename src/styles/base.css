@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+:root {
+  --steel-gray: #4B5563;
+  --midnight-blue: #1E293B;
+  --copper: #B87333;
+  --industrial-silver: #9CA3AF;
+  --background-default: #F3F4F6;
+  --white: #FFFFFF;
+  --font-gilroy: 'Gilroy', 'Inter', 'Segoe UI', 'Arial', sans-serif;
+}
+
+body {
+  font-family: var(--font-gilroy);
+  color: var(--midnight-blue);
+  background: var(--background-default);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-gilroy);
+  font-weight: 900;
+  color: var(--midnight-blue);
+  letter-spacing: 0.02em;
+}
+
+img {
+  max-width: 100%;
+}
