@@ -134,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white);
   padding: 60px 0 20px;
   font-family: var(--font-gilroy);
+  padding-top: 160px; /* Increased to accommodate overlapping CTA card */
 }
 
 /* Utilities */
@@ -232,7 +233,6 @@ img {
   display: flex;
   justify-content: center;
   position: relative;
-  /* will overlap footer with negative margin */
   z-index: 20;
   margin-bottom: -120px; /* Overlap over the footer */
   margin-top: 64px;
