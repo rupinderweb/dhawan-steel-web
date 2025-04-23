@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
-// Remove CTACard import as it's now part of the footer
 
 const Index = () => {
   return (
@@ -150,49 +149,108 @@ const Index = () => {
               <p className="lead">High-quality ferrous and non-ferrous materials sourced from trusted suppliers globally.</p>
             </div>
           </div>
-          <div className="row">
+          <div className="row g-4">
             <div className="col-lg-6 mb-4">
-              <div className="card h-100 border-0 rounded-4 p-4">
-                <div className="card-body">
-                  <h4 className="card-title fw-bold mb-4">Ferrous Materials</h4>
-                  <ul className="list-unstyled">
-                    <li className="mb-3 d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span> MS Ingots
-                    </li>
-                    <li className="mb-3 d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span> Billets
-                    </li>
-                    <li className="mb-3 d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span> MS Scrap
-                    </li>
-                    <li className="mb-3 d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span> Ship Breaking Materials
-                    </li>
-                  </ul>
+              <div className="card border-0 rounded-4 shadow-rich h-100 overflow-hidden">
+                <div className="row g-0 h-100">
+                  <div className="col-md-6">
+                    <img 
+                      src="https://images.unsplash.com/photo-1605557202601-033f0a0f3752?auto=format&fit=crop&w=800&q=80" 
+                      alt="MS Ingots and Billets"
+                      className="h-100 w-100 object-cover"
+                      style={{ minHeight: "300px" }}
+                    />
+                  </div>
+                  <div className="col-md-6">
+                    <div className="card-body p-4">
+                      <h4 className="card-title fw-bold mb-4 text-copper">Ferrous Materials</h4>
+                      <ul className="list-unstyled mb-0">
+                        <li className="mb-3 d-flex align-items-center">
+                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          </span>
+                          MS Ingots
+                        </li>
+                        <li className="mb-3 d-flex align-items-center">
+                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          </span>
+                          Billets
+                        </li>
+                        <li className="mb-3 d-flex align-items-center">
+                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          </span>
+                          MS Scrap
+                        </li>
+                        <li className="mb-3 d-flex align-items-center">
+                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          </span>
+                          Ship Breaking Materials
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div className="col-lg-6 mb-4">
-              <div className="card h-100 border-0 rounded-4 p-4">
-                <div className="card-body">
-                  <h4 className="card-title fw-bold mb-4">Non-Ferrous Materials</h4>
-                  <ul className="list-unstyled">
-                    <li className="mb-3 d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span> Stainless Steel Scrap
-                    </li>
-                    <li className="mb-3 d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span> Low Alloy Steel Scrap
-                    </li>
-                    <li className="mb-3 d-flex align-items-center">
-                      <span className="me-2 text-primary">✓</span> Aluminium Scrap
-                    </li>
-                  </ul>
+              <div className="card border-0 rounded-4 shadow-rich h-100 overflow-hidden">
+                <div className="row g-0 h-100">
+                  <div className="col-md-6">
+                    <img 
+                      src="https://images.unsplash.com/photo-1534959513142-2fe19c7f44d0?auto=format&fit=crop&w=800&q=80" 
+                      alt="Stainless Steel and Aluminum"
+                      className="h-100 w-100 object-cover"
+                      style={{ minHeight: "300px" }}
+                    />
+                  </div>
+                  <div className="col-md-6">
+                    <div className="card-body p-4">
+                      <h4 className="card-title fw-bold mb-4 text-copper">Non-Ferrous Materials</h4>
+                      <ul className="list-unstyled mb-0">
+                        <li className="mb-3 d-flex align-items-center">
+                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          </span>
+                          Stainless Steel Scrap
+                        </li>
+                        <li className="mb-3 d-flex align-items-center">
+                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          </span>
+                          Low Alloy Steel Scrap
+                        </li>
+                        <li className="mb-3 d-flex align-items-center">
+                          <span className="me-2 rounded-circle bg-copper p-1 d-flex align-items-center justify-content-center" style={{ width: "24px", height: "24px" }}>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                          </span>
+                          Aluminium Scrap
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div className="text-center mt-4">
-            <Link to="/products" className="btn btn-primary btn-lg">
+            <Link to="/products" className="btn btn-copper btn-lg">
               View All Products <ArrowRight size={18} className="ms-2" />
             </Link>
           </div>
