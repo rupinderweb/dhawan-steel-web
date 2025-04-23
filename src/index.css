@@ -77,6 +77,10 @@ h1, h2, h3, h4, h5, h6 {
   background: none;
 }
 
+.section-sm {
+  padding: 50px 0;
+}
+
 .bg-light {
   background-color: var(--background-default) !important;
 }
@@ -116,7 +120,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: var(--industrial-silver, #9CA3AF);
+  background-color: var(--industrial-silver);
   color: var(--midnight-blue);
   font-size: 1.8rem;
   margin-bottom: 20px;
@@ -169,3 +173,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* Fix for main padding that might be causing layout issues */
+main {
+  padding: 0;
+}
+
+/* Reset App.css styles that might be conflicting with Bootstrap */
+#root {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
