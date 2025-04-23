@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
-import CTACard from "../components/CTACard";
+// Remove CTACard import as it's now part of the footer
 
 const Index = () => {
   return (
@@ -477,7 +477,7 @@ const Index = () => {
       </section>
 
       {/* New CTA Section */}
-      <CTACard />
+      {/* Previous CTACard was here, now removed */}
 
       {/* Remove old Contact & Quick Links section */}
 
