@@ -496,3 +496,49 @@ img {
 .sustainability-image:hover {
   transform: scale(1.02);
 }
+
+/* Modern Sustainability Section Styles */
+.sustainability-card {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.sustainability-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(184,115,51,0.1);
+  border-color: var(--copper);
+}
+
+.icon-circle-modern {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.75rem;
+  background: var(--copper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.sustainability-image-wrapper-modern {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px -12px rgba(184,115,51,0.25);
+  aspect-ratio: 4/3;
+}
+
+.sustainability-modern-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.sustainability-image-wrapper-modern:hover .sustainability-modern-image {
+  transform: scale(1.05);
+}

@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake, Target, Eye, Diamond } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
@@ -495,72 +494,62 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Sustainability Commitment (ENHANCED) */}
-      <section className="section-sm py-16">
+      {/* Sustainability Commitment - Greener Steel Section */}
+      <section className="section-sm bg-gradient-to-b from-gray-50 to-white py-12">
         <div className="container">
-          <div className="row align-items-center">
-            <div className="col-lg-6 pe-lg-5">
-              <h1 className="display-4 fw-bold mb-4 text-copper">
-                Greener Steel,<br />
-                Brighter Future
-              </h1>
-              
-              <p className="lead mb-5 text-steel">
-                At the heart of our sustainability mission is a commitment to eco-friendly steel production and recycling. 
-                We empower industries with sustainable solutions that reduce environmental impact.
-              </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="space-y-6">
+              <div className="max-w-xl">
+                <h2 className="text-4xl font-bold mb-4 text-copper">
+                  Greener Steel,<br />
+                  Brighter Future
+                </h2>
+                
+                <p className="text-lg text-steel mb-8">
+                  At the heart of our sustainability mission is a commitment to eco-friendly steel production and recycling. 
+                  We empower industries with sustainable solutions that reduce environmental impact.
+                </p>
+              </div>
 
-              <div className="row g-4 mb-4">
-                <div className="col-md-6">
-                  <div className="sustainability-item">
-                    <div className="icon-circle">
-                      <Target className="icon-style" />
-                    </div>
-                    <h4 className="fw-bold mb-2">Our Mission</h4>
-                    <p className="text-steel">
-                      Transform steel production through sustainable practices and innovative recycling solutions.
-                    </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="sustainability-card">
+                  <div className="icon-circle-modern">
+                    <Target className="h-6 w-6 text-white" />
                   </div>
+                  <h4 className="text-xl font-bold mb-2">Our Mission</h4>
+                  <p className="text-steel">Transform steel production through sustainable practices and innovative recycling solutions.</p>
                 </div>
 
-                <div className="col-md-6">
-                  <div className="sustainability-item">
-                    <div className="icon-circle">
-                      <Eye className="icon-style" />
-                    </div>
-                    <h4 className="fw-bold mb-2">Our Vision</h4>
-                    <p className="text-steel">
-                      Lead the industry in environmental stewardship and sustainable metal processing.
-                    </p>
+                <div className="sustainability-card">
+                  <div className="icon-circle-modern">
+                    <Eye className="h-6 w-6 text-white" />
                   </div>
+                  <h4 className="text-xl font-bold mb-2">Our Vision</h4>
+                  <p className="text-steel">Lead the industry in environmental stewardship and sustainable metal processing.</p>
                 </div>
 
-                <div className="col-12">
-                  <div className="sustainability-item">
-                    <div className="icon-circle">
-                      <Diamond className="icon-style" />
-                    </div>
-                    <h4 className="fw-bold mb-2">Our Value</h4>
-                    <p className="text-steel">
-                      Commitment to sustainability, innovation, and responsible resource management in every process.
-                    </p>
+                <div className="sustainability-card md:col-span-2">
+                  <div className="icon-circle-modern">
+                    <Diamond className="h-6 w-6 text-white" />
                   </div>
+                  <h4 className="text-xl font-bold mb-2">Our Value</h4>
+                  <p className="text-steel">Commitment to sustainability, innovation, and responsible resource management in every process.</p>
                 </div>
               </div>
 
-              <div className="mt-5">
+              <div className="mt-8">
                 <Link to="/contact" className="btn btn-copper btn-lg px-4 py-3">
                   Let's Work Together
                 </Link>
               </div>
             </div>
             
-            <div className="col-lg-6">
-              <div className="position-relative sustainability-image-wrapper">
+            <div className="relative">
+              <div className="sustainability-image-wrapper-modern">
                 <img
-                  src="https://images.unsplash.com/photo-1605557202601-033f0a0f3752"
+                  src="https://images.unsplash.com/photo-1581093458791-9d42e3f8c3d2"
                   alt="Sustainable Steel Production"
-                  className="sustainability-image"
+                  className="sustainability-modern-image"
                 />
               </div>
             </div>
