@@ -211,11 +211,11 @@ const Index = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1605557202601-033f0a0f3752"
                   alt="MS Ingots"
-                  className="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover rounded-t-lg"
                 />
-                <div className="card-body">
-                  <h4 className="text-xl font-semibold text-copper">MS Ingots</h4>
-                  <p className="text-gray-600 mt-2">High-quality mild steel ingots for various industrial applications.</p>
+                <div className="card-body p-4">
+                  <h4 className="text-xl font-semibold mb-2 text-copper">MS Ingots</h4>
+                  <p className="text-gray-600">High-quality mild steel ingots for various industrial applications.</p>
                 </div>
               </div>
             </div>
@@ -225,11 +225,11 @@ const Index = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1533613220915-609f661a6fe1"
                   alt="Billets"
-                  className="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover rounded-t-lg"
                 />
-                <div className="card-body">
-                  <h4 className="text-xl font-semibold text-copper">Billets</h4>
-                  <p className="text-gray-600 mt-2">Premium steel billets for construction and manufacturing.</p>
+                <div className="card-body p-4">
+                  <h4 className="text-xl font-semibold mb-2 text-copper">Billets</h4>
+                  <p className="text-gray-600">Premium steel billets for construction and manufacturing.</p>
                 </div>
               </div>
             </div>
@@ -239,11 +239,11 @@ const Index = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1517897719686-983b325fb3d3"
                   alt="Ship Breaking Materials"
-                  className="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover rounded-t-lg"
                 />
-                <div className="card-body">
-                  <h4 className="text-xl font-semibold text-copper">Ship Breaking Materials</h4>
-                  <p className="text-gray-600 mt-2">Recycled marine-grade metals from ship dismantling.</p>
+                <div className="card-body p-4">
+                  <h4 className="text-xl font-semibold mb-2 text-copper">Ship Breaking Materials</h4>
+                  <p className="text-gray-600">Recycled marine-grade metals from ship dismantling.</p>
                 </div>
               </div>
             </div>
@@ -253,11 +253,11 @@ const Index = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1534959513142-2fe19c7f44d0"
                   alt="Stainless Steel"
-                  className="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover rounded-t-lg"
                 />
-                <div className="card-body">
-                  <h4 className="text-xl font-semibold text-copper">Stainless Steel</h4>
-                  <p className="text-gray-600 mt-2">Premium grade stainless steel for durability and corrosion resistance.</p>
+                <div className="card-body p-4">
+                  <h4 className="text-xl font-semibold mb-2 text-copper">Stainless Steel</h4>
+                  <p className="text-gray-600">Premium grade stainless steel for durability and corrosion resistance.</p>
                 </div>
               </div>
             </div>
@@ -270,11 +270,11 @@ const Index = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1589923188900-85f945e76bde"
                   alt="MS Scrap"
-                  className="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover rounded-t-lg"
                 />
-                <div className="card-body">
-                  <h4 className="text-xl font-semibold text-copper">MS Scrap</h4>
-                  <p className="text-gray-600 mt-2">Quality mild steel scrap materials for recycling and reprocessing.</p>
+                <div className="card-body p-4">
+                  <h4 className="text-xl font-semibold mb-2 text-copper">MS Scrap</h4>
+                  <p className="text-gray-600">Quality mild steel scrap materials for recycling and reprocessing.</p>
                 </div>
               </div>
             </div>
@@ -284,11 +284,11 @@ const Index = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1584264514664-1ce88a419b28"
                   alt="Low Alloy Steel"
-                  className="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover rounded-t-lg"
                 />
-                <div className="card-body">
-                  <h4 className="text-xl font-semibold text-copper">Low Alloy Steel</h4>
-                  <p className="text-gray-600 mt-2">Specialized low alloy steel for specific industrial needs.</p>
+                <div className="card-body p-4">
+                  <h4 className="text-xl font-semibold mb-2 text-copper">Low Alloy Steel</h4>
+                  <p className="text-gray-600">Specialized low alloy steel for specific industrial needs.</p>
                 </div>
               </div>
             </div>
@@ -298,11 +298,11 @@ const Index = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1578835187647-2a37a85683b7"
                   alt="Aluminium"
-                  className="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover rounded-t-lg"
                 />
-                <div className="card-body">
-                  <h4 className="text-xl font-semibold text-copper">Aluminium</h4>
-                  <p className="text-gray-600 mt-2">Lightweight and versatile aluminium products for various applications.</p>
+                <div className="card-body p-4">
+                  <h4 className="text-xl font-semibold mb-2 text-copper">Aluminium</h4>
+                  <p className="text-gray-600">Lightweight and versatile aluminium products for various applications.</p>
                 </div>
               </div>
             </div>
