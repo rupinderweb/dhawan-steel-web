@@ -7,14 +7,14 @@ const Index = () => {
       {/* HERO BANNER */}
       <section style={{
         position: "relative",
-        minHeight: 600,
+        minHeight: 480,
         width: "100%",
-        height: "75vh",
-        backgroundColor: "#1E293B",
+        height: "60vh",
+        backgroundColor: "#F1F1F1",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        padding: "2rem"
+        padding: "1rem"
       }}>
         <div style={{
           position: "relative",
@@ -37,13 +37,13 @@ const Index = () => {
           <div className="container hero-overlay-content" style={{
             position: "relative",
             zIndex: 2,
-            color: "#fff",
+            color: "#1E293B",
             textAlign: "left",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             height: "100%",
-            padding: "3rem"
+            padding: "2rem"
           }}>
             <h1 className="display-4 fw-bolder mb-4" style={{
               color: "#fff",
