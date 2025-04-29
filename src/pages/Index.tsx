@@ -453,82 +453,73 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Sustainability Commitment (ENHANCED) */}
-      <section className="section-sm py-0 sustainability-attractive">
-        <div className="container px-0">
-          <div className="row g-0 align-items-center flex-lg-row flex-column-reverse">
-            <div className="col-lg-6 col-12" style={{
-            position: "relative",
-            zIndex: 2
-          }}>
-              <div className="p-5 rounded-4 shadow-rich sustainability-card" style={{
-              background: "rgba(255,255,255, 0.97)",
-              marginTop: 32,
-              marginBottom: 32,
-              boxShadow: "0 8px 32px rgba(30, 41, 59, 0.16)"
-            }}>
-                <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=500&q=80" alt="Recycling Metal" className="rounded-circle float-end ms-3 mb-2 d-none d-md-block" style={{
-                width: 80,
-                height: 80,
-                objectFit: "cover",
-                border: "4px solid var(--copper)",
-                boxShadow: "0 0px 12px 0 rgba(184,115,51,0.14)"
-              }} />
-                <div className="feature-icon mb-3 mx-0" style={{
-                background: "var(--copper)",
-                color: "#fff",
-                width: 64,
-                height: 64
-              }}>
-                  <Leaf size={36} />
+      {/* Sustainability Commitment (REDESIGNED) */}
+      <section className="section bg-light py-5">
+        <div className="container">
+          <div className="row g-4 align-items-center">
+            <div className="col-lg-6">
+              <div className="position-relative">
+                <div className="rounded-lg overflow-hidden shadow-lg" style={{ height: "480px" }}>
+                  <img 
+                    src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=cover&w=1200&q=80" 
+                    alt="Green manufacturing with recycled steel" 
+                    className="w-100 h-100 object-cover"
+                  />
                 </div>
-                <h3 className="fw-bold mb-2 sustainability-headline">
-                  Greener Steel, Brighter Future
-                </h3>
-                <p className="lead mb-2 sustainability-text" style={{
-                color: "var(--steel-gray)",
-                fontWeight: 500
-              }}>
-                  Our commitment extends beyond steel — we champion <span className="text-copper fw-semibold">recycling</span> and <span style={{
-                  color: "var(--midnight-blue)"
-                }}>repurposing</span> for a cleaner tomorrow.
-                </p>
-                <ul className="list-unstyled mb-0 mt-3" style={{
-                fontSize: "1.13rem"
-              }}>
-                  <li className="mb-2 d-flex align-items-center">
-                    <Recycle className="me-2 text-success" size={22} />
-                    <span>Over 10,000 tons recycled each year</span>
-                  </li>
-                  <li className="mb-2 d-flex align-items-center">
-                    <Package className="me-2 text-primary" size={22} />
-                    <span>Materials repurposed for new journeys</span>
-                  </li>
-                  <li className="mb-2 d-flex align-items-center">
-                    <Users className="me-2 text-copper" size={22} />
-                    <span>Partnered with eco-conscious industries</span>
-                  </li>
-                </ul>
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-green-500/10 to-copper/10 rounded-lg"></div>
+                <div className="position-absolute bottom-0 end-0 transform translate-y-1/4 translate-x-1/4">
+                  <div className="bg-white p-3 rounded-full shadow-xl">
+                    <Recycle size={40} className="text-green-600" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-lg-6 col-12 sustainability-img-col" style={{
-            position: 'relative',
-            minHeight: 400
-          }}>
-              <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=cover&w=1200&q=80" alt="Green manufacturing with recycled steel" style={{
-              width: '100%',
-              height: '100%',
-              minHeight: 400,
-              objectFit: 'cover',
-              borderRadius: "1.25rem",
-              filter: "brightness(0.80) contrast(1.04)"
-            }} className="shadow-rich" />
-              <div style={{
-              position: "absolute",
-              inset: 0,
-              background: "linear-gradient(120deg,rgba(76,175,80,0.09) 0%,rgba(30,41,59,0.14) 60%,rgba(183,115,51,0.09) 100%)",
-              borderRadius: "1.25rem"
-            }} />
+            <div className="col-lg-6">
+              <div className="p-4">
+                <div className="d-inline-flex align-items-center justify-content-center rounded-3 p-3 bg-green-100 mb-4">
+                  <Leaf className="text-green-600" size={24} />
+                </div>
+                <h2 className="fw-bold display-6 mb-4">Greener Steel, <span className="text-copper">Brighter Future</span></h2>
+                <p className="lead mb-4">
+                  Our commitment extends beyond steel — we champion recycling and repurposing for a cleaner tomorrow.
+                </p>
+                
+                <div className="row g-3 mb-4">
+                  <div className="col-md-6">
+                    <div className="d-flex bg-light p-3 rounded-3 h-100">
+                      <Recycle className="text-green-600 me-3 flex-shrink-0" size={24} />
+                      <div>
+                        <h5 className="fw-bold">10,000+ Tons</h5>
+                        <p className="mb-0 text-muted">Recycled each year</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex bg-light p-3 rounded-3 h-100">
+                      <Package className="text-copper me-3 flex-shrink-0" size={24} />
+                      <div>
+                        <h5 className="fw-bold">Materials Reuse</h5>
+                        <p className="mb-0 text-muted">For new journeys</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="d-flex gap-3">
+                  <img 
+                    src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=120&q=80" 
+                    alt="Recycling Process" 
+                    className="rounded-circle object-cover border-4 border-white shadow"
+                    style={{ width: "80px", height: "80px" }}
+                  />
+                  <div className="bg-white p-3 rounded-3 shadow flex-grow-1">
+                    <p className="fst-italic mb-0">
+                      "Our sustainable practices have reduced carbon footprint by 30% while maintaining the highest quality standards."
+                    </p>
+                    <div className="text-copper fw-bold mt-2">— Dhawan Sustainability Team</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
