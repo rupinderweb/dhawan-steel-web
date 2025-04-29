@@ -288,15 +288,8 @@ const Index = () => {
           </div>
           
           <div className="text-center mt-4">
-            <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
-            background: "#1E293B",
-            border: "none",
-            color: "#fff",
-            display: "inline-flex",
-            alignItems: "center",
-            gap: "0.5rem"
-          }}>
-              Explore Our Products <ArrowRight size={18} />
+            <Link to="/products" className="btn btn-primary btn-lg px-4 py-2 fw-semibold">
+              Explore Our Products <ArrowRight size={18} className="ms-2" />
             </Link>
           </div>
         </div>
