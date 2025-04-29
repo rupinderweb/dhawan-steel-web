@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
@@ -47,8 +46,7 @@ const Index = () => {
         }}>
             <h1 className="display-4 fw-bolder mb-4" style={{
             color: "#fff",
-            textShadow: "0 3px 16px rgba(30,41,59,0.45)",
-            marginTop: "2.5rem"
+            textShadow: "0 3px 16px rgba(30,41,59,0.45)"
           }}>
               Delivering Quality Steel Solutions Across India
             </h1>
@@ -59,20 +57,18 @@ const Index = () => {
               Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
             </p>
             <div className="d-flex flex-wrap gap-3">
-              <Link to="/products" className="btn btn-primary px-3 py-2 fw-semibold shadow-rich" style={{
+              <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
               background: "#B87333",
               border: "none",
-              color: "#fff",
-              fontSize: "0.95rem"
+              color: "#fff"
             }}>
                 Explore Our Products
               </Link>
-              <Link to="/services" className="btn btn-light px-3 py-2 fw-semibold" style={{
+              <Link to="/services" className="btn btn-light btn-lg px-4 py-3 fw-semibold" style={{
               borderWidth: 2,
               borderColor: "#B87333",
               color: "#B87333",
-              background: "#fff",
-              fontSize: "0.95rem"
+              background: "#fff"
             }}>
                 Learn About Our Services
               </Link>
