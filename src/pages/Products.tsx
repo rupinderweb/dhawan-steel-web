@@ -1,10 +1,7 @@
-
 import { Link } from 'react-router-dom';
 import { Package, Download, Search, ArrowRight, Recycle, Anchor } from 'lucide-react';
-
 const Products = () => {
-  return (
-    <>
+  return <>
       {/* Page Header */}
       <section className="bg-primary text-white py-5">
         <div className="container">
@@ -294,12 +291,11 @@ const Products = () => {
           
           <div className="row align-items-center">
             <div className="col-lg-6 mb-4 mb-lg-0">
-              <img 
-                src="https://images.unsplash.com/photo-1486718448742-163732cd1544" 
-                alt="Finished Steel Products" 
-                className="img-fluid rounded-4 shadow"
-                style={{ height: '400px', width: '100%', objectFit: 'cover' }}
-              />
+              <img alt="Finished Steel Products" className="img-fluid rounded-4 shadow" style={{
+              height: '400px',
+              width: '100%',
+              objectFit: 'cover'
+            }} src="/lovable-uploads/3841a2d4-1980-4be4-a198-15e3c5257c2e.jpg" />
             </div>
             <div className="col-lg-6">
               <div className="ps-lg-4">
@@ -405,8 +401,6 @@ const Products = () => {
           </div>
         </div>
       </section>
-    </>
-  );
+    </>;
 };
-
 export default Products;
