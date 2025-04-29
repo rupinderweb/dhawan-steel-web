@@ -56,7 +56,7 @@ const Index = () => {
             <p style={{
             color: "#c7c9d1",
             fontWeight: 500
-          }} className="lead mb-5 text-base text-slate-50">
+          }} className="lead mb-5 text-slate-50 text-base">
               Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
             </p>
             <div className="d-flex flex-wrap gap-3">
