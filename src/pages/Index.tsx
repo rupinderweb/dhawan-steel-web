@@ -1,4 +1,11 @@
 
+import React from 'react';
+
+const Index = () => {
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <section className="mb-12">
+        <div className="row">
             {/* Chemical Analysis Service */}
             <div className="col-md-6 mb-4">
               <div className="service-card position-relative overflow-hidden rounded-4">
@@ -14,3 +21,10 @@
                 </div>
               </div>
             </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default Index;
