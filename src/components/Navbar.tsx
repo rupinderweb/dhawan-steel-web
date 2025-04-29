@@ -1,26 +1,16 @@
-
 import { Link } from 'react-router-dom';
-
 const Navbar = () => {
-  return (
-    <nav className="navbar navbar-expand-lg navbar-dark" style={{
-      backgroundColor: 'var(--midnight-blue)',
-      padding: '0.5rem 0',  // Reduced vertical padding
-      marginTop: 0 // Remove white space on top
-    }}>
+  return <nav style={{
+    backgroundColor: 'var(--midnight-blue)',
+    padding: '0.5rem 0',
+    // Reduced vertical padding
+    marginTop: 0 // Remove white space on top
+  }} className="navbar navbar-expand-lg navbar-dark bg-zinc-950">
       <div className="container">
         <Link className="navbar-brand fw-bold" to="/">
           Dhawan Ispat Udyog
         </Link>
-        <button 
-          className="navbar-toggler" 
-          type="button" 
-          data-bs-toggle="collapse" 
-          data-bs-target="#navbarNav" 
-          aria-controls="navbarNav" 
-          aria-expanded="false" 
-          aria-label="Toggle navigation"
-        >
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
@@ -46,8 +36,6 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </nav>
-  );
+    </nav>;
 };
-
 export default Navbar;
