@@ -1,10 +1,7 @@
-
 import { Link } from 'react-router-dom';
 import { Calendar, Users, Search, Building, Factory, Download, Recycle, Globe, Settings, ArrowRight } from 'lucide-react';
-
 const About = () => {
-  return (
-    <>
+  return <>
       {/* Page Header */}
       <section className="bg-accent text-white py-5">
         <div className="container">
@@ -41,12 +38,11 @@ const About = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 mb-5 mb-lg-0">
               <div className="position-relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
-                  alt="Dhawan Ispat Udyog Facility" 
-                  className="img-fluid rounded-4 shadow"
-                  style={{ height: '500px', width: '100%', objectFit: 'cover' }}
-                />
+                <img alt="Dhawan Ispat Udyog Facility" className="img-fluid rounded-4 shadow" style={{
+                height: '500px',
+                width: '100%',
+                objectFit: 'cover'
+              }} src="/lovable-uploads/ae4cf5ac-6893-42cb-9ea8-c89ea04ce816.jpg" />
                 <div className="position-absolute top-0 end-0 bg-accent text-white p-4 rounded-circle m-3">
                   <div className="text-center">
                     <h3 className="fw-bold mb-0">15+</h3>
@@ -59,10 +55,10 @@ const About = () => {
               <div className="ps-lg-4">
                 <div className="mb-4">
                   <div className="d-flex align-items-center mb-3">
-                    <div className="feature-icon me-3">
+                    <div className="feature-icon me-3 bg-yellow-700">
                       <Calendar size={28} />
                     </div>
-                    <h4 className="fw-bold mb-0 text-accent">Established in 2008</h4>
+                    <h4 className="fw-bold mb-0 text-zinc-950">Established in 2008</h4>
                   </div>
                   <p>
                     Dhawan Ispat Udyog began with a single yard and a clear mission—to provide high-quality steel and metal solutions to industries across India. Our foundation was built on expertise, quality, and customer satisfaction.
@@ -71,7 +67,7 @@ const About = () => {
 
                 <div className="mb-4">
                   <div className="d-flex align-items-center mb-3">
-                    <div className="feature-icon me-3">
+                    <div className="feature-icon me-3 bg-yellow-700">
                       <Building size={28} />
                     </div>
                     <h4 className="fw-bold mb-0 text-accent">Expanded to Two Yards</h4>
@@ -83,7 +79,7 @@ const About = () => {
 
                 <div className="mb-4">
                   <div className="d-flex align-items-center mb-3">
-                    <div className="feature-icon me-3">
+                    <div className="feature-icon me-3 bg-yellow-700">
                       <Factory size={28} />
                     </div>
                     <h4 className="fw-bold mb-0 text-accent">Integration of Partap Iron & Steel</h4>
@@ -132,7 +128,7 @@ const About = () => {
             <div className="col-md-6 col-lg-3 mb-4">
               <div className="card h-100 border-0 rounded-4 text-center p-4">
                 <div className="card-body">
-                  <div className="feature-icon mx-auto">
+                  <div className="feature-icon mx-auto bg-yellow-700">
                     <Users size={28} />
                   </div>
                   <h4 className="card-title fw-bold mt-4 mb-3 text-accent">Quality Control Teams</h4>
@@ -145,7 +141,7 @@ const About = () => {
             <div className="col-md-6 col-lg-3 mb-4">
               <div className="card h-100 border-0 rounded-4 text-center p-4">
                 <div className="card-body">
-                  <div className="feature-icon mx-auto">
+                  <div className="feature-icon mx-auto bg-yellow-700">
                     <Search size={28} />
                   </div>
                   <h4 className="card-title fw-bold mt-4 mb-3 text-accent">Chemical Analysis</h4>
@@ -158,7 +154,7 @@ const About = () => {
             <div className="col-md-6 col-lg-3 mb-4">
               <div className="card h-100 border-0 rounded-4 text-center p-4">
                 <div className="card-body">
-                  <div className="feature-icon mx-auto">
+                  <div className="feature-icon mx-auto bg-yellow-700">
                     <Globe size={28} />
                   </div>
                   <h4 className="card-title fw-bold mt-4 mb-3 text-accent">Global Procurement</h4>
@@ -171,7 +167,7 @@ const About = () => {
             <div className="col-md-6 col-lg-3 mb-4">
               <div className="card h-100 border-0 rounded-4 text-center p-4">
                 <div className="card-body">
-                  <div className="feature-icon mx-auto">
+                  <div className="feature-icon mx-auto bg-yellow-700">
                     <Settings size={28} />
                   </div>
                   <h4 className="card-title fw-bold mt-4 mb-3 text-accent">Processing Capabilities</h4>
@@ -197,12 +193,11 @@ const About = () => {
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
               <div className="position-relative">
-                <img 
-                  src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e" 
-                  alt="Partap Iron & Steel Facility" 
-                  className="img-fluid rounded-4 shadow"
-                  style={{ height: '400px', width: '100%', objectFit: 'cover' }}
-                />
+                <img alt="Partap Iron & Steel Facility" className="img-fluid rounded-4 shadow" style={{
+                height: '400px',
+                width: '100%',
+                objectFit: 'cover'
+              }} src="/lovable-uploads/4717eca1-c854-4c17-b365-67cccc5dff37.jpg" />
               </div>
             </div>
             <div className="col-lg-6 order-lg-1">
@@ -270,8 +265,6 @@ const About = () => {
 
       {/* Ready to Work With Us CTA removed as per request */}
 
-    </>
-  );
+    </>;
 };
-
 export default About;
