@@ -1,7 +1,8 @@
-
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+
 const Index = () => {
   return <>
       {/* HERO BANNER */}
@@ -515,81 +516,83 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Credibility Section: Partap Iron & Steel Rolling Mills (ENHANCED) */}
-      <section className="section-sm credibility-section" style={{
-      backgroundColor: '#f8f9fa',
-      position: 'relative',
-      zIndex: 1
-    }}>
-        <div className="container">
-          <div className="row align-items-center flex-lg-row flex-column-reverse">
-            <div className="col-lg-7">
-              <div className="mb-4 credibility-card p-4 rounded-4 shadow-rich bg-white">
-                <div className="d-flex align-items-center mb-3">
-                  <span className="me-3 p-3 bg-copper rounded-circle d-flex align-items-center justify-content-center">
-                    <Factory size={32} className="text-white" />
-                  </span>
-                  <h2 className="fw-bold mb-0" style={{
-                  color: "#B87333",
-                  fontSize: "2.1rem"
-                }}>
-                    Partap Iron & Steel Rolling Mills
-                  </h2>
+      {/* Credibility Section: Partap Iron & Steel Rolling Mills (REDESIGNED) */}
+      <section className="py-12 bg-gradient-to-b from-gray-50 to-gray-100">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col lg:flex-row gap-10 items-center">
+            {/* Left side - Image with overlays */}
+            <div className="lg:w-2/5 relative">
+              <div className="rounded-2xl overflow-hidden shadow-2xl relative">
+                <img 
+                  alt="Steel manufacturing at Partap Mills" 
+                  className="w-full h-[420px] object-cover" 
+                  src="/lovable-uploads/ac04f31a-5c7c-47e1-9a83-0ed36c266a97.jpg" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                
+                {/* Badge overlay */}
+                <div className="absolute top-6 right-6">
+                  <div className="bg-white/90 backdrop-blur-sm shadow-lg rounded-full py-2 px-4 flex items-center gap-2">
+                    <BadgeCheck size={20} className="text-copper" />
+                    <span className="font-semibold text-sm">ISO & ISI Certified</span>
+                  </div>
                 </div>
-                <h5 className="text-steel fw-semibold mb-2">Precision & Credibility Since 1997</h5>
-                <p className="lead" style={{
-                color: "#6c757d"
-              }}>
-                  Partap Iron & Steel Rolling Mills, <span className="fw-semibold text-copper">part of our group since 1997</span>, manufactures MS Bars & Angles at Khanna, Punjab.<br />
-                  Renowned for <span className="fw-semibold">thin-section steel production</span>, Partap supports industries across India with precision-crafted steel products.
-                </p>
-                <div className="d-flex flex-wrap gap-4 mt-4">
-                  <div className="d-flex align-items-center gap-3">
-                    <span className="bg-silver shadow-rich rounded-3 p-3 d-inline-flex">
-                      <Award size={28} className="text-copper" />
-                    </span>
+                
+                {/* Since overlay */}
+                <div className="absolute bottom-6 left-6 bg-copper/90 backdrop-blur-sm text-white py-2 px-4 rounded-lg shadow-lg">
+                  <div className="flex items-center gap-3">
+                    <Award size={32} className="text-white" />
                     <div>
-                      <span className="fw-bold d-block text-steel">Trusted since 1997</span>
-                      <span className="text-muted small">Years of steelmaking excellence</span>
-                    </div>
-                  </div>
-                  <div className="d-flex align-items-center gap-3">
-                    <span className="bg-silver shadow-rich rounded-3 p-3 d-inline-flex">
-                      <BadgeCheck size={28} className="text-success" />
-                    </span>
-                    <div>
-                      <span className="fw-bold d-block text-steel">Certified Precision</span>
-                      <span className="text-muted small">IS:1786/MS standards</span>
-                    </div>
-                  </div>
-                  <div className="d-flex align-items-center gap-3">
-                    <span className="bg-silver shadow-rich rounded-3 p-3 d-inline-flex">
-                      <Handshake size={28} className="text-primary" />
-                    </span>
-                    <div>
-                      <span className="fw-bold d-block text-steel">Nationwide Trust</span>
-                      <span className="text-muted small">Reliable supply partner</span>
+                      <p className="text-white/80 text-xs">Established</p>
+                      <p className="font-bold text-xl">Since 1997</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col-lg-5 mb-4 mb-lg-0">
-              <div className="cred-image-container position-relative">
-                <img alt="Steel manufacturing at Partap Mills" className="img-fluid rounded-4 shadow-rich" style={{
-                width: "100%",
-                height: 340,
-                objectFit: "cover",
-                border: '4px solid var(--copper)'
-              }} src="/lovable-uploads/ac04f31a-5c7c-47e1-9a83-0ed36c266a97.jpg" />
-                <div className="cred-badge shadow-lg">
-                  <span className="badge bg-copper text-white py-2 px-3 rounded-pill fw-semibold text-uppercase small" style={{
-                  fontWeight: 700,
-                  letterSpacing: ".06em"
-                }}>
-                  ISO & ISI Certified
-                </span>
+            
+            {/* Right side - Content */}
+            <div className="lg:w-3/5">
+              <div className="bg-white rounded-2xl p-6 shadow-xl border border-gray-100">
+                <div className="inline-flex items-center gap-3 mb-6 bg-copper/10 py-2 px-4 rounded-full">
+                  <Factory size={20} className="text-copper" />
+                  <span className="font-medium text-copper">Our Manufacturing Excellence</span>
                 </div>
+                
+                <h2 className="text-3xl font-bold mb-3 text-gray-800">
+                  Partap Iron & <span className="text-copper">Steel Rolling Mills</span>
+                </h2>
+                
+                <p className="text-lg text-gray-600 mb-6">
+                  A cornerstone of our group since 1997, specializing in manufacturing premium MS Bars & Angles at our Khanna, Punjab facility. Renowned for thin-section steel production with precision and reliability.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                  <div className="bg-gray-50 rounded-xl p-4 transition-all hover:shadow-md hover:-translate-y-1 duration-300">
+                    <Award size={24} className="text-copper mb-2" />
+                    <h4 className="font-semibold">25+ Years Experience</h4>
+                    <p className="text-sm text-gray-500">Decades of steel excellence</p>
+                  </div>
+                  
+                  <div className="bg-gray-50 rounded-xl p-4 transition-all hover:shadow-md hover:-translate-y-1 duration-300">
+                    <BadgeCheck size={24} className="text-green-600 mb-2" />
+                    <h4 className="font-semibold">Quality Certified</h4>
+                    <p className="text-sm text-gray-500">IS:1786/MS standards</p>
+                  </div>
+                  
+                  <div className="bg-gray-50 rounded-xl p-4 transition-all hover:shadow-md hover:-translate-y-1 duration-300">
+                    <Handshake size={24} className="text-blue-600 mb-2" />
+                    <h4 className="font-semibold">Trusted Partner</h4>
+                    <p className="text-sm text-gray-500">Serving industries nationwide</p>
+                  </div>
+                </div>
+                
+                <Button variant="default" asChild className="group">
+                  <Link to="/about" className="flex items-center gap-2">
+                    Learn more about our facilities
+                    <ArrowRight className="size-4 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
