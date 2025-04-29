@@ -416,7 +416,7 @@ main {
 }
 
 .nav-link {
-  color: var(--industrial-silver) !important;
+  color: var(--white) !important;  /* Changed to white from var(--industrial-silver) */
   font-weight: 600;
   transition: color 0.2s;
 }
