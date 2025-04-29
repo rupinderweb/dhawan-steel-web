@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
@@ -457,7 +458,7 @@ const Index = () => {
               }}>
                   <img src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" alt="Steel recycling yard with recycling container" className="w-100 h-100 object-cover" />
                 </div>
-                <div className="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-green-500/10 to-copper/10 rounded-lg"></div>
+                <div className="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-green-500/10 to-copper/10 rounded-3xl" style={{ borderRadius: '1rem' }}></div>
                 <div className="position-absolute bottom-0 end-0 transform translate-y-1/4 translate-x-1/4">
                   <div className="bg-white p-3 rounded-full shadow-xl">
                     <Recycle size={40} className="text-green-600" />
