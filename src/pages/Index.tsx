@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
-
 const Index = () => {
   return <>
       {/* HERO BANNER */}
@@ -105,11 +104,11 @@ const Index = () => {
               overflow: "hidden",
               boxShadow: "0 8px 32px rgba(30,41,59,0.12)"
             }}>
-                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Steel Processing Facility" style={{
+                <img alt="Steel Processing Facility" style={{
                 width: "100%",
                 height: "500px",
                 objectFit: "cover"
-              }} />
+              }} src="/lovable-uploads/e5d0b300-bbbe-4c83-bf38-5b72169d0931.jpg" />
               </div>
 
               {/* Secondary Image */}
@@ -123,11 +122,11 @@ const Index = () => {
               boxShadow: "0 8px 32px rgba(30,41,59,0.12)",
               border: "4px solid white"
             }}>
-                <img src="https://images.unsplash.com/photo-1533613220915-609f661a6fe1" alt="Steel Production" style={{
+                <img alt="Steel Production" style={{
                 width: "100%",
                 height: "100%",
                 objectFit: "cover"
-              }} />
+              }} src="/lovable-uploads/939e71d3-3221-4e3c-868e-b1201db286cb.png" />
               </div>
             </div>
 
@@ -390,7 +389,7 @@ const Index = () => {
           <div className="row g-4 justify-content-center">
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper">
+                <div className="industry-icon-wrapper bg-yellow-700">
                   <span className="industry-icon">
                     <Wrench className="h-8 w-8" />
                   </span>
@@ -404,7 +403,7 @@ const Index = () => {
             
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper">
+                <div className="industry-icon-wrapper bg-yellow-700">
                   <span className="industry-icon">
                     <Wind className="h-8 w-8" />
                   </span>
@@ -418,7 +417,7 @@ const Index = () => {
             
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper">
+                <div className="industry-icon-wrapper bg-yellow-700">
                   <span className="industry-icon">
                     <Square className="h-8 w-8" />
                   </span>
@@ -432,7 +431,7 @@ const Index = () => {
             
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper">
+                <div className="industry-icon-wrapper bg-yellow-700">
                   <span className="industry-icon">
                     <Box className="h-8 w-8" />
                   </span>
