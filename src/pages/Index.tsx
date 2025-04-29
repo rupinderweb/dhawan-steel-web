@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
@@ -461,8 +462,8 @@ const Index = () => {
               <div className="position-relative">
                 <div className="rounded-lg overflow-hidden shadow-lg" style={{ height: "480px" }}>
                   <img 
-                    src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=cover&w=1200&q=80" 
-                    alt="Green manufacturing with recycled steel" 
+                    src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" 
+                    alt="Steel recycling yard with recycling container" 
                     className="w-100 h-100 object-cover"
                   />
                 </div>
