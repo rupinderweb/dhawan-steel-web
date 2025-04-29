@@ -1,14 +1,11 @@
-
 import { Link } from 'react-router-dom';
 import CTACard from './CTACard';
-
 const Footer = () => {
-  return (
-    <>
-      <div className="cta-card-outer">
+  return <>
+      <div className="cta-card-outer bg-gray-50">
         <CTACard />
       </div>
-      <footer className="footer">
+      <footer className="footer bg-zinc-950">
         <div className="container">
           <div className="row">
             <div className="col-lg-4 mb-4 mb-lg-0">
@@ -84,7 +81,9 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <hr className="mt-4 mb-4" style={{ backgroundColor: 'rgba(255,255,255,0.1)' }} />
+          <hr className="mt-4 mb-4" style={{
+          backgroundColor: 'rgba(255,255,255,0.1)'
+        }} />
           <div className="row">
             <div className="col-md-6 text-center text-md-start">
               <p className="mb-0 text-light">
@@ -100,8 +99,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-    </>
-  );
+    </>;
 };
-
 export default Footer;
