@@ -1,12 +1,9 @@
-
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { useIsMobile } from '@/hooks/use-mobile';
-
 const Index = () => {
   const isMobile = useIsMobile();
-
   return <>
       {/* HERO BANNER */}
       <section style={{
@@ -56,10 +53,10 @@ const Index = () => {
           }}>
               Delivering Quality Steel Solutions Across India
             </h1>
-            <p className="lead mb-5" style={{
+            <p style={{
             color: "#c7c9d1",
             fontWeight: 500
-          }}>
+          }} className="lead mb-5 text-base text-slate-50">
               Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
             </p>
             <div className="d-flex flex-wrap gap-3">
@@ -401,7 +398,9 @@ const Index = () => {
           <div className="row g-4 justify-content-center">
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper" style={{ backgroundColor: "#B87333" }}>
+                <div className="industry-icon-wrapper" style={{
+                backgroundColor: "#B87333"
+              }}>
                   <span className="industry-icon">
                     <Wrench className="h-8 w-8" />
                   </span>
@@ -415,7 +414,9 @@ const Index = () => {
             
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper" style={{ backgroundColor: "#B87333" }}>
+                <div className="industry-icon-wrapper" style={{
+                backgroundColor: "#B87333"
+              }}>
                   <span className="industry-icon">
                     <Wind className="h-8 w-8" />
                   </span>
@@ -429,7 +430,9 @@ const Index = () => {
             
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper" style={{ backgroundColor: "#B87333" }}>
+                <div className="industry-icon-wrapper" style={{
+                backgroundColor: "#B87333"
+              }}>
                   <span className="industry-icon">
                     <Square className="h-8 w-8" />
                   </span>
@@ -443,7 +446,9 @@ const Index = () => {
             
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper" style={{ backgroundColor: "#B87333" }}>
+                <div className="industry-icon-wrapper" style={{
+                backgroundColor: "#B87333"
+              }}>
                   <span className="industry-icon">
                     <Box className="h-8 w-8" />
                   </span>
@@ -464,15 +469,13 @@ const Index = () => {
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
               <div className="position-relative sustainability-image-container" style={{
-                height: isMobile ? "auto" : "480px",
-                marginBottom: isMobile ? "1.5rem" : "0"
-              }}>
+              height: isMobile ? "auto" : "480px",
+              marginBottom: isMobile ? "1.5rem" : "0"
+            }}>
                 <div className="rounded-lg overflow-hidden shadow-lg" style={{
                 height: isMobile ? "300px" : "480px"
               }}>
-                  <img src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" 
-                       alt="Steel recycling yard with recycling container" 
-                       className="w-100 h-100 object-cover" />
+                  <img src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" alt="Steel recycling yard with recycling container" className="w-100 h-100 object-cover" />
                 </div>
                 <div className="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-green-500/10 to-copper/10 rounded-3xl" style={{
                 borderRadius: '1rem'
@@ -555,7 +558,9 @@ const Index = () => {
                     Partap Iron & Steel Rolling Mills
                   </h2>
                 </div>
-                <h5 className="text-steel fw-semibold mb-2" style={{textAlign: isMobile ? "left" : "inherit"}}>Precision & Credibility Since 1997</h5>
+                <h5 className="text-steel fw-semibold mb-2" style={{
+                textAlign: isMobile ? "left" : "inherit"
+              }}>Precision & Credibility Since 1997</h5>
                 <p className="lead" style={{
                 color: "#6c757d"
               }}>
