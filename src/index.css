@@ -1,3 +1,4 @@
+
 /* Import Inter Font from Google Fonts as a high-quality, Gilroy-like alternative */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
@@ -157,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #22C55E;
+  background-color: var(--copper);  /* Changed to copper color */
   margin-bottom: 1.5rem;
 }
 
@@ -398,6 +399,54 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
   .display-4 {
     font-size: 2.4rem;
+  }
+  
+  /* Mobile optimizations for materials display */
+  .materials-grid .col-lg-3 {
+    width: 50%;
+  }
+  
+  /* Fix for About Us secondary image */
+  .position-absolute.secondary-image {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  /* Make CTA buttons smaller on mobile */
+  .hero-overlay-content .btn-lg {
+    padding: 0.5rem 1.25rem !important;
+    font-size: 0.9rem !important;
+  }
+  
+  /* Add top margin to hero heading */
+  .hero-overlay-content h1.display-4 {
+    margin-top: 2rem !important;
+  }
+  
+  /* Sustainability section mobile improvements */
+  .sustainability-image-container {
+    height: auto !important;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Hide leaf icon on mobile */
+  .sustainability-section .leaf-icon-mobile-hidden {
+    display: none !important;
+  }
+  
+  /* Partap section mobile adjustments */
+  .credibility-section h2 {
+    text-align: left !important;
+    font-size: 1.75rem !important;
+  }
+  
+  .credibility-section .mobile-hidden-svg {
+    display: none !important;
   }
 }
 

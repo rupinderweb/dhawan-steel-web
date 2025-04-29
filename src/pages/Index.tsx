@@ -1,7 +1,12 @@
+
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
+import { useIsMobile } from '@/hooks/use-mobile';
+
 const Index = () => {
+  const isMobile = useIsMobile();
+
   return <>
       {/* HERO BANNER */}
       <section style={{
@@ -46,7 +51,8 @@ const Index = () => {
         }}>
             <h1 className="display-4 fw-bolder mb-4" style={{
             color: "#fff",
-            textShadow: "0 3px 16px rgba(30,41,59,0.45)"
+            textShadow: "0 3px 16px rgba(30,41,59,0.45)",
+            marginTop: isMobile ? "2rem" : "0"
           }}>
               Delivering Quality Steel Solutions Across India
             </h1>
@@ -60,7 +66,9 @@ const Index = () => {
               <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
               background: "#B87333",
               border: "none",
-              color: "#fff"
+              color: "#fff",
+              padding: isMobile ? "0.5rem 1.25rem !important" : "0.75rem 2rem",
+              fontSize: isMobile ? "0.9rem" : "1rem"
             }}>
                 Explore Our Products
               </Link>
@@ -68,7 +76,9 @@ const Index = () => {
               borderWidth: 2,
               borderColor: "#B87333",
               color: "#B87333",
-              background: "#fff"
+              background: "#fff",
+              padding: isMobile ? "0.5rem 1.25rem !important" : "0.75rem 2rem",
+              fontSize: isMobile ? "0.9rem" : "1rem"
             }}>
                 Learn About Our Services
               </Link>
@@ -111,20 +121,22 @@ const Index = () => {
               }} src="/lovable-uploads/e5d0b300-bbbe-4c83-bf38-5b72169d0931.jpg" />
               </div>
 
-              {/* Secondary Image */}
-              <div className="position-absolute" style={{
-              right: "-40px",
-              bottom: "-40px",
-              width: "250px",
-              height: "250px",
+              {/* Secondary Image - Modified to fix cropping on mobile */}
+              <div className={`${isMobile ? '' : 'position-absolute'} secondary-image`} style={{
+              right: isMobile ? "auto" : "-40px",
+              bottom: isMobile ? "auto" : "-40px",
+              width: isMobile ? "100%" : "250px",
+              height: isMobile ? "auto" : "250px",
               borderRadius: "1.5rem",
               overflow: "hidden",
               boxShadow: "0 8px 32px rgba(30,41,59,0.12)",
-              border: "4px solid white"
+              border: "4px solid white",
+              marginTop: isMobile ? "20px" : "0",
+              marginBottom: isMobile ? "20px" : "0"
             }}>
                 <img alt="Steel Production" style={{
                 width: "100%",
-                height: "100%",
+                height: isMobile ? "auto" : "100%",
                 objectFit: "cover"
               }} src="/lovable-uploads/939e71d3-3221-4e3c-868e-b1201db286cb.png" />
               </div>
@@ -197,9 +209,9 @@ const Index = () => {
             </div>
           </div>
           
-          {/* First row - 4 products */}
-          <div className="row g-4 mb-4">
-            <div className="col-lg-3 col-md-6">
+          {/* First row - 4 products - Modified to show 2 per row on mobile */}
+          <div className="row g-4 mb-4 materials-grid">
+            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
               <Card className="h-100 hover:shadow-xl transition-shadow">
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="MS Ingots" className="h-full w-full object-cover" src="/lovable-uploads/856f1eb4-ac83-429c-bb54-c0bed9f869c1.jpg" />
@@ -211,7 +223,7 @@ const Index = () => {
               </Card>
             </div>
             
-            <div className="col-lg-3 col-md-6">
+            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
               <Card className="h-100 hover:shadow-xl transition-shadow">
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Billets" className="h-full w-full object-cover" src="/lovable-uploads/64f8a59c-894f-4509-a015-8f56dba569ed.jpg" />
@@ -223,7 +235,7 @@ const Index = () => {
               </Card>
             </div>
             
-            <div className="col-lg-3 col-md-6">
+            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
               <Card className="h-100 hover:shadow-xl transition-shadow">
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Ship Breaking Materials" className="h-full w-full object-cover" src="/lovable-uploads/2a203fa3-c007-4dfe-baa0-0783a15ba8c8.jpg" />
@@ -235,7 +247,7 @@ const Index = () => {
               </Card>
             </div>
             
-            <div className="col-lg-3 col-md-6">
+            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
               <Card className="h-100 hover:shadow-xl transition-shadow">
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Stainless Steel" className="h-full w-full object-cover" src="/lovable-uploads/02426647-1541-42a6-a39d-09f1b4a8e6f8.jpg" />
@@ -248,9 +260,9 @@ const Index = () => {
             </div>
           </div>
           
-          {/* Second row - 3 products */}
-          <div className="row g-4">
-            <div className="col-lg-4 col-md-6">
+          {/* Second row - 3 products - Modified for mobile */}
+          <div className="row g-4 materials-grid">
+            <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6'}`}>
               <Card className="h-100 hover:shadow-xl transition-shadow">
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="MS Scrap" className="h-full w-full object-cover" src="/lovable-uploads/480f3867-3776-4aae-bf32-fef5b493aa6d.jpg" />
@@ -262,7 +274,7 @@ const Index = () => {
               </Card>
             </div>
             
-            <div className="col-lg-4 col-md-6">
+            <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6'}`}>
               <Card className="h-100 hover:shadow-xl transition-shadow">
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Low Alloy Steel" className="h-full w-full object-cover" src="/lovable-uploads/67181090-05d6-4588-8c7d-aaba542ce2c2.jpg" />
@@ -274,7 +286,7 @@ const Index = () => {
               </Card>
             </div>
             
-            <div className="col-lg-4 col-md-6">
+            <div className={`col-lg-4 col-md-6 ${isMobile ? 'col-12 mt-4' : ''}`}>
               <Card className="h-100 hover:shadow-xl transition-shadow">
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Aluminium" className="h-full w-full object-cover" src="/lovable-uploads/5c999f96-f326-4dc2-a85b-09eca404f377.jpg" />
@@ -377,7 +389,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Industries We Serve */}
+      {/* Industries We Serve - Updated with copper background for icons */}
       <section className="section bg-light">
         <div className="container">
           <div className="row mb-5">
@@ -389,7 +401,7 @@ const Index = () => {
           <div className="row g-4 justify-content-center">
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper bg-yellow-700">
+                <div className="industry-icon-wrapper" style={{ backgroundColor: "#B87333" }}>
                   <span className="industry-icon">
                     <Wrench className="h-8 w-8" />
                   </span>
@@ -403,7 +415,7 @@ const Index = () => {
             
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper bg-yellow-700">
+                <div className="industry-icon-wrapper" style={{ backgroundColor: "#B87333" }}>
                   <span className="industry-icon">
                     <Wind className="h-8 w-8" />
                   </span>
@@ -417,7 +429,7 @@ const Index = () => {
             
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper bg-yellow-700">
+                <div className="industry-icon-wrapper" style={{ backgroundColor: "#B87333" }}>
                   <span className="industry-icon">
                     <Square className="h-8 w-8" />
                   </span>
@@ -431,7 +443,7 @@ const Index = () => {
             
             <div className="col-lg-3 col-md-6">
               <div className="text-center industry-card p-4">
-                <div className="industry-icon-wrapper bg-yellow-700">
+                <div className="industry-icon-wrapper" style={{ backgroundColor: "#B87333" }}>
                   <span className="industry-icon">
                     <Box className="h-8 w-8" />
                   </span>
@@ -446,16 +458,21 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Sustainability Commitment (REDESIGNED) */}
-      <section className="section bg-light py-5">
+      {/* Sustainability Commitment (REDESIGNED and FIXED for mobile) */}
+      <section className="section sustainability-section bg-light py-5">
         <div className="container">
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
-              <div className="position-relative">
-                <div className="rounded-lg overflow-hidden shadow-lg" style={{
-                height: "480px"
+              <div className="position-relative sustainability-image-container" style={{
+                height: isMobile ? "auto" : "480px",
+                marginBottom: isMobile ? "1.5rem" : "0"
               }}>
-                  <img src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" alt="Steel recycling yard with recycling container" className="w-100 h-100 object-cover" />
+                <div className="rounded-lg overflow-hidden shadow-lg" style={{
+                height: isMobile ? "300px" : "480px"
+              }}>
+                  <img src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" 
+                       alt="Steel recycling yard with recycling container" 
+                       className="w-100 h-100 object-cover" />
                 </div>
                 <div className="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-green-500/10 to-copper/10 rounded-3xl" style={{
                 borderRadius: '1rem'
@@ -469,7 +486,7 @@ const Index = () => {
             </div>
             <div className="col-lg-6">
               <div className="p-4">
-                <div className="d-inline-flex align-items-center justify-content-center rounded-3 p-3 bg-green-100 mb-4">
+                <div className={`d-inline-flex align-items-center justify-content-center rounded-3 p-3 bg-green-100 mb-4 leaf-icon-mobile-hidden ${isMobile ? 'leaf-icon-mobile-hidden' : ''}`}>
                   <Leaf className="text-green-600" size={24} />
                 </div>
                 <h2 className="fw-bold display-6 mb-4">Greener Steel, <span className="text-copper">Brighter Future</span></h2>
@@ -516,7 +533,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Credibility Section: Partap Iron & Steel Rolling Mills (ENHANCED) */}
+      {/* Credibility Section: Partap Iron & Steel Rolling Mills (Mobile fixes) */}
       <section className="section-sm credibility-section" style={{
       backgroundColor: '#f8f9fa',
       position: 'relative',
@@ -527,17 +544,18 @@ const Index = () => {
             <div className="col-lg-7">
               <div className="mb-4 credibility-card p-4 rounded-4 shadow-rich bg-white">
                 <div className="d-flex align-items-center mb-3">
-                  <span className="me-3 p-3 bg-copper rounded-circle d-flex align-items-center justify-content-center">
+                  <span className={`me-3 p-3 bg-copper rounded-circle d-flex align-items-center justify-content-center mobile-hidden-svg ${isMobile ? 'mobile-hidden-svg' : ''}`}>
                     <Factory size={32} className="text-white" />
                   </span>
                   <h2 className="fw-bold mb-0" style={{
                   color: "#B87333",
-                  fontSize: "2.1rem"
+                  fontSize: isMobile ? "1.75rem" : "2.1rem",
+                  textAlign: isMobile ? "left" : "inherit"
                 }}>
                     Partap Iron & Steel Rolling Mills
                   </h2>
                 </div>
-                <h5 className="text-steel fw-semibold mb-2">Precision & Credibility Since 1997</h5>
+                <h5 className="text-steel fw-semibold mb-2" style={{textAlign: isMobile ? "left" : "inherit"}}>Precision & Credibility Since 1997</h5>
                 <p className="lead" style={{
                 color: "#6c757d"
               }}>

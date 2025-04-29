@@ -1,42 +1,56 @@
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+  text-align: left;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  /* Hero section */
+  .hero-overlay-content .btn-lg {
+    padding: 0.5rem 1.25rem !important;
+    font-size: 0.9rem !important;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .hero-overlay-content h1.display-4 {
+    margin-top: 2rem !important;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  /* Materials grid */
+  .materials-grid .col-6 {
+    padding-left: 8px;
+    padding-right: 8px;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  
+  /* About section secondary image */
+  .secondary-image {
+    position: relative !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  /* Sustainability section */
+  .leaf-icon-mobile-hidden {
+    display: none !important;
+  }
+  
+  .sustainability-image-container {
+    height: auto !important;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Partap Iron section */
+  .credibility-section h2 {
+    text-align: left !important;
+  }
+  
+  .mobile-hidden-svg {
+    display: none !important;
+  }
 }
