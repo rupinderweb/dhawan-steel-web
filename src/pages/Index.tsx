@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
@@ -290,13 +289,13 @@ const Index = () => {
           
           <div className="text-center mt-4">
             <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
-              background: "#1E293B",
-              border: "none",
-              color: "#fff",
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "0.5rem"
-            }}>
+            background: "#1E293B",
+            border: "none",
+            color: "#fff",
+            display: "inline-flex",
+            alignItems: "center",
+            gap: "0.5rem"
+          }}>
               Explore Our Products <ArrowRight size={18} />
             </Link>
           </div>
@@ -460,12 +459,10 @@ const Index = () => {
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
               <div className="position-relative">
-                <div className="rounded-lg overflow-hidden shadow-lg" style={{ height: "480px" }}>
-                  <img 
-                    src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" 
-                    alt="Steel recycling yard with recycling container" 
-                    className="w-100 h-100 object-cover"
-                  />
+                <div className="rounded-lg overflow-hidden shadow-lg" style={{
+                height: "480px"
+              }}>
+                  <img src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" alt="Steel recycling yard with recycling container" className="w-100 h-100 object-cover" />
                 </div>
                 <div className="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-green-500/10 to-copper/10 rounded-lg"></div>
                 <div className="position-absolute bottom-0 end-0 transform translate-y-1/4 translate-x-1/4">
@@ -507,12 +504,10 @@ const Index = () => {
                 </div>
                 
                 <div className="d-flex gap-3">
-                  <img 
-                    src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=120&q=80" 
-                    alt="Recycling Process" 
-                    className="rounded-circle object-cover border-4 border-white shadow"
-                    style={{ width: "80px", height: "80px" }}
-                  />
+                  <img alt="Recycling Process" className="rounded-circle object-cover border-4 border-white shadow" style={{
+                  width: "80px",
+                  height: "80px"
+                }} src="/lovable-uploads/18a10566-cdaf-4d20-ad1c-d6129b2bc194.png" />
                   <div className="bg-white p-3 rounded-3 shadow flex-grow-1">
                     <p className="fst-italic mb-0">
                       "Our sustainable practices have reduced carbon footprint by 30% while maintaining the highest quality standards."
