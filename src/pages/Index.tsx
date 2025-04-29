@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Building, Factory, Package, Search, Wrench, ArrowRight, Recycle, Users, Globe, List, Settings, Wind, Square, Box, Leaf, Award, BadgeCheck, Handshake } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
+
 const Index = () => {
   return <>
       {/* HERO BANNER */}
@@ -308,7 +309,7 @@ const Index = () => {
             {/* Chemical Analysis Service */}
             <div className="col-md-6 mb-4">
               <div className="service-card position-relative overflow-hidden rounded-4">
-                <img src="https://images.unsplash.com/photo-1581093458791-9d42e3f8c3d2?auto=format&fit=crop&w=800&q=80" alt="Chemical Analysis" className="w-100 h-100 object-cover" style={{
+                <img src="/lovable-uploads/1092e548-b43f-4871-b3e2-89cc3d92bb44.png" alt="Chemical Analysis" className="w-100 h-100 object-cover" style={{
                 height: "400px"
               }} />
                 <div className="service-overlay">
@@ -460,7 +461,7 @@ const Index = () => {
               marginBottom: 32,
               boxShadow: "0 8px 32px rgba(30, 41, 59, 0.16)"
             }}>
-                <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=cover&w=500&q=80" alt="Recycling Metal" className="rounded-circle float-end ms-3 mb-2 d-none d-md-block" style={{
+                <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=500&q=80" alt="Recycling Metal" className="rounded-circle float-end ms-3 mb-2 d-none d-md-block" style={{
                 width: 80,
                 height: 80,
                 objectFit: "cover",
