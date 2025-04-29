@@ -1,11 +1,13 @@
 
 import { Link } from 'react-router-dom';
+
 const Navbar = () => {
   return <nav style={{
     backgroundColor: 'var(--midnight-blue)',
     padding: '0.5rem 0',
-    // Reduced vertical padding
-    marginTop: 0 // Remove white space on top
+    marginTop: 0, // Remove white space on top
+    position: 'sticky',
+    top: 0
   }} className="navbar navbar-expand-lg navbar-dark bg-zinc-950">
       <div className="container">
         <Link className="navbar-brand fw-bold" to="/">
@@ -15,7 +17,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-0">
+          <ul className="navbar-nav ms-5"> {/* Changed from ms-0 to ms-5 to add space between logo and menu items */}
             <li className="nav-item">
               <Link className="nav-link text-white" to="/">Home</Link>
             </li>
@@ -39,4 +41,5 @@ const Navbar = () => {
       </div>
     </nav>;
 };
+
 export default Navbar;
