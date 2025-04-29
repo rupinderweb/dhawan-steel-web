@@ -287,16 +287,23 @@ const Index = () => {
             </div>
           </div>
           
-          <div className="text-center mt-5">
-            <Link to="/products" className="btn btn-copper btn-lg">
-              View All Products <ArrowRight size={18} className="ms-2" />
+          <div className="text-center mt-4">
+            <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
+              background: "#1E293B",
+              border: "none",
+              color: "#fff",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.5rem"
+            }}>
+              Explore Our Products <ArrowRight size={18} />
             </Link>
           </div>
         </div>
       </section>
 
       {/* Our Services */}
-      <section className="section bg-light">
+      <section className="section bg-light pt-2">
         <div className="container">
           <div className="row mb-5">
             <div className="col-lg-6 mx-auto text-center">
@@ -599,8 +606,8 @@ const Index = () => {
                   fontWeight: 700,
                   letterSpacing: ".06em"
                 }}>
-                    ISO & ISI Certified
-                  </span>
+                  ISO & ISI Certified
+                </span>
                 </div>
               </div>
             </div>
