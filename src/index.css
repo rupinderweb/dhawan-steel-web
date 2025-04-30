@@ -13,6 +13,12 @@
   --font-gilroy: 'Gilroy', 'Inter', 'Segoe UI', 'Arial', sans-serif;
 }
 
+.bg-copper{
+  background-color: var(--copper);
+}
+.bg-silver{
+  background-color: #e8e6e3 !important;
+}
 /* Set font globally */
 body {
   font-family: var(--font-gilroy);
@@ -414,6 +420,17 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
+.learn-more-section{
+  background-color: #b8733314;
+}
+.learn-more-section a{
+  font-weight: bold;
+  border: 1px solid #b8733341;;
+}
+.learn-more-section a:hover{
+  color: var(--copper);
+}
+
 @media (max-width: 768px) {
   .hero-banner{
     height: 100% !important;
@@ -483,6 +500,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0 !important;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
   }
 }
 
