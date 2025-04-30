@@ -85,9 +85,7 @@ const Index = () => {
       </section>
 
       {/* About Dhawan Ispat Udyog */}
-      <section style={{
-      backgroundColor: "#F1F1F1"
-    }} className="section position-relative overflow-hidden">
+      <section className="section position-relative overflow-hidden">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 position-relative mb-5 mb-lg-0">
