@@ -209,7 +209,7 @@ const Index = () => {
           {/* First row - 4 products - Modified to show 2 per row on mobile */}
           <div className="row g-4 mb-4 materials-grid">
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow rounded-xl">
+              <Card className="h-100 hover:shadow-xl transition-shadow rounded-xl overflow-hidden">
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="MS Ingots" className="h-full w-full object-cover" src="/lovable-uploads/856f1eb4-ac83-429c-bb54-c0bed9f869c1.jpg" />
                 </div>
