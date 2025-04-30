@@ -54,3 +54,8 @@
     display: none !important;
   }
 }
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-collapse {
+      justify-content: end;
+  }
+}
