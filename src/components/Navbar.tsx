@@ -16,8 +16,8 @@ const Navbar = () => {
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-end" id="navbarNav">
-          <ul className="navbar-nav justify-end ms-5"> {/* Changed from ms-0 to ms-5 to add space between logo and menu items */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-5"> {/* Changed from ms-0 to ms-5 to add space between logo and menu items */}
             <li className="nav-item">
               <Link className="nav-link text-white lg:px-3" to="/">Home</Link>
             </li>
