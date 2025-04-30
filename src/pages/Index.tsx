@@ -14,8 +14,8 @@ const Index = () => {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      padding: "1rem"
-    }}>
+      padding: isMobile ? "2rem 1rem 1rem" : "1rem",
+    }} className='hero-banner'>
         <div style={{
         position: "relative",
         width: "100%",
@@ -43,7 +43,7 @@ const Index = () => {
           flexDirection: "column",
           justifyContent: "center",
           height: "100%",
-          padding: "2rem"
+          padding: "0 2rem 2rem"
         }}>
             <h1 className="display-4 fw-bolder mb-4" style={{
             color: "#fff",
@@ -53,7 +53,7 @@ const Index = () => {
               Delivering Quality Steel Solutions Across India
             </h1>
             <p style={{
-            color: "#c7c9d1",
+            color: "#e9e9e9",
             fontWeight: 500
           }} className="lead mb-5 text-slate-50 text-base">
               Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
@@ -90,7 +90,7 @@ const Index = () => {
             <div className="col-lg-6 position-relative mb-5 mb-lg-0">
               {/* Experience Badge */}
               <div className="position-absolute" style={{
-              left: "-20px",
+              left: "-10px",
               top: "50px",
               zIndex: 2,
               background: "#B87333",
@@ -118,17 +118,19 @@ const Index = () => {
               </div>
 
               {/* Secondary Image - Modified to fix cropping on mobile */}
-              <div className={`${isMobile ? '' : 'position-absolute'} secondary-image`} style={{
+              <div className={`${isMobile ? 'position-relative' : 'position-absolute'} secondary-image`} style={{
               right: isMobile ? "auto" : "-40px",
               bottom: isMobile ? "auto" : "-40px",
-              width: isMobile ? "100%" : "250px",
+              width: isMobile ? "90%" : "250px",
               height: isMobile ? "auto" : "250px",
               borderRadius: "1.5rem",
               overflow: "hidden",
               boxShadow: "0 8px 32px rgba(30,41,59,0.12)",
               border: "4px solid white",
-              marginTop: isMobile ? "20px" : "0",
-              marginBottom: isMobile ? "20px" : "0"
+              marginTop: isMobile ? "-60px" : "0",
+              marginBottom: isMobile ? "20px" : "0",
+              marginLeft: isMobile ? "auto" : "",
+              marginRight: isMobile ? "auto" : ""
             }}>
                 <img alt="Steel Production" style={{
                 width: "100%",
@@ -145,7 +147,7 @@ const Index = () => {
                 letterSpacing: "0.05em"
               }}>ABOUT US</span>
                 <h2 className="fw-bold mb-4" style={{
-                fontSize: "2.5rem"
+                fontSize: isMobile ? "2rem" : "2.5rem"
               }}>About Dhawan Ispat Udyog</h2>
                 <p className="lead text-muted mb-4">
                   Dhawan Ispat Udyog began with a single yard and a clear mission—to provide high-quality steel and metal solutions. Today, with two fully equipped yards and state-of-the-art processing facilities, we cater to industries across India.
@@ -206,97 +208,97 @@ const Index = () => {
           </div>
           
           {/* First row - 4 products - Modified to show 2 per row on mobile */}
-          <div className="row g-4 mb-4 materials-grid">
-            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
+          <div className="row mb-4 materials-grid">
+            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6 material-card'}`}>
               <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="MS Ingots" className="h-full w-full object-cover" src="/lovable-uploads/856f1eb4-ac83-429c-bb54-c0bed9f869c1.jpg" />
                 </div>
-                <CardContent className="p-4">
+                <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">MS Ingots</h4>
-                  <p className="text-gray-600">High-quality mild steel ingots for various industrial applications.</p>
+                  <p className="text-gray-600 mb-1">High-quality mild steel ingots for various industrial applications.</p>
                 </CardContent>
               </Card>
             </div>
             
-            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
+            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6 material-card'}`}>
               <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Billets" className="h-full w-full object-cover" src="/lovable-uploads/64f8a59c-894f-4509-a015-8f56dba569ed.jpg" />
                 </div>
-                <CardContent className="p-4">
+                <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">Billets</h4>
-                  <p className="text-gray-600">Premium steel billets for construction and manufacturing.</p>
+                  <p className="text-gray-600 mb-1">Premium steel billets for construction and manufacturing.</p>
                 </CardContent>
               </Card>
             </div>
             
-            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
+            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6 material-card'}`}>
               <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Ship Breaking Materials" className="h-full w-full object-cover" src="/lovable-uploads/2a203fa3-c007-4dfe-baa0-0783a15ba8c8.jpg" />
                 </div>
-                <CardContent className="p-4">
+                <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">Ship Breaking Materials</h4>
-                  <p className="text-gray-600">Recycled marine-grade metals from ship dismantling.</p>
+                  <p className="text-gray-600 mb-1">Recycled marine-grade metals from ship dismantling.</p>
                 </CardContent>
               </Card>
             </div>
             
-            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
+            <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6 material-card'}`}>
               <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Stainless Steel" className="h-full w-full object-cover" src="/lovable-uploads/02426647-1541-42a6-a39d-09f1b4a8e6f8.jpg" />
                 </div>
-                <CardContent className="p-4">
+                <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">Stainless Steel</h4>
-                  <p className="text-gray-600">Premium grade stainless steel for durability and corrosion resistance.</p>
+                  <p className="text-gray-600 mb-1">Premium grade stainless steel for durability and corrosion resistance.</p>
                 </CardContent>
               </Card>
             </div>
           </div>
           
           {/* Second row - 3 products - Modified for mobile */}
-          <div className="row g-4 materials-grid">
-            <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6'}`}>
+          <div className="row materials-grid">
+            <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6 material-card'}`}>
               <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="MS Scrap" className="h-full w-full object-cover" src="/lovable-uploads/480f3867-3776-4aae-bf32-fef5b493aa6d.jpg" />
                 </div>
-                <CardContent className="p-4">
+                <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">MS Scrap</h4>
-                  <p className="text-gray-600">Quality mild steel scrap materials for recycling and reprocessing.</p>
+                  <p className="text-gray-600 mb-1">Quality mild steel scrap materials for recycling and reprocessing.</p>
                 </CardContent>
               </Card>
             </div>
             
-            <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6'}`}>
+            <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6 material-card'}`}>
               <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Low Alloy Steel" className="h-full w-full object-cover" src="/lovable-uploads/67181090-05d6-4588-8c7d-aaba542ce2c2.jpg" />
                 </div>
-                <CardContent className="p-4">
+                <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">Low Alloy Steel</h4>
-                  <p className="text-gray-600">Specialized low alloy steel for specific industrial needs.</p>
+                  <p className="text-gray-600 mb-1">Specialized low alloy steel for specific industrial needs.</p>
                 </CardContent>
               </Card>
             </div>
             
-            <div className={`col-lg-4 col-md-6 ${isMobile ? 'col-12 mt-4' : ''}`}>
+            <div className={`col-lg-4 col-md-6 material-card ${isMobile ? 'col-12 mt-4' : ''}`}>
               <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Aluminium" className="h-full w-full object-cover" src="/lovable-uploads/5c999f96-f326-4dc2-a85b-09eca404f377.jpg" />
                 </div>
-                <CardContent className="p-4">
+                <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">Aluminium</h4>
-                  <p className="text-gray-600">Lightweight and versatile aluminium products for various applications.</p>
+                  <p className="text-gray-600 mb-1">Lightweight and versatile aluminium products for various applications.</p>
                 </CardContent>
               </Card>
             </div>
           </div>
           
           <div className="text-center mt-4">
-            <Link to="/products" className="btn btn-primary btn-lg px-4 py-2 fw-semibold">
+            <Link to="/products" className="btn btn-primary btn-lg px-4 py-2 mt-3 fw-semibold">
               Explore Our Products <ArrowRight size={18} className="ms-2" />
             </Link>
           </div>
@@ -312,7 +314,7 @@ const Index = () => {
               <p className="lead">We offer comprehensive steel processing and supply chain solutions.</p>
             </div>
           </div>
-          <div className="row g-4">
+          <div className={`${isMobile ? 'row g-2' : 'row g-4'}`}>
             {/* Chemical Analysis Service */}
             <div className="col-md-6 mb-4">
               <div className="service-card position-relative overflow-hidden rounded-4">
@@ -537,7 +539,7 @@ const Index = () => {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="p-4">
+              <div className={`${isMobile ? 'p-2' : 'p-4'}`}>
                 <div className={`d-inline-flex align-items-center justify-content-center rounded-3 p-3 bg-green-100 mb-4 leaf-icon-mobile-hidden ${isMobile ? 'leaf-icon-mobile-hidden' : ''}`}>
                   <Leaf className="text-green-600" size={24} />
                 </div>

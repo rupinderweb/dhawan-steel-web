@@ -150,6 +150,13 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-8px);
   box-shadow: 0 8px 32px rgba(184,115,51,0.12);
 }
+.material-card{
+  transition: all 0.3s ease;
+}
+.material-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 32px rgba(184,115,51,0.12);
+}
 
 .industry-icon-wrapper {
   display: inline-flex;
@@ -408,8 +415,21 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  .hero-banner{
+    height: 100% !important;
+  }
+  .section{
+    padding: 42px 0;
+  }
   .display-4 {
     font-size: 2.4rem;
+  }
+  .materials-grid{
+    --bs-gutter-x: 1rem !important;
+    --bs-gutter-y: 1rem !important;
+  }
+  .materials-grid .h-48.w-full.overflow-hidden.rounded-t-lg {
+    height: 150px;
   }
   
   /* Mobile optimizations for materials display */
@@ -458,6 +478,11 @@ h1, h2, h3, h4, h5, h6 {
   
   .credibility-section .mobile-hidden-svg {
     display: none !important;
+  }
+  .cta-card-outer {
+    margin-top: 0 !important;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
