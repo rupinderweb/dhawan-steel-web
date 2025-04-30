@@ -676,8 +676,3 @@ img {
   opacity: 0.9;
   margin: 0;
 }
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-collapse {
-        justify-content: end;
-    }
-}
