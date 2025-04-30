@@ -59,7 +59,7 @@ const Index = () => {
               Since 2008, Dhawan Ispat Udyog has been a trusted name in iron, steel, and non-ferrous materials—serving industries with precision and reliability.
             </p>
             <div className="d-flex flex-wrap gap-3">
-              <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich" style={{
+              <Link to="/products" className="btn btn-primary btn-lg px-4 py-3 fw-semibold shadow-rich main-btn" style={{
               background: "#B87333",
               border: "none",
               color: "#fff",
@@ -68,7 +68,7 @@ const Index = () => {
             }}>
                 Explore Our Products
               </Link>
-              <Link to="/services" className="btn btn-light btn-lg px-4 py-3 fw-semibold" style={{
+              <Link to="/services" className="btn btn-light btn-lg px-4 py-3 fw-semibold main-btn" style={{
               borderWidth: 2,
               borderColor: "#B87333",
               color: "#B87333",
@@ -154,7 +154,7 @@ const Index = () => {
 
               <div className="row g-4">
                 <div className="col-md-6">
-                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-light">
+                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-white">
                     <Factory size={24} className="text-copper" />
                     <div>
                       <h5 className="fw-semibold mb-0">Two advanced yards</h5>
@@ -163,7 +163,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-light">
+                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-white">
                     <Package size={24} className="text-copper" />
                     <div>
                       <h5 className="fw-semibold mb-0">Diverse materials</h5>
@@ -172,7 +172,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-light">
+                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-white">
                     <Globe size={24} className="text-copper" />
                     <div>
                       <h5 className="fw-semibold mb-0">Global procurement</h5>
@@ -181,7 +181,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-light">
+                  <div className="d-flex gap-3 align-items-center p-3 rounded-3 bg-white">
                     <Users size={24} className="text-copper" />
                     <div>
                       <h5 className="fw-semibold mb-0">Nationwide service</h5>
@@ -208,48 +208,48 @@ const Index = () => {
           {/* First row - 4 products - Modified to show 2 per row on mobile */}
           <div className="row g-4 mb-4 materials-grid">
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="MS Ingots" className="h-full w-full object-cover" src="/lovable-uploads/856f1eb4-ac83-429c-bb54-c0bed9f869c1.jpg" />
                 </div>
                 <CardContent className="p-4">
-                  <h4 className="text-xl font-semibold mb-2 text-copper">MS Ingots</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">MS Ingots</h4>
                   <p className="text-gray-600">High-quality mild steel ingots for various industrial applications.</p>
                 </CardContent>
               </Card>
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Billets" className="h-full w-full object-cover" src="/lovable-uploads/64f8a59c-894f-4509-a015-8f56dba569ed.jpg" />
                 </div>
                 <CardContent className="p-4">
-                  <h4 className="text-xl font-semibold mb-2 text-copper">Billets</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Billets</h4>
                   <p className="text-gray-600">Premium steel billets for construction and manufacturing.</p>
                 </CardContent>
               </Card>
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Ship Breaking Materials" className="h-full w-full object-cover" src="/lovable-uploads/2a203fa3-c007-4dfe-baa0-0783a15ba8c8.jpg" />
                 </div>
                 <CardContent className="p-4">
-                  <h4 className="text-xl font-semibold mb-2 text-copper">Ship Breaking Materials</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Ship Breaking Materials</h4>
                   <p className="text-gray-600">Recycled marine-grade metals from ship dismantling.</p>
                 </CardContent>
               </Card>
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Stainless Steel" className="h-full w-full object-cover" src="/lovable-uploads/02426647-1541-42a6-a39d-09f1b4a8e6f8.jpg" />
                 </div>
                 <CardContent className="p-4">
-                  <h4 className="text-xl font-semibold mb-2 text-copper">Stainless Steel</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Stainless Steel</h4>
                   <p className="text-gray-600">Premium grade stainless steel for durability and corrosion resistance.</p>
                 </CardContent>
               </Card>
@@ -259,36 +259,36 @@ const Index = () => {
           {/* Second row - 3 products - Modified for mobile */}
           <div className="row g-4 materials-grid">
             <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="MS Scrap" className="h-full w-full object-cover" src="/lovable-uploads/480f3867-3776-4aae-bf32-fef5b493aa6d.jpg" />
                 </div>
                 <CardContent className="p-4">
-                  <h4 className="text-xl font-semibold mb-2 text-copper">MS Scrap</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">MS Scrap</h4>
                   <p className="text-gray-600">Quality mild steel scrap materials for recycling and reprocessing.</p>
                 </CardContent>
               </Card>
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Low Alloy Steel" className="h-full w-full object-cover" src="/lovable-uploads/67181090-05d6-4588-8c7d-aaba542ce2c2.jpg" />
                 </div>
                 <CardContent className="p-4">
-                  <h4 className="text-xl font-semibold mb-2 text-copper">Low Alloy Steel</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Low Alloy Steel</h4>
                   <p className="text-gray-600">Specialized low alloy steel for specific industrial needs.</p>
                 </CardContent>
               </Card>
             </div>
             
             <div className={`col-lg-4 col-md-6 ${isMobile ? 'col-12 mt-4' : ''}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Aluminium" className="h-full w-full object-cover" src="/lovable-uploads/5c999f96-f326-4dc2-a85b-09eca404f377.jpg" />
                 </div>
                 <CardContent className="p-4">
-                  <h4 className="text-xl font-semibold mb-2 text-copper">Aluminium</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Aluminium</h4>
                   <p className="text-gray-600">Lightweight and versatile aluminium products for various applications.</p>
                 </CardContent>
               </Card>
@@ -401,7 +401,15 @@ const Index = () => {
                 backgroundColor: "#B87333"
               }}>
                   <span className="industry-icon">
-                    <Wrench className="h-8 w-8" />
+                    <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M271.875 37.5H206.25L178.125 65.625H75L46.875 37.5H28.125C23.1522 37.5 18.3831 39.4754 14.8667 42.9917C11.3504 46.5081 9.375 51.2772 9.375 56.25V243.75C9.375 248.723 11.3504 253.492 14.8667 257.008C18.3831 260.525 23.1522 262.5 28.125 262.5H46.875L75 234.375H178.125L206.25 262.5H271.875C276.848 262.5 281.617 260.525 285.133 257.008C288.65 253.492 290.625 248.723 290.625 243.75V56.25C290.625 51.2772 288.65 46.5081 285.133 42.9917C281.617 39.4754 276.848 37.5 271.875 37.5Z" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.375 121.875H215.625C219.34 121.796 223.033 122.469 226.481 123.855C229.929 125.24 233.061 127.309 235.689 129.937C238.316 132.564 240.385 135.696 241.771 139.144C243.156 142.592 243.829 146.285 243.75 150" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M9.375 178.125H215.625C219.34 178.204 223.033 177.531 226.481 176.146C229.929 174.76 233.061 172.691 235.689 170.064C238.316 167.436 240.385 164.304 241.771 160.856C243.156 157.408 243.829 153.715 243.75 150" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M56.25 121.875V178.125" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M253.125 84.375C258.303 84.375 262.5 80.1777 262.5 75C262.5 69.8223 258.303 65.625 253.125 65.625C247.947 65.625 243.75 69.8223 243.75 75C243.75 80.1777 247.947 84.375 253.125 84.375Z" fill="#fff"/>
+                      <path d="M253.125 234.375C258.303 234.375 262.5 230.178 262.5 225C262.5 219.822 258.303 215.625 253.125 215.625C247.947 215.625 243.75 219.822 243.75 225C243.75 230.178 247.947 234.375 253.125 234.375Z" fill="#fff"/>
+                      </svg>
+
                   </span>
                 </div>
                 <h4 className="industry-title">01. Hardware</h4>
@@ -417,7 +425,27 @@ const Index = () => {
                 backgroundColor: "#B87333"
               }}>
                   <span className="industry-icon">
-                    <Wind className="h-8 w-8" />
+                  <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M132.422 157.281V62.1092H167.578V107.563" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M167.578 142.719V237.891H132.422V192.437" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M142.719 167.578L75.4219 100.281L100.281 75.4225L132.421 107.562" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M157.281 132.422L224.578 199.719L199.718 224.578L167.579 192.438" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M157.281 167.578H62.1094V132.422H107.562" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M142.719 132.422H237.89V167.578H192.437" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M167.579 157.281L100.282 224.578L75.4229 199.719L107.563 167.578" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M132.422 142.719L199.719 75.4221L224.578 100.282L192.438 132.422" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <mask id="mask0_1146_14" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
+                    <path d="M0 3.05176e-05H300V300H0V3.05176e-05Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_1146_14)">
+                    <path d="M256.055 291.211H43.9453C24.5291 291.211 8.78906 275.471 8.78906 256.055V43.9453C8.78906 24.5291 24.5291 8.78909 43.9453 8.78909H256.055C275.471 8.78909 291.211 24.5291 291.211 43.9453V256.055C291.211 275.471 275.471 291.211 256.055 291.211Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M150 62.1094V8.78907" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M150 237.891V291.211" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.78906 150H62.1094" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M237.891 150H291.211" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    </svg>
+
                   </span>
                 </div>
                 <h4 className="industry-title">02. Air Coolers</h4>
@@ -433,7 +461,19 @@ const Index = () => {
                 backgroundColor: "#B87333"
               }}>
                   <span className="industry-icon">
-                    <Square className="h-8 w-8" />
+                    <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <mask id="mask0_1146_46" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
+                      <path d="M0 3.05176e-05H300V300H0V3.05176e-05Z" fill="white"/>
+                      </mask>
+                      <g mask="url(#mask0_1146_46)">
+                      <path d="M0 55.9609H300" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
+                      <path d="M0 244.037H300" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
+                      <path d="M26.2261 29.2504V270.748" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
+                      <path d="M273.774 29.2504V270.748" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
+                      </g>
+                      <path d="M237.256 209.375H62.7446V90.6254H237.256V209.375Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
+                      </svg>
+
                   </span>
                 </div>
                 <h4 className="industry-title">03. Frames</h4>
@@ -449,7 +489,17 @@ const Index = () => {
                 backgroundColor: "#B87333"
               }}>
                   <span className="industry-icon">
-                    <Box className="h-8 w-8" />
+                  <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="mask0_1146_63" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
+                    <path d="M0 3.05176e-05H300V300H0V3.05176e-05Z" fill="white"/>
+                    </mask>
+                    <g mask="url(#mask0_1146_63)">
+                    <path d="M291.211 114.844H8.78906V62.1094H291.211V114.844Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M273.633 237.891H26.3672V114.844H273.633V237.891Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    </g>
+                    <path d="M238.477 202.734H168.164V167.578H238.477V202.734Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+
                   </span>
                 </div>
                 <h4 className="industry-title">04. Trunks</h4>
@@ -568,7 +618,7 @@ const Index = () => {
                 </p>
                 <div className="d-flex flex-wrap gap-4 mt-4">
                   <div className="d-flex align-items-center gap-3">
-                    <span className="bg-silver shadow-rich rounded-3 p-3 d-inline-flex">
+                    <span className="bg-light border border-silver shadow-rich rounded-3 p-3 d-inline-flex">
                       <Award size={28} className="text-copper" />
                     </span>
                     <div>
@@ -577,7 +627,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="d-flex align-items-center gap-3">
-                    <span className="bg-silver shadow-rich rounded-3 p-3 d-inline-flex">
+                    <span className="bg-light border border-silver shadow-rich rounded-3 p-3 d-inline-flex">
                       <BadgeCheck size={28} className="text-success" />
                     </span>
                     <div>
@@ -586,7 +636,7 @@ const Index = () => {
                     </div>
                   </div>
                   <div className="d-flex align-items-center gap-3">
-                    <span className="bg-silver shadow-rich rounded-3 p-3 d-inline-flex">
+                    <span className="bg-light border border-silver shadow-rich rounded-3 p-3 d-inline-flex">
                       <Handshake size={28} className="text-primary" />
                     </span>
                     <div>

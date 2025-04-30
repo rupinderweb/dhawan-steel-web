@@ -289,6 +289,12 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   transform: translateY(-2px) scale(1.03);
 }
+.main-btn:hover{
+  background: #fde1d3 !important;
+  color: #b87333 !important;
+  text-decoration: none;
+  transform: translateY(-2px) scale(1.03);
+}
 
 @media (max-width: 576px) {
   .cta-card {
@@ -394,6 +400,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   opacity: 0.9;
   margin: 0;
+}
+
+.material-points{
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -681,7 +692,7 @@ img {
     .navbar-expand-lg .navbar-collapse {
         justify-content: end;
     }
-    .navbar-expand-lg .navbar-collapse a:hover {
+    .navbar-expand-lg .navbar-collapse a:hover, .footer a:hover {
       color: var(--copper) !important
     }
 }
