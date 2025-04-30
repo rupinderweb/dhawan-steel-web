@@ -199,7 +199,7 @@ const Index = () => {
       {/* Our Materials */}
       <section className="section bg-light">
         <div className="container">
-          <div className="row mb-5">
+          <div className="row mb-4">
             <div className="col-lg-6 mx-auto text-center">
               <h2 className="fw-bold mb-3">Our Materials</h2>
               <p className="lead">High-quality materials sourced from trusted suppliers globally.</p>
