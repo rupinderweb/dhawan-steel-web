@@ -11,7 +11,6 @@ const Index = () => {
       minHeight: 480,
       width: "100%",
       height: "60vh",
-      backgroundColor: "#F1F1F1",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
@@ -307,7 +306,7 @@ const Index = () => {
       {/* Our Services */}
       <section className="section bg-light pt-2">
         <div className="container">
-          <div className="row mb-5">
+          <div className="row mb-4">
             <div className="col-lg-6 mx-auto text-center">
               <h2 className="fw-bold mb-3">Our Services</h2>
               <p className="lead">We offer comprehensive steel processing and supply chain solutions.</p>
@@ -387,9 +386,9 @@ const Index = () => {
       </section>
 
       {/* Industries We Serve - Updated with copper background for icons */}
-      <section className="section bg-light">
+      <section className="section bg-light  pt-2">
         <div className="container">
-          <div className="row mb-5">
+          <div className="row mb-4">
             <div className="col-lg-6 mx-auto text-center">
               <h2 className="fw-bold mb-3">Industries We Serve</h2>
               <p className="lead">Our quality materials support a wide range of industrial applications.</p>
@@ -464,7 +463,7 @@ const Index = () => {
       </section>
 
       {/* Sustainability Commitment (REDESIGNED and FIXED for mobile) */}
-      <section className="section sustainability-section bg-light py-5">
+      <section className="section sustainability-section bg-light pt-2 pb-4">
         <div className="container">
           <div className="row g-4 align-items-center">
             <div className="col-lg-6">
@@ -475,7 +474,7 @@ const Index = () => {
                 <div className="rounded-lg overflow-hidden shadow-lg" style={{
                 height: isMobile ? "300px" : "480px"
               }}>
-                  <img src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" alt="Steel recycling yard with recycling container" className="w-100 h-100 object-cover" />
+                  <img src="/lovable-uploads/db1ac54c-6c54-4167-b4d3-9f3138d8cebf.png" alt="Steel recycling yard with recycling container" className="w-100 h-100 rounded-4 object-cover" />
                 </div>
                 <div className="position-absolute top-0 start-0 w-100 h-100 bg-gradient-to-r from-green-500/10 to-copper/10 rounded-3xl" style={{
                 borderRadius: '1rem'

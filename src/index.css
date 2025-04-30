@@ -681,4 +681,7 @@ img {
     .navbar-expand-lg .navbar-collapse {
         justify-content: end;
     }
+    .navbar-expand-lg .navbar-collapse a:hover {
+      color: var(--copper) !important
+    }
 }
