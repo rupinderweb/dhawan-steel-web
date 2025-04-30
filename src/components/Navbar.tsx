@@ -19,22 +19,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-5"> {/* Changed from ms-0 to ms-5 to add space between logo and menu items */}
             <li className="nav-item">
-              <Link className="nav-link text-white px-3" to="/">Home</Link>
+              <Link className="nav-link text-white px-3 hover:text-copper" to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white px-3" to="/about">About</Link>
+              <Link className="nav-link text-white px-3 hover:text-copper" to="/about">About</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white px-3" to="/products">Products</Link>
+              <Link className="nav-link text-white px-3 hover:text-copper" to="/products">Products</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white px-3" to="/services">Services</Link>
+              <Link className="nav-link text-white px-3 hover:text-copper" to="/services">Services</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white px-3" to="/gallery">Gallery</Link>
+              <Link className="nav-link text-white px-3 hover:text-copper" to="/gallery">Gallery</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-white px-3" to="/contact">Contact</Link>
+              <Link className="nav-link text-white px-3 hover:text-copper" to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
