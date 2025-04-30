@@ -209,7 +209,7 @@ const Index = () => {
           {/* First row - 4 products - Modified to show 2 per row on mobile */}
           <div className="row g-4 mb-4 materials-grid">
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow rounded-xl overflow-hidden">
+              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="MS Ingots" className="h-full w-full object-cover" src="/lovable-uploads/856f1eb4-ac83-429c-bb54-c0bed9f869c1.jpg" />
                 </div>
@@ -221,7 +221,7 @@ const Index = () => {
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow rounded-xl overflow-hidden">
+              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Billets" className="h-full w-full object-cover" src="/lovable-uploads/64f8a59c-894f-4509-a015-8f56dba569ed.jpg" />
                 </div>
@@ -233,7 +233,7 @@ const Index = () => {
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow rounded-xl overflow-hidden">
+              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Ship Breaking Materials" className="h-full w-full object-cover" src="/lovable-uploads/2a203fa3-c007-4dfe-baa0-0783a15ba8c8.jpg" />
                 </div>
@@ -245,7 +245,7 @@ const Index = () => {
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow rounded-xl overflow-hidden">
+              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Stainless Steel" className="h-full w-full object-cover" src="/lovable-uploads/02426647-1541-42a6-a39d-09f1b4a8e6f8.jpg" />
                 </div>
@@ -260,7 +260,7 @@ const Index = () => {
           {/* Second row - 3 products - Modified for mobile */}
           <div className="row g-4 materials-grid">
             <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow rounded-xl overflow-hidden">
+              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="MS Scrap" className="h-full w-full object-cover" src="/lovable-uploads/480f3867-3776-4aae-bf32-fef5b493aa6d.jpg" />
                 </div>
@@ -272,7 +272,7 @@ const Index = () => {
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6'}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow rounded-xl overflow-hidden">
+              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Low Alloy Steel" className="h-full w-full object-cover" src="/lovable-uploads/67181090-05d6-4588-8c7d-aaba542ce2c2.jpg" />
                 </div>
@@ -284,7 +284,7 @@ const Index = () => {
             </div>
             
             <div className={`col-lg-4 col-md-6 ${isMobile ? 'col-12 mt-4' : ''}`}>
-              <Card className="h-100 hover:shadow-xl transition-shadow rounded-xl overflow-hidden">
+              <Card className="h-100 hover:shadow-xl transition-shadow" style={{ borderRadius: "1.5rem"}}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Aluminium" className="h-full w-full object-cover" src="/lovable-uploads/5c999f96-f326-4dc2-a85b-09eca404f377.jpg" />
                 </div>
