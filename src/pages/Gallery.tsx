@@ -213,28 +213,28 @@ const Gallery = () => {
             {/* Update onClick handlers for Work in Action images */}
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Rolling Process")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="Rolling Process" style={{
+                <img className="card-img-top rounded-4" alt="Rolling Process" style={{
                 height: '320px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/4f07f0a0-052e-4142-9fa0-49a9ba09d284.jpg" />
               </div>
             </div>
             
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Torch Cutting")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="Torch Cutting" style={{
+                <img className="card-img-top rounded-4" alt="Torch Cutting" style={{
                 height: '320px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/34718182-b84b-413b-8e29-c8507d609348.jpg" />
               </div>
             </div>
             
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Forging Process")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="Forging Process" style={{
+                <img className="card-img-top rounded-4" alt="Forging Process" style={{
                 height: '320px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/a443f1e9-3173-4f57-8ab6-a6091978d22f.jpg" />
               </div>
             </div>
           </div>
@@ -255,19 +255,19 @@ const Gallery = () => {
             {/* Update onClick handlers for Sustainability images */}
             <div className="col-md-6 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Recycling Operations")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="Recycling Operations" style={{
+                <img className="card-img-top rounded-4" alt="Recycling Operations" style={{
                 height: '320px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/5201650a-7e76-4ae8-8479-d6403dace31f.jpg" />
               </div>
             </div>
             
             <div className="col-md-6 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Environmental Compliance")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="Environmental Compliance" style={{
+                <img className="card-img-top rounded-4" alt="Environmental Compliance" style={{
                 height: '320px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/7b3608e5-7641-4bca-a955-001d86074f5e.jpg" />
               </div>
             </div>
           </div>
