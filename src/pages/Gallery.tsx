@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useState } from 'react';
 import ImageZoom from '@/components/ImageZoom';
+
 const Gallery = () => {
   const isMobile = useIsMobile();
   const [selectedImage, setSelectedImage] = useState<{
@@ -10,13 +11,16 @@ const Gallery = () => {
   } | null>(null);
 
   // Function to handle image click
-  const handleImageClick = (src: string, alt: string) => {
-    console.log("Image clicked:", src, alt);
+  const handleImageClick = (imageElement: HTMLImageElement) => {
+    if (!imageElement) return;
+    
+    console.log("Image clicked:", imageElement.src, imageElement.alt);
     setSelectedImage({
-      src,
-      alt
+      src: imageElement.src,
+      alt: imageElement.alt
     });
   };
+
   return <>
       {/* Page Header */}
       <section className="bg-copper text-white py-5">
@@ -54,7 +58,8 @@ const Gallery = () => {
           
           <div className="row g-4">
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1449157291145-7efd050a4d0e", "Processing Yard")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Processing Yard" style={{
                 width: '100%',
                 height: '350px',
@@ -63,7 +68,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1518770660439-4636190af475", "Quality Control Lab")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Quality Control Lab" style={{
                 width: '100%',
                 height: '350px',
@@ -72,7 +78,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace", "Storage Yard")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Storage Yard" style={{
                 width: '100%',
                 height: '350px',
@@ -81,7 +88,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Processing Equipment")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Processing Equipment" style={{
                 width: '100%',
                 height: '350px',
@@ -90,7 +98,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1486718448742-163732cd1544", "Rolling Mill")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Rolling Mill" style={{
                 width: '100%',
                 height: '350px',
@@ -99,7 +108,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1605810230434-7631ac76ec81", "Logistics Fleet")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Logistics Fleet" style={{
                 width: '100%',
                 height: '350px',
@@ -124,7 +134,8 @@ const Gallery = () => {
           <div className="row g-4">
             {/* Replace all the product image sections with updated onClick handlers */}
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "MS Ingots")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="MS Ingots" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -134,7 +145,8 @@ const Gallery = () => {
             
             {/* Repeat the pattern for all other product images with updated onClick */}
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Steel Billets")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Steel Billets" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -143,7 +155,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "MS Scrap")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="MS Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -152,7 +165,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Stainless Steel Scrap")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Stainless Steel Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -161,7 +175,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "MS Angles")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="MS Angles" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -170,7 +185,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "MS Round Bars")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="MS Round Bars" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -179,7 +195,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Aluminium Scrap")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Aluminium Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -188,7 +205,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Ship Breaking Materials")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Ship Breaking Materials" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -212,7 +230,8 @@ const Gallery = () => {
           <div className="row g-4">
             {/* Update onClick handlers for Work in Action images */}
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Rolling Process")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Rolling Process" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -221,7 +240,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Torch Cutting")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Torch Cutting" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -230,7 +250,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Forging Process")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Forging Process" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -254,7 +275,8 @@ const Gallery = () => {
           <div className="row g-4">
             {/* Update onClick handlers for Sustainability images */}
             <div className="col-md-6 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Recycling Operations")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Recycling Operations" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -263,7 +285,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Environmental Compliance")}>
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Environmental Compliance" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -289,9 +312,14 @@ const Gallery = () => {
       </section>
 
       {/* Image Zoom Dialog */}
-      {selectedImage && <ImageZoom src={selectedImage.src} alt={selectedImage.alt} open={!!selectedImage} onOpenChange={open => {
-      if (!open) setSelectedImage(null);
-    }} />}
+      {selectedImage && <ImageZoom 
+        src={selectedImage.src} 
+        alt={selectedImage.alt} 
+        open={!!selectedImage} 
+        onOpenChange={(open) => {
+          if (!open) setSelectedImage(null);
+        }} 
+      />}
     </>;
 };
 export default Gallery;
