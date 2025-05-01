@@ -125,74 +125,74 @@ const Gallery = () => {
             {/* Replace all the product image sections with updated onClick handlers */}
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "MS Ingots")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="MS Ingots" style={{
+                <img className="card-img-top rounded-4" alt="MS Ingots" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/e18e9435-e3df-4b30-86af-5215fe6ead1e.jpg" />
               </div>
             </div>
             
             {/* Repeat the pattern for all other product images with updated onClick */}
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Steel Billets")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="Steel Billets" style={{
+                <img className="card-img-top rounded-4" alt="Steel Billets" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/e94862e8-f057-4cba-a658-1592648e385c.jpg" />
               </div>
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "MS Scrap")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="MS Scrap" style={{
+                <img className="card-img-top rounded-4" alt="MS Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/fe4a62b2-a0f3-460b-867b-544b698d9711.jpg" />
               </div>
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Stainless Steel Scrap")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="Stainless Steel Scrap" style={{
+                <img className="card-img-top rounded-4" alt="Stainless Steel Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/0e3b6497-e602-47b9-b933-098d825e9135.jpg" />
               </div>
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "MS Angles")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="MS Angles" style={{
+                <img className="card-img-top rounded-4" alt="MS Angles" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/63a2d2ac-f63e-41e9-8ecb-1fa12a960996.jpg" />
               </div>
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "MS Round Bars")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="MS Round Bars" style={{
+                <img className="card-img-top rounded-4" alt="MS Round Bars" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/6500f27c-2b60-41dc-8c94-f299e1c5d7a6.jpg" />
               </div>
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Aluminium Scrap")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="Aluminium Scrap" style={{
+                <img className="card-img-top rounded-4" alt="Aluminium Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/76ab16d7-51eb-4adf-b346-aefea9f14b79.jpg" />
               </div>
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" onClick={() => handleImageClick("https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", "Ship Breaking Materials")}>
-                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" className="card-img-top rounded-4" alt="Ship Breaking Materials" style={{
+                <img className="card-img-top rounded-4" alt="Ship Breaking Materials" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} />
+              }} src="/lovable-uploads/662f92b2-45c0-40eb-a3ea-411e35392bbb.jpg" />
               </div>
             </div>
           </div>
