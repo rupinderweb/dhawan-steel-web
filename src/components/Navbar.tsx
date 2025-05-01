@@ -23,20 +23,20 @@ const Navbar = () => {
       backgroundColor: 'var(--midnight-blue)',
       padding: '0.5rem 0',
       marginTop: 0,
-      position: 'sticky',
+      position: isMenuOpen ? 'fixed' : 'sticky',
       top: 0,
       zIndex: 50,
     }} className="navbar navbar-expand-lg navbar-dark bg-zinc-950">
-      <div className="container">
+      <div className="container position-relative">
         <Link className="navbar-brand fw-bold" to="/">
           Dhawan Ispat Udyog
         </Link>
         
         {isMobile ? (
-          <Collapsible open={isMenuOpen} onOpenChange={setIsMenuOpen}>
+          <Collapsible open={isMenuOpen} onOpenChange={setIsMenuOpen} className='w-100'>
             <CollapsibleTrigger asChild>
               <button 
-                className="navbar-toggler border border-white/20" 
+                className="navbar-toggler border border-white/20 position-absolute" 
                 type="button"
                 aria-label="Toggle navigation"
               >

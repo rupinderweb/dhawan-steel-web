@@ -51,7 +51,7 @@ const Gallery = () => {
         <div className="container">
           <div className={`${isMobile ? 'mb-4' : 'mb-5'} row`}>
             <div className="col-lg-6 mx-auto text-center">
-              <h2 className="fw-bold mb-3">Our Facilities</h2>
+              <h2 className="fw-bold mb-2">Our Facilities</h2>
               <p className={`${isMobile ? '' : 'lead'} `}>State-of-the-art yards and processing equipment</p>
             </div>
           </div>
@@ -120,7 +120,7 @@ const Gallery = () => {
         <div className="container">
           <div className={`${isMobile ? 'mb-4' : 'mb-5'} row`}>
             <div className="col-lg-6 mx-auto text-center">
-              <h2 className="fw-bold mb-3">Our Products</h2>
+              <h2 className="fw-bold mb-2">Our Products</h2>
               <p className={`${isMobile ? '' : 'lead'} `}>Quality materials for diverse industrial applications</p>
             </div>
           </div>
@@ -208,7 +208,7 @@ const Gallery = () => {
         <div className="container">
           <div className={`${isMobile ? 'mb-4' : 'mb-5'} row`}>
             <div className="col-lg-6 mx-auto text-center">
-              <h2 className="fw-bold mb-3">Work in Action</h2>
+              <h2 className="fw-bold mb-2">Work in Action</h2>
               <p className={`${isMobile ? '' : 'lead'} `}>Our processes and operations in motion</p>
             </div>
           </div>
@@ -250,7 +250,7 @@ const Gallery = () => {
         <div className="container">
           <div className={`${isMobile ? 'mb-4' : 'mb-5'} row`}>
             <div className="col-lg-6 mx-auto text-center">
-              <h2 className="fw-bold mb-3">Sustainability Efforts</h2>
+              <h2 className="fw-bold mb-2">Sustainability Efforts</h2>
               <p className={`${isMobile ? '' : 'lead'} `}>Our commitment to environmental responsibility</p>
             </div>
           </div>
