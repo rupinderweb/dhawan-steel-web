@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
 import { useState } from 'react';
-
+import { useIsMobile } from '@/hooks/use-mobile';
 const Contact = () => {
+  const isMobile = useIsMobile();
   // Form state
   const [formData, setFormData] = useState({
     name: '',
@@ -63,7 +64,7 @@ const Contact = () => {
         <div className="container">
           <nav aria-label="breadcrumb">
             <ol className="breadcrumb mb-0">
-              <li className="breadcrumb-item"><Link to="/" className="text-decoration-none">Home</Link></li>
+              <li className="breadcrumb-item"><Link to="/" className="text-decoration-none text-copper">Home</Link></li>
               <li className="breadcrumb-item active" aria-current="page">Contact</li>
             </ol>
           </nav>
@@ -74,15 +75,15 @@ const Contact = () => {
       <section className="section">
         <div className="container">
           <div className="row">
-            <div className="col-lg-5 mb-5 mb-lg-0">
-              <h2 className="fw-bold mb-4">Get In Touch</h2>
-              <p className="lead mb-5">
+            <div className="col-lg-5 mb-4 mb-lg-0">
+              <h2 className="fw-bold mb-3">Get In Touch</h2>
+              <p className={`${isMobile ? '' : 'lead'} mb-4`}>
                 Have questions about our products or services? Our team is here to help you find the right solutions for your business needs.
               </p>
               
-              <div className="d-flex mb-4">
+              <div className="d-flex mb-3">
                 <div className="me-3">
-                  <div className="feature-icon">
+                  <div className="feature-icon text-copper bg-silver">
                     <MapPin size={24} />
                   </div>
                 </div>
@@ -95,9 +96,9 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="d-flex mb-4">
+              <div className="d-flex mb-3">
                 <div className="me-3">
-                  <div className="feature-icon">
+                  <div className="feature-icon text-copper bg-silver">
                     <Phone size={24} />
                   </div>
                 </div>
@@ -108,9 +109,9 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="d-flex mb-4">
+              <div className="d-flex mb-3">
                 <div className="me-3">
-                  <div className="feature-icon">
+                  <div className="feature-icon text-copper bg-silver">
                     <Mail size={24} />
                   </div>
                 </div>
@@ -121,9 +122,9 @@ const Contact = () => {
                 </div>
               </div>
               
-              <div className="d-flex mb-4">
+              <div className="d-flex mb-3">
                 <div className="me-3">
-                  <div className="feature-icon">
+                  <div className="feature-icon text-copper bg-silver">
                     <Clock size={24} />
                   </div>
                 </div>
@@ -137,7 +138,7 @@ const Contact = () => {
             
             <div className="col-lg-7">
               <div className="card border-0 rounded-4 shadow p-4">
-                <div className="card-body">
+                <div className={` ${isMobile ? 'p-0' : ''} card-body`}>
                   <h3 className="fw-bold mb-4">Send Us a Message</h3>
                   
                   {isSubmitted ? (
@@ -193,7 +194,7 @@ const Contact = () => {
                         <div className="col-md-6">
                           <label htmlFor="inquiryType" className="form-label">Inquiry Type *</label>
                           <select 
-                            className="form-select form-select-lg" 
+                            className="form-select form-select-md" 
                             id="inquiryType" 
                             name="inquiryType"
                             value={formData.inquiryType}
@@ -222,7 +223,7 @@ const Contact = () => {
                         <div className="col-12">
                           <button 
                             type="submit" 
-                            className="btn btn-primary btn-lg px-5"
+                            className="btn btn-primary btn-lg px-5 mt-3"
                             disabled={isSubmitting}
                           >
                             {isSubmitting ? (
@@ -248,26 +249,19 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="section bg-light">
+      <section className="section bg-light pt-2">
         <div className="container">
-          <div className="row mb-5">
+          <div className={`${isMobile ? 'mb-3' : 'mb-4'} row`}>
             <div className="col-lg-6 mx-auto text-center">
               <h2 className="fw-bold mb-3">Find Us</h2>
-              <p className="lead">Visit our facilities to see our operations firsthand</p>
+              <p className={`${isMobile ? '' : 'lead'} `}>Visit our facilities to see our operations firsthand</p>
             </div>
           </div>
           
           <div className="row">
             <div className="col-12">
               <div className="card border-0 rounded-4 shadow overflow-hidden">
-                {/* Placeholder for Google Map - In a real implementation, you would add a proper Google Maps embed here */}
-                <div className="bg-secondary text-white text-center py-5" style={{ height: '400px' }}>
-                  <div className="d-flex flex-column align-items-center justify-content-center h-100">
-                    <MapPin size={48} />
-                    <h4 className="mt-3">Google Maps Embed Would Appear Here</h4>
-                    <p className="mb-0">Dhawan Ispat Udyog, Punjab, India</p>
-                  </div>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1715.961933115939!2d76.28935013231091!3d30.664272303408453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39101b6e5da6d547%3A0x3c422d140dd80f53!2sDHAWAN%20ISPAT%20UDYOG!5e0!3m2!1sen!2sin!4v1746081346033!5m2!1sen!2sin" width="100%" height="450" loading="lazy"></iframe>
               </div>
             </div>
           </div>
@@ -275,22 +269,22 @@ const Contact = () => {
       </section>
 
       {/* Quick Links Section */}
-      <section className="section">
+      <section className="section help-section mb-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
               <h3 className="fw-bold mb-4">Explore More About Us</h3>
               <div className="d-flex flex-wrap justify-content-center gap-3">
-                <Link to="/about" className="btn btn-outline-primary">
+                <Link to="/about" className="btn btn-light">
                   About Our Company
                 </Link>
-                <Link to="/products" className="btn btn-outline-primary">
+                <Link to="/products" className="btn btn-light">
                   View Our Products
                 </Link>
-                <Link to="/services" className="btn btn-outline-primary">
+                <Link to="/services" className="btn btn-light">
                   Discover Our Services
                 </Link>
-                <Link to="/gallery" className="btn btn-outline-primary">
+                <Link to="/gallery" className="btn btn-light">
                   Browse Our Gallery
                 </Link>
               </div>

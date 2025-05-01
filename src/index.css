@@ -430,6 +430,9 @@ h1, h2, h3, h4, h5, h6 {
 .learn-more-section a:hover{
   color: var(--copper);
 }
+.help-section .btn-light {
+  border: 1px solid var(--copper);
+}
 .help-section .btn-light:hover {
   background-color: var(--copper);
   color: #fff;
