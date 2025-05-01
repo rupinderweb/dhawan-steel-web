@@ -370,11 +370,11 @@ const Services = () => {
           
           <div className="row align-items-center">
             <div className="col-lg-6 mb-4 mb-lg-0">
-              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" alt="Logistics Solutions" className="img-fluid rounded-4 shadow" style={{
+              <img alt="Logistics Solutions" className="img-fluid rounded-4 shadow" style={{
               height: isMobile ? '300px' : '520px',
               width: '100%',
               objectFit: 'cover'
-            }} />
+            }} src="/lovable-uploads/96424342-18e0-4eab-ac78-39083fc6d12a.jpg" />
             </div>
             <div className="col-lg-6">
               <div className="ps-lg-4">
@@ -473,11 +473,11 @@ const Services = () => {
           
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-              <img src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" alt="Sustainability Practices" className="img-fluid rounded-4 shadow" style={{
+              <img alt="Sustainability Practices" className="img-fluid rounded-4 shadow" style={{
               height: isMobile ? '400px' : '520px',
               width: '100%',
               objectFit: 'cover'
-            }} />
+            }} src="/lovable-uploads/71391d5e-ec65-4e87-8fad-e7ea2a2030d9.jpg" />
             </div>
             <div className="col-lg-6 order-lg-1">
               <div className="pe-lg-4">
