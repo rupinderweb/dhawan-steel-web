@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useState } from 'react';
@@ -6,6 +7,12 @@ import ImageZoom from '@/components/ImageZoom';
 const Gallery = () => {
   const isMobile = useIsMobile();
   const [selectedImage, setSelectedImage] = useState<{ src: string; alt: string } | null>(null);
+
+  // Function to handle image click
+  const handleImageClick = (src: string, alt: string) => {
+    console.log("Image clicked:", src, alt);
+    setSelectedImage({ src, alt });
+  };
 
   return (
     <>
@@ -46,10 +53,10 @@ const Gallery = () => {
           <div className="row g-4">
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e", 
-                  alt: "Processing Yard" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e", 
+                  "Processing Yard"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1449157291145-7efd050a4d0e" 
                   className="card-img-top rounded-4" 
@@ -60,10 +67,10 @@ const Gallery = () => {
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1518770660439-4636190af475", 
-                  alt: "Quality Control Lab" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1518770660439-4636190af475", 
+                  "Quality Control Lab"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1518770660439-4636190af475" 
                   className="card-img-top rounded-4" 
@@ -74,10 +81,10 @@ const Gallery = () => {
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace", 
-                  alt: "Storage Yard" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace", 
+                  "Storage Yard"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace" 
                   className="card-img-top rounded-4" 
@@ -88,10 +95,10 @@ const Gallery = () => {
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Processing Equipment" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Processing Equipment"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -102,10 +109,10 @@ const Gallery = () => {
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1486718448742-163732cd1544", 
-                  alt: "Rolling Mill" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1486718448742-163732cd1544", 
+                  "Rolling Mill"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1486718448742-163732cd1544" 
                   className="card-img-top rounded-4" 
@@ -116,10 +123,10 @@ const Gallery = () => {
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81", 
-                  alt: "Logistics Fleet" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1605810230434-7631ac76ec81", 
+                  "Logistics Fleet"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
                   className="card-img-top rounded-4" 
@@ -143,12 +150,13 @@ const Gallery = () => {
           </div>
           
           <div className="row g-4">
+            {/* Replace all the product image sections with updated onClick handlers */}
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "MS Ingots" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "MS Ingots"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -157,12 +165,14 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
+            {/* Repeat the pattern for all other product images with updated onClick */}
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Steel Billets" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Steel Billets"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -171,12 +181,13 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "MS Scrap" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "MS Scrap"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -185,12 +196,13 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Stainless Steel Scrap" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Stainless Steel Scrap"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -199,12 +211,13 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "MS Angles" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "MS Angles"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -213,12 +226,13 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "MS Round Bars" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "MS Round Bars"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -227,12 +241,13 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Aluminium Scrap" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Aluminium Scrap"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -241,12 +256,13 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
             <div className="col-md-6 col-lg-3 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Ship Breaking Materials" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Ship Breaking Materials"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -270,12 +286,13 @@ const Gallery = () => {
           </div>
           
           <div className="row g-4">
+            {/* Update onClick handlers for Work in Action images */}
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Rolling Process" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Rolling Process"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -284,12 +301,13 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Torch Cutting" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Torch Cutting"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -298,12 +316,13 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
             <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Forging Process" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Forging Process"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -327,12 +346,13 @@ const Gallery = () => {
           </div>
           
           <div className="row g-4">
+            {/* Update onClick handlers for Sustainability images */}
             <div className="col-md-6 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Recycling Operations" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Recycling Operations"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
@@ -341,12 +361,13 @@ const Gallery = () => {
                 />
               </div>
             </div>
+            
             <div className="col-md-6 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
-                onClick={() => setSelectedImage({ 
-                  src: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
-                  alt: "Environmental Compliance" 
-                })}>
+                onClick={() => handleImageClick(
+                  "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7", 
+                  "Environmental Compliance"
+                )}>
                 <img 
                   src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
                   className="card-img-top rounded-4" 
