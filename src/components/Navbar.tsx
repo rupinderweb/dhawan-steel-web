@@ -25,22 +25,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav lg:ms-5 text-center"> {/* Changed from ms-0 to ms-5 to add space between logo and menu items */}
             <li className="nav-item">
-              <Link className={`nav-link px-3 ${isActive('/') ? 'text-copper' : 'text-white'}`} to="/">Home</Link>
+              <Link className={`nav-link px-3 ${isActive('/') ? 'active text-copper' : 'text-white'}`} to="/">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-white px-3 ${isActive('/about') ? 'text-copper font-bold' : ''}`} to="/about">About</Link>
+              <Link className={`nav-link px-3 ${isActive('/about') ? 'active text-copper' : 'text-white'}`} to="/about">About</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-white px-3 ${isActive('/products') ? 'text-copper font-bold' : ''}`} to="/products">Products</Link>
+              <Link className={`nav-link px-3 ${isActive('/products') ? 'active text-copper' : 'text-white'}`} to="/products">Products</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-white px-3 ${isActive('/services') ? 'text-copper font-bold' : ''}`} to="/services">Services</Link>
+              <Link className={`nav-link px-3 ${isActive('/services') ? 'active text-copper' : 'text-white'}`} to="/services">Services</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-white px-3 ${isActive('/gallery') ? 'text-copper font-bold' : ''}`} to="/gallery">Gallery</Link>
+              <Link className={`nav-link px-3 ${isActive('/gallery') ? 'active text-copper' : 'text-white'}`} to="/gallery">Gallery</Link>
             </li>
             <li className="nav-item">
-              <Link className={`nav-link text-white px-3 ${isActive('/contact') ? 'text-copper font-bold' : ''}`} to="/contact">Contact</Link>
+              <Link className={`nav-link px-3 ${isActive('/contact') ? 'active text-copper' : 'text-white'}`} to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
