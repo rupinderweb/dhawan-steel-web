@@ -200,9 +200,9 @@ const Index = () => {
       {/* Our Materials */}
       <section className="section bg-light">
         <div className="container">
-          <div className="row mb-4">
+          <div className={`${isMobile ? 'mb-2' : 'mb-4'} row`}>
             <div className="col-lg-6 mx-auto text-center">
-              <h2 className="fw-bold mb-3">Our Materials</h2>
+              <h2 className={`${isMobile ? 'mb-2' : 'mb-3'} fw-bold`}>Our Materials</h2>
               <p className="lead">High-quality materials sourced from trusted suppliers globally.</p>
             </div>
           </div>
@@ -329,9 +329,9 @@ const Index = () => {
       {/* Our Services */}
       <section className="section bg-light pt-2">
         <div className="container">
-          <div className="row mb-4">
+          <div className={`${isMobile ? 'mb-2' : 'mb-4'} row`}>
             <div className="col-lg-6 mx-auto text-center">
-              <h2 className="fw-bold mb-3">Our Services</h2>
+              <h2 className={`${isMobile ? 'mb-2' : 'mb-3'} fw-bold`}>Our Services</h2>
               <p className="lead">We offer comprehensive steel processing and supply chain solutions.</p>
             </div>
           </div>
@@ -411,9 +411,9 @@ const Index = () => {
       {/* Industries We Serve - Updated with copper background for icons */}
       <section className="section bg-light  pt-2">
         <div className="container">
-          <div className="row mb-4">
+          <div className={`${isMobile ? 'mb-2' : 'mb-4'} row`}>
             <div className="col-lg-6 mx-auto text-center">
-              <h2 className="fw-bold mb-3">Industries We Serve</h2>
+              <h2 className={`${isMobile ? 'mb-2' : 'mb-3'} fw-bold`}>Industries We Serve</h2>
               <p className="lead">Our quality materials support a wide range of industrial applications.</p>
             </div>
           </div>
