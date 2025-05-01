@@ -14,10 +14,10 @@
 }
 
 .bg-copper{
-  background-color: var(--copper);
+  background-color: var(--copper) !important;
 }
 .bg-silver{
-  background-color: #e8e6e3 !important;
+  background-color: #eeebe6 !important;
 }
 /* Set font globally */
 body {
@@ -420,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-.learn-more-section{
+.learn-more-section, .help-section {
   background-color: #b8733314;
 }
 .learn-more-section a{
@@ -430,7 +430,10 @@ h1, h2, h3, h4, h5, h6 {
 .learn-more-section a:hover{
   color: var(--copper);
 }
-
+.help-section .btn-light:hover {
+  background-color: var(--copper);
+  color: #fff;
+}
 @media (max-width: 768px) {
   .hero-banner{
     height: 100% !important;

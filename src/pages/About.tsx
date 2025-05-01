@@ -67,7 +67,7 @@ const About = () => {
                       </g>
                     </svg>
                     </div>
-                    <h4 className="fw-bold mb-0 text-zinc-950">Established in 2008</h4>
+                    <h4 className="fw-bold mb-2 text-zinc-950">Established in 2008</h4>
                   </div>
                   <p>
                     Dhawan Ispat Udyog began with a single yard and a clear mission—to provide high-quality steel and metal solutions to industries across India. Our foundation was built on expertise, quality, and customer satisfaction.
@@ -97,7 +97,7 @@ const About = () => {
                       </svg>
 
                     </div>
-                    <h4 className="fw-bold mb-0 text-zinc-950">Expanded to Two Yards</h4>
+                    <h4 className="fw-bold mb-2 text-zinc-950">Expanded to Two Yards</h4>
                   </div>
                   <p>
                     Over the years, we've grown significantly, expanding our operations to include two fully equipped yards with state-of-the-art processing facilities to better serve our customers across various industries.
@@ -117,7 +117,7 @@ const About = () => {
                       <path d="M241.775 237.268L256.056 241.927L284.187 190.91L268.108 177.875C270.239 168.779 271.318 159.415 271.318 150C271.318 140.585 270.239 131.22 268.108 122.125L284.187 109.09L256.056 58.0729L236.31 64.5158C221.042 48.9563 202.036 37.7625 181.072 31.9822L177.284 11.7188H118.717L114.928 31.9816C93.9637 37.7619 74.9576 48.9557 59.6898 64.5152L39.9438 58.0723L11.8135 109.09L27.8916 122.125C25.7611 131.221 24.6818 140.585 24.6818 150C24.6818 159.415 25.7611 168.78 27.8916 177.875L11.8135 190.91L39.9438 241.927L59.6898 235.484C74.9576 251.044 93.9637 262.237 114.928 268.018L118.717 288.281H177.284L181.073 268.018C183.288 267.408 185.481 266.736 187.65 266.006" stroke="#B87333" stroke-width="23.4375" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                     </div>
-                    <h4 className="fw-bold mb-0 text-zinc-950">Integration of Partap Iron & Steel</h4>
+                    <h4 className="fw-bold mb-2 text-zinc-950">Integration of Partap Iron & Steel</h4>
                   </div>
                   <p>
                     Since 1997, Partap Iron & Steel Rolling Mills has been part of our group, manufacturing MS Bars & Angles in Khanna, Punjab. This integration has strengthened our position in the market as a comprehensive steel solution provider.
