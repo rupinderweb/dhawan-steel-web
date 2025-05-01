@@ -167,11 +167,11 @@ const Services = () => {
           
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
-              <img src="https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace" alt="Steel Rolling Services" className="img-fluid rounded-4 shadow" style={{
+              <img alt="Steel Rolling Services" className="img-fluid rounded-4 shadow" style={{
               height: '420px',
               width: '100%',
               objectFit: 'cover'
-            }} />
+            }} src="/lovable-uploads/ccafb32a-ec34-459f-9738-85e8a1a1aec8.jpg" />
             </div>
             <div className="col-lg-6 order-lg-1">
               <div className="pe-lg-4">
