@@ -202,7 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-copper {
-  color: var(--copper);
+  color: var(--copper) !important;
 }
 
 .bg-silver {
@@ -537,7 +537,7 @@ main {
 .nav-link:hover, 
 .nav-link:focus, 
 .nav-link.active {
-  color: var(--white) !important;
+  color: var(--copper) !important;
 }
 
 .navbar-toggler {
