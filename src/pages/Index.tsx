@@ -14,7 +14,7 @@ const Index = () => {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      padding: isMobile ? "2rem 1rem 1rem" : "1rem",
+      padding: isMobile ? "2rem 1rem 1rem" : "1rem"
     }} className='hero-banner'>
         <div style={{
         position: "relative",
@@ -210,9 +210,12 @@ const Index = () => {
           {/* First row - 4 products - Modified to show 2 per row on mobile */}
           <div className="row mb-4 materials-grid">
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6 material-card'}`}>
-              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{
+              borderRadius: "1.5rem",
+              overflow: "hidden"
+            }}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
-                  <img alt="MS Ingots" className="h-full w-full object-cover" src="/lovable-uploads/856f1eb4-ac83-429c-bb54-c0bed9f869c1.jpg" />
+                  <img alt="MS Ingots" className="h-full w-full object-cover" src="/lovable-uploads/cafe995b-a436-4a35-aa4b-a27fc1f2cf60.jpg" />
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">MS Ingots</h4>
@@ -222,9 +225,12 @@ const Index = () => {
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6 material-card'}`}>
-              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{
+              borderRadius: "1.5rem",
+              overflow: "hidden"
+            }}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
-                  <img alt="Billets" className="h-full w-full object-cover" src="/lovable-uploads/64f8a59c-894f-4509-a015-8f56dba569ed.jpg" />
+                  <img alt="Billets" className="h-full w-full object-cover" src="/lovable-uploads/ea460b30-2c78-4b47-a623-42d85f2e6863.jpg" />
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">Billets</h4>
@@ -234,7 +240,10 @@ const Index = () => {
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6 material-card'}`}>
-              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{
+              borderRadius: "1.5rem",
+              overflow: "hidden"
+            }}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Ship Breaking Materials" className="h-full w-full object-cover" src="/lovable-uploads/2a203fa3-c007-4dfe-baa0-0783a15ba8c8.jpg" />
                 </div>
@@ -246,7 +255,10 @@ const Index = () => {
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-3 col-md-6 material-card'}`}>
-              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{
+              borderRadius: "1.5rem",
+              overflow: "hidden"
+            }}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
                   <img alt="Stainless Steel" className="h-full w-full object-cover" src="/lovable-uploads/02426647-1541-42a6-a39d-09f1b4a8e6f8.jpg" />
                 </div>
@@ -261,9 +273,12 @@ const Index = () => {
           {/* Second row - 3 products - Modified for mobile */}
           <div className="row materials-grid">
             <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6 material-card'}`}>
-              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{
+              borderRadius: "1.5rem",
+              overflow: "hidden"
+            }}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
-                  <img alt="MS Scrap" className="h-full w-full object-cover" src="/lovable-uploads/480f3867-3776-4aae-bf32-fef5b493aa6d.jpg" />
+                  <img alt="MS Scrap" className="h-full w-full object-cover" src="/lovable-uploads/a547572c-10b2-4378-9164-925953e5a28b.jpg" />
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">MS Scrap</h4>
@@ -273,9 +288,12 @@ const Index = () => {
             </div>
             
             <div className={`${isMobile ? 'col-6' : 'col-lg-4 col-md-6 material-card'}`}>
-              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{
+              borderRadius: "1.5rem",
+              overflow: "hidden"
+            }}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
-                  <img alt="Low Alloy Steel" className="h-full w-full object-cover" src="/lovable-uploads/67181090-05d6-4588-8c7d-aaba542ce2c2.jpg" />
+                  <img alt="Low Alloy Steel" className="h-full w-full object-cover" src="/lovable-uploads/b6dff390-368c-4782-b60d-4258665dd781.jpg" />
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">Low Alloy Steel</h4>
@@ -285,9 +303,12 @@ const Index = () => {
             </div>
             
             <div className={`col-lg-4 col-md-6 material-card ${isMobile ? 'col-12 mt-4' : ''}`}>
-              <Card className="h-100 hover:shadow-lg transition-shadow" style={{ borderRadius: "1.5rem", overflow: "hidden"}}>
+              <Card className="h-100 hover:shadow-lg transition-shadow" style={{
+              borderRadius: "1.5rem",
+              overflow: "hidden"
+            }}>
                 <div className="h-48 w-full overflow-hidden rounded-t-lg">
-                  <img alt="Aluminium" className="h-full w-full object-cover" src="/lovable-uploads/5c999f96-f326-4dc2-a85b-09eca404f377.jpg" />
+                  <img alt="Aluminium" className="h-full w-full object-cover" src="/lovable-uploads/dd9eec32-745f-4361-9991-3f6695f6f573.jpg" />
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">Aluminium</h4>
@@ -404,12 +425,12 @@ const Index = () => {
               }}>
                   <span className="industry-icon">
                     <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M271.875 37.5H206.25L178.125 65.625H75L46.875 37.5H28.125C23.1522 37.5 18.3831 39.4754 14.8667 42.9917C11.3504 46.5081 9.375 51.2772 9.375 56.25V243.75C9.375 248.723 11.3504 253.492 14.8667 257.008C18.3831 260.525 23.1522 262.5 28.125 262.5H46.875L75 234.375H178.125L206.25 262.5H271.875C276.848 262.5 281.617 260.525 285.133 257.008C288.65 253.492 290.625 248.723 290.625 243.75V56.25C290.625 51.2772 288.65 46.5081 285.133 42.9917C281.617 39.4754 276.848 37.5 271.875 37.5Z" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M9.375 121.875H215.625C219.34 121.796 223.033 122.469 226.481 123.855C229.929 125.24 233.061 127.309 235.689 129.937C238.316 132.564 240.385 135.696 241.771 139.144C243.156 142.592 243.829 146.285 243.75 150" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M9.375 178.125H215.625C219.34 178.204 223.033 177.531 226.481 176.146C229.929 174.76 233.061 172.691 235.689 170.064C238.316 167.436 240.385 164.304 241.771 160.856C243.156 157.408 243.829 153.715 243.75 150" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M56.25 121.875V178.125" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M253.125 84.375C258.303 84.375 262.5 80.1777 262.5 75C262.5 69.8223 258.303 65.625 253.125 65.625C247.947 65.625 243.75 69.8223 243.75 75C243.75 80.1777 247.947 84.375 253.125 84.375Z" fill="#fff"/>
-                      <path d="M253.125 234.375C258.303 234.375 262.5 230.178 262.5 225C262.5 219.822 258.303 215.625 253.125 215.625C247.947 215.625 243.75 219.822 243.75 225C243.75 230.178 247.947 234.375 253.125 234.375Z" fill="#fff"/>
+                      <path d="M271.875 37.5H206.25L178.125 65.625H75L46.875 37.5H28.125C23.1522 37.5 18.3831 39.4754 14.8667 42.9917C11.3504 46.5081 9.375 51.2772 9.375 56.25V243.75C9.375 248.723 11.3504 253.492 14.8667 257.008C18.3831 260.525 23.1522 262.5 28.125 262.5H46.875L75 234.375H178.125L206.25 262.5H271.875C276.848 262.5 281.617 260.525 285.133 257.008C288.65 253.492 290.625 248.723 290.625 243.75V56.25C290.625 51.2772 288.65 46.5081 285.133 42.9917C281.617 39.4754 276.848 37.5 271.875 37.5Z" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.375 121.875H215.625C219.34 121.796 223.033 122.469 226.481 123.855C229.929 125.24 233.061 127.309 235.689 129.937C238.316 132.564 240.385 135.696 241.771 139.144C243.156 142.592 243.829 146.285 243.75 150" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M9.375 178.125H215.625C219.34 178.204 223.033 177.531 226.481 176.146C229.929 174.76 233.061 172.691 235.689 170.064C238.316 167.436 240.385 164.304 241.771 160.856C243.156 157.408 243.829 153.715 243.75 150" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M56.25 121.875V178.125" stroke="#fff" stroke-width="18.75" stroke-linecap="round" stroke-linejoin="round" />
+                      <path d="M253.125 84.375C258.303 84.375 262.5 80.1777 262.5 75C262.5 69.8223 258.303 65.625 253.125 65.625C247.947 65.625 243.75 69.8223 243.75 75C243.75 80.1777 247.947 84.375 253.125 84.375Z" fill="#fff" />
+                      <path d="M253.125 234.375C258.303 234.375 262.5 230.178 262.5 225C262.5 219.822 258.303 215.625 253.125 215.625C247.947 215.625 243.75 219.822 243.75 225C243.75 230.178 247.947 234.375 253.125 234.375Z" fill="#fff" />
                       </svg>
 
                   </span>
@@ -428,23 +449,23 @@ const Index = () => {
               }}>
                   <span className="industry-icon">
                   <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M132.422 157.281V62.1092H167.578V107.563" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M167.578 142.719V237.891H132.422V192.437" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M142.719 167.578L75.4219 100.281L100.281 75.4225L132.421 107.562" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M157.281 132.422L224.578 199.719L199.718 224.578L167.579 192.438" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M157.281 167.578H62.1094V132.422H107.562" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M142.719 132.422H237.89V167.578H192.437" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M167.579 157.281L100.282 224.578L75.4229 199.719L107.563 167.578" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M132.422 142.719L199.719 75.4221L224.578 100.282L192.438 132.422" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M132.422 157.281V62.1092H167.578V107.563" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M167.578 142.719V237.891H132.422V192.437" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M142.719 167.578L75.4219 100.281L100.281 75.4225L132.421 107.562" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M157.281 132.422L224.578 199.719L199.718 224.578L167.579 192.438" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M157.281 167.578H62.1094V132.422H107.562" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M142.719 132.422H237.89V167.578H192.437" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M167.579 157.281L100.282 224.578L75.4229 199.719L107.563 167.578" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M132.422 142.719L199.719 75.4221L224.578 100.282L192.438 132.422" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     <mask id="mask0_1146_14" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
-                    <path d="M0 3.05176e-05H300V300H0V3.05176e-05Z" fill="white"/>
+                    <path d="M0 3.05176e-05H300V300H0V3.05176e-05Z" fill="white" />
                     </mask>
                     <g mask="url(#mask0_1146_14)">
-                    <path d="M256.055 291.211H43.9453C24.5291 291.211 8.78906 275.471 8.78906 256.055V43.9453C8.78906 24.5291 24.5291 8.78909 43.9453 8.78909H256.055C275.471 8.78909 291.211 24.5291 291.211 43.9453V256.055C291.211 275.471 275.471 291.211 256.055 291.211Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M150 62.1094V8.78907" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M150 237.891V291.211" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M8.78906 150H62.1094" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M237.891 150H291.211" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M256.055 291.211H43.9453C24.5291 291.211 8.78906 275.471 8.78906 256.055V43.9453C8.78906 24.5291 24.5291 8.78909 43.9453 8.78909H256.055C275.471 8.78909 291.211 24.5291 291.211 43.9453V256.055C291.211 275.471 275.471 291.211 256.055 291.211Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M150 62.1094V8.78907" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M150 237.891V291.211" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M8.78906 150H62.1094" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M237.891 150H291.211" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     </g>
                     </svg>
 
@@ -465,15 +486,15 @@ const Index = () => {
                   <span className="industry-icon">
                     <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <mask id="mask0_1146_46" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
-                      <path d="M0 3.05176e-05H300V300H0V3.05176e-05Z" fill="white"/>
+                      <path d="M0 3.05176e-05H300V300H0V3.05176e-05Z" fill="white" />
                       </mask>
                       <g mask="url(#mask0_1146_46)">
-                      <path d="M0 55.9609H300" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
-                      <path d="M0 244.037H300" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
-                      <path d="M26.2261 29.2504V270.748" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
-                      <path d="M273.774 29.2504V270.748" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
+                      <path d="M0 55.9609H300" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" />
+                      <path d="M0 244.037H300" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" />
+                      <path d="M26.2261 29.2504V270.748" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" />
+                      <path d="M273.774 29.2504V270.748" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" />
                       </g>
-                      <path d="M237.256 209.375H62.7446V90.6254H237.256V209.375Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10"/>
+                      <path d="M237.256 209.375H62.7446V90.6254H237.256V209.375Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" />
                       </svg>
 
                   </span>
@@ -493,13 +514,13 @@ const Index = () => {
                   <span className="industry-icon">
                   <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <mask id="mask0_1146_63" maskUnits="userSpaceOnUse" x="0" y="0" width="300" height="300">
-                    <path d="M0 3.05176e-05H300V300H0V3.05176e-05Z" fill="white"/>
+                    <path d="M0 3.05176e-05H300V300H0V3.05176e-05Z" fill="white" />
                     </mask>
                     <g mask="url(#mask0_1146_63)">
-                    <path d="M291.211 114.844H8.78906V62.1094H291.211V114.844Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M273.633 237.891H26.3672V114.844H273.633V237.891Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M291.211 114.844H8.78906V62.1094H291.211V114.844Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M273.633 237.891H26.3672V114.844H273.633V237.891Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                     </g>
-                    <path d="M238.477 202.734H168.164V167.578H238.477V202.734Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M238.477 202.734H168.164V167.578H238.477V202.734Z" stroke="#fff" stroke-width="17.5781" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
 
                   </span>
@@ -542,9 +563,9 @@ const Index = () => {
               <div className={`${isMobile ? 'p-2' : 'p-4'}`}>
                 <div className={`d-inline-flex align-items-center justify-content-center rounded-3 p-3 bg-green-100 mb-4 leaf-icon-mobile-hidden ${isMobile ? 'leaf-icon-mobile-hidden' : ''}`}>
                 <svg width="30" height="30" viewBox="0 0 512 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M404.267 219.41C394.219 198.461 358.272 169.383 323.542 141.287C304.171 125.628 285.867 110.823 274.198 99.1538C271.275 96.2098 266.902 95.2708 263.041 96.6578C255.852 99.2608 251.414 101.266 247.916 102.823C242.583 105.212 240.791 106.023 233.601 106.748C232.036 106.902 230.524 107.401 229.174 108.209C227.824 109.017 226.67 110.113 225.793 111.42C210.71 133.969 195.094 132.049 184.662 128.551C181.334 127.442 180.737 126.012 180.417 124.647C178.177 115.282 189.42 93.4788 203.99 78.9078C238.657 44.2198 256.534 35.5368 294.294 52.4118C337.131 71.5688 380.054 86.5668 380.481 86.7158C381.805 87.1793 383.207 87.3768 384.607 87.2972C386.007 87.2176 387.378 86.8624 388.64 86.2519C389.903 85.6414 391.032 84.7877 391.964 83.7397C392.896 82.6917 393.612 81.47 394.07 80.1448C395.99 74.5768 393.067 68.4968 387.499 66.5558C387.072 66.4068 345.003 51.7078 303.019 32.9128C254.102 11.0458 227.264 25.4458 188.928 63.8038C174.336 78.3958 154.517 107.921 159.637 129.575C161.834 138.791 168.32 145.618 177.962 148.796C202.133 156.775 224.191 149.137 240.618 127.335C247.402 126.29 251.093 124.754 256.639 122.258C259.107 121.143 261.597 120.076 264.106 119.058C276.309 130.514 292.778 143.847 310.122 157.863C341.482 183.228 377.045 211.986 385.045 228.626C388.992 236.839 384.746 242.194 381.866 244.647C377.642 248.274 371.861 249.426 368.725 247.228C365.269 244.86 360.768 244.711 357.205 246.844C355.452 247.889 354.035 249.415 353.124 251.242C352.212 253.068 351.845 255.118 352.064 257.148C352.789 263.932 346.581 267.815 343.893 269.159C337.066 272.615 329.941 272.018 327.274 269.543C324.287 266.77 319.999 265.959 316.202 267.367C312.405 268.796 309.759 272.295 309.375 276.348C308.735 283.345 303.551 290.065 296.788 292.689C293.524 293.926 288.788 294.673 284.543 290.79C283.241 289.617 281.673 288.778 279.975 288.347C278.276 287.916 276.498 287.905 274.794 288.315C273.089 288.731 271.513 289.562 270.207 290.735C268.9 291.907 267.904 293.384 267.306 295.035C266.901 296.102 265.983 298.662 255.999 298.662C248.895 298.662 236.116 293.862 229.866 289.723C222.378 284.795 175.423 249.766 134.869 215.803C129.173 211.003 119.317 200.72 110.613 191.632C102.89 183.568 95.8293 176.251 92.2023 173.179C87.6583 169.339 80.9383 169.915 77.1623 174.438C73.3653 178.939 73.9193 185.681 78.4213 189.478C81.7283 192.273 88.1283 199.035 95.1893 206.395C104.704 216.336 114.538 226.619 121.152 232.166C160.875 265.425 208.619 301.329 218.133 307.579C225.984 312.742 242.901 319.995 256 319.995C266.517 319.995 274.603 317.584 280.213 312.87C287.722 315.793 296.256 315.814 304.469 312.614C314.176 308.859 322.154 301.286 326.677 292.113C335.082 293.905 344.704 292.646 353.45 288.252C362.005 283.943 368.191 277.351 371.263 269.649C379.754 270.097 388.5 267.089 395.732 260.881C407.979 250.407 411.349 234.109 404.267 219.41Z" fill="#B87333"/>
-                    <path d="M213.333 42.6641H117.333C111.445 42.6641 106.666 47.4431 106.666 53.3311C106.666 59.2191 111.445 63.9981 117.333 63.9981H213.333C219.221 63.9981 224 59.2191 224 53.3311C224 47.4431 219.221 42.6641 213.333 42.6641ZM435.52 196.712C432.213 191.827 425.6 190.483 420.715 193.811L389.526 214.76C384.641 218.045 383.339 224.68 386.625 229.565C387.606 231.017 388.928 232.205 390.476 233.027C392.023 233.849 393.748 234.279 395.5 234.28C397.527 234.28 399.596 233.704 401.431 232.467L432.62 211.518C437.504 208.232 438.805 201.598 435.52 196.712ZM369.301 247.614C361.664 241.598 327.509 206.633 306.389 184.617C302.314 180.35 295.552 180.201 291.306 184.297C287.039 188.372 286.911 195.134 290.986 199.38C296.469 205.097 344.831 255.508 356.074 264.383C357.952 265.864 360.274 266.669 362.666 266.666C365.802 266.666 368.938 265.258 371.071 262.591C374.72 257.982 373.931 251.262 369.301 247.614ZM326.677 269.011C313.898 258.792 281.792 224.68 274.538 216.787C270.527 212.435 263.807 212.179 259.455 216.147C255.124 220.136 254.826 226.899 258.815 231.23C259.199 231.635 297.514 273.001 313.343 285.673C315.236 287.176 317.582 287.996 319.999 287.998C323.114 287.998 326.228 286.611 328.34 284.009C332.011 279.4 331.264 272.68 326.677 269.011ZM284.224 290.494C269.013 277.673 237.888 244.542 231.808 238.035C227.776 233.726 221.013 233.491 216.725 237.523C212.416 241.555 212.202 248.296 216.213 252.606C224.96 261.971 254.741 293.545 270.464 306.814C272.384 308.439 274.818 309.33 277.333 309.331C280.362 309.331 283.392 308.03 285.504 305.534C289.301 301.011 288.725 294.291 284.224 290.494Z" fill="#B87333"/>
-                    <path d="M124.672 24.2534C106.389 6.93041 33.28 1.31941 11.307 0.0184069C8.278 -0.130593 5.483 0.871412 3.35 2.89841C2.29154 3.8958 1.44832 5.09919 0.872212 6.43457C0.296101 7.76994 -0.000721845 9.20906 1.31823e-06 10.6634V202.663C1.31823e-06 208.551 4.779 213.33 10.667 213.33H74.667C79.275 213.33 83.371 210.365 84.8 205.97C86.357 201.191 123.115 88.3814 127.957 32.9144C128.235 29.6714 127.04 26.4714 124.672 24.2534ZM66.88 191.997H21.333V22.0984C55.616 24.8074 92.608 30.6954 106.048 37.2234C100.395 83.9434 74.816 166.951 66.88 191.997ZM501.333 21.3304C417.578 21.3304 371.114 42.7704 369.173 43.6664C366.4 44.9674 364.33 47.3784 363.477 50.3014C362.624 53.2244 363.05 56.3604 364.65 58.9624C377.834 80.1894 419.114 198.077 427.05 226.834C427.671 229.085 429.013 231.07 430.871 232.484C432.728 233.898 434.998 234.664 437.333 234.663H501.333C507.221 234.663 512 229.884 512 223.996V31.9964C512.001 30.5953 511.726 29.2077 511.19 27.9131C510.655 26.6184 509.869 25.4421 508.878 24.4514C507.888 23.4607 506.711 22.6752 505.416 22.1396C504.122 21.6041 502.734 21.3291 501.333 21.3304ZM490.667 213.33H445.312C435.2 180.391 405.333 94.5034 388.672 59.0054C404.949 53.4804 439.915 43.9864 490.667 42.7924V213.33Z" fill="#B87333"/>
+                    <path d="M404.267 219.41C394.219 198.461 358.272 169.383 323.542 141.287C304.171 125.628 285.867 110.823 274.198 99.1538C271.275 96.2098 266.902 95.2708 263.041 96.6578C255.852 99.2608 251.414 101.266 247.916 102.823C242.583 105.212 240.791 106.023 233.601 106.748C232.036 106.902 230.524 107.401 229.174 108.209C227.824 109.017 226.67 110.113 225.793 111.42C210.71 133.969 195.094 132.049 184.662 128.551C181.334 127.442 180.737 126.012 180.417 124.647C178.177 115.282 189.42 93.4788 203.99 78.9078C238.657 44.2198 256.534 35.5368 294.294 52.4118C337.131 71.5688 380.054 86.5668 380.481 86.7158C381.805 87.1793 383.207 87.3768 384.607 87.2972C386.007 87.2176 387.378 86.8624 388.64 86.2519C389.903 85.6414 391.032 84.7877 391.964 83.7397C392.896 82.6917 393.612 81.47 394.07 80.1448C395.99 74.5768 393.067 68.4968 387.499 66.5558C387.072 66.4068 345.003 51.7078 303.019 32.9128C254.102 11.0458 227.264 25.4458 188.928 63.8038C174.336 78.3958 154.517 107.921 159.637 129.575C161.834 138.791 168.32 145.618 177.962 148.796C202.133 156.775 224.191 149.137 240.618 127.335C247.402 126.29 251.093 124.754 256.639 122.258C259.107 121.143 261.597 120.076 264.106 119.058C276.309 130.514 292.778 143.847 310.122 157.863C341.482 183.228 377.045 211.986 385.045 228.626C388.992 236.839 384.746 242.194 381.866 244.647C377.642 248.274 371.861 249.426 368.725 247.228C365.269 244.86 360.768 244.711 357.205 246.844C355.452 247.889 354.035 249.415 353.124 251.242C352.212 253.068 351.845 255.118 352.064 257.148C352.789 263.932 346.581 267.815 343.893 269.159C337.066 272.615 329.941 272.018 327.274 269.543C324.287 266.77 319.999 265.959 316.202 267.367C312.405 268.796 309.759 272.295 309.375 276.348C308.735 283.345 303.551 290.065 296.788 292.689C293.524 293.926 288.788 294.673 284.543 290.79C283.241 289.617 281.673 288.778 279.975 288.347C278.276 287.916 276.498 287.905 274.794 288.315C273.089 288.731 271.513 289.562 270.207 290.735C268.9 291.907 267.904 293.384 267.306 295.035C266.901 296.102 265.983 298.662 255.999 298.662C248.895 298.662 236.116 293.862 229.866 289.723C222.378 284.795 175.423 249.766 134.869 215.803C129.173 211.003 119.317 200.72 110.613 191.632C102.89 183.568 95.8293 176.251 92.2023 173.179C87.6583 169.339 80.9383 169.915 77.1623 174.438C73.3653 178.939 73.9193 185.681 78.4213 189.478C81.7283 192.273 88.1283 199.035 95.1893 206.395C104.704 216.336 114.538 226.619 121.152 232.166C160.875 265.425 208.619 301.329 218.133 307.579C225.984 312.742 242.901 319.995 256 319.995C266.517 319.995 274.603 317.584 280.213 312.87C287.722 315.793 296.256 315.814 304.469 312.614C314.176 308.859 322.154 301.286 326.677 292.113C335.082 293.905 344.704 292.646 353.45 288.252C362.005 283.943 368.191 277.351 371.263 269.649C379.754 270.097 388.5 267.089 395.732 260.881C407.979 250.407 411.349 234.109 404.267 219.41Z" fill="#B87333" />
+                    <path d="M213.333 42.6641H117.333C111.445 42.6641 106.666 47.4431 106.666 53.3311C106.666 59.2191 111.445 63.9981 117.333 63.9981H213.333C219.221 63.9981 224 59.2191 224 53.3311C224 47.4431 219.221 42.6641 213.333 42.6641ZM435.52 196.712C432.213 191.827 425.6 190.483 420.715 193.811L389.526 214.76C384.641 218.045 383.339 224.68 386.625 229.565C387.606 231.017 388.928 232.205 390.476 233.027C392.023 233.849 393.748 234.279 395.5 234.28C397.527 234.28 399.596 233.704 401.431 232.467L432.62 211.518C437.504 208.232 438.805 201.598 435.52 196.712ZM369.301 247.614C361.664 241.598 327.509 206.633 306.389 184.617C302.314 180.35 295.552 180.201 291.306 184.297C287.039 188.372 286.911 195.134 290.986 199.38C296.469 205.097 344.831 255.508 356.074 264.383C357.952 265.864 360.274 266.669 362.666 266.666C365.802 266.666 368.938 265.258 371.071 262.591C374.72 257.982 373.931 251.262 369.301 247.614ZM326.677 269.011C313.898 258.792 281.792 224.68 274.538 216.787C270.527 212.435 263.807 212.179 259.455 216.147C255.124 220.136 254.826 226.899 258.815 231.23C259.199 231.635 297.514 273.001 313.343 285.673C315.236 287.176 317.582 287.996 319.999 287.998C323.114 287.998 326.228 286.611 328.34 284.009C332.011 279.4 331.264 272.68 326.677 269.011ZM284.224 290.494C269.013 277.673 237.888 244.542 231.808 238.035C227.776 233.726 221.013 233.491 216.725 237.523C212.416 241.555 212.202 248.296 216.213 252.606C224.96 261.971 254.741 293.545 270.464 306.814C272.384 308.439 274.818 309.33 277.333 309.331C280.362 309.331 283.392 308.03 285.504 305.534C289.301 301.011 288.725 294.291 284.224 290.494Z" fill="#B87333" />
+                    <path d="M124.672 24.2534C106.389 6.93041 33.28 1.31941 11.307 0.0184069C8.278 -0.130593 5.483 0.871412 3.35 2.89841C2.29154 3.8958 1.44832 5.09919 0.872212 6.43457C0.296101 7.76994 -0.000721845 9.20906 1.31823e-06 10.6634V202.663C1.31823e-06 208.551 4.779 213.33 10.667 213.33H74.667C79.275 213.33 83.371 210.365 84.8 205.97C86.357 201.191 123.115 88.3814 127.957 32.9144C128.235 29.6714 127.04 26.4714 124.672 24.2534ZM66.88 191.997H21.333V22.0984C55.616 24.8074 92.608 30.6954 106.048 37.2234C100.395 83.9434 74.816 166.951 66.88 191.997ZM501.333 21.3304C417.578 21.3304 371.114 42.7704 369.173 43.6664C366.4 44.9674 364.33 47.3784 363.477 50.3014C362.624 53.2244 363.05 56.3604 364.65 58.9624C377.834 80.1894 419.114 198.077 427.05 226.834C427.671 229.085 429.013 231.07 430.871 232.484C432.728 233.898 434.998 234.664 437.333 234.663H501.333C507.221 234.663 512 229.884 512 223.996V31.9964C512.001 30.5953 511.726 29.2077 511.19 27.9131C510.655 26.6184 509.869 25.4421 508.878 24.4514C507.888 23.4607 506.711 22.6752 505.416 22.1396C504.122 21.6041 502.734 21.3291 501.333 21.3304ZM490.667 213.33H445.312C435.2 180.391 405.333 94.5034 388.672 59.0054C404.949 53.4804 439.915 43.9864 490.667 42.7924V213.33Z" fill="#B87333" />
                   </svg>
                 </div>
                 <h2 className="fw-bold display-6 mb-4">Greener Steel, <span className="text-copper">Brighter Future</span></h2>
