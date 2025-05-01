@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { useState } from 'react';
-// import ImageZoom from '@/components/ImageZoom';
+import ImageZoom from '@/components/ImageZoom';
 
 const Gallery = () => {
   const isMobile = useIsMobile();
@@ -11,15 +11,15 @@ const Gallery = () => {
   } | null>(null);
 
   // Function to handle image click
-  // const handleImageClick = (imageElement: HTMLImageElement) => {
-  //   if (!imageElement) return;
+  const handleImageClick = (imageElement: HTMLImageElement) => {
+    if (!imageElement) return;
     
-  //   console.log("Image clicked:", imageElement.src, imageElement.alt);
-  //   setSelectedImage({
-  //     src: imageElement.src,
-  //     alt: imageElement.alt
-  //   });
-  // };
+    console.log("Image clicked:", imageElement.src, imageElement.alt);
+    setSelectedImage({
+      src: imageElement.src,
+      alt: imageElement.alt
+    });
+  };
 
   return <>
       {/* Page Header */}
@@ -58,7 +58,8 @@ const Gallery = () => {
           
           <div className="row g-4">
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow" 
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Processing Yard" style={{
                 width: '100%',
                 height: '350px',
@@ -67,7 +68,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Quality Control Lab" style={{
                 width: '100%',
                 height: '350px',
@@ -76,7 +78,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Storage Yard" style={{
                 width: '100%',
                 height: '350px',
@@ -85,7 +88,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Processing Equipment" style={{
                 width: '100%',
                 height: '350px',
@@ -94,7 +98,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Rolling Mill" style={{
                 width: '100%',
                 height: '350px',
@@ -103,7 +108,8 @@ const Gallery = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Logistics Fleet" style={{
                 width: '100%',
                 height: '350px',
@@ -126,9 +132,9 @@ const Gallery = () => {
           </div>
           
           <div className="row g-4">
-            {/* Replace all the product image sections with updated onClick handlers */}
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="MS Ingots" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -136,9 +142,9 @@ const Gallery = () => {
               </div>
             </div>
             
-            {/* Repeat the pattern for all other product images with updated onClick */}
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Steel Billets" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -147,7 +153,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="MS Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -156,7 +163,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Stainless Steel Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -165,7 +173,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="MS Angles" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -174,7 +183,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="MS Round Bars" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -183,7 +193,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Aluminium Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -192,7 +203,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-3 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Ship Breaking Materials" style={{
                 height: '300px',
                 objectFit: 'cover'
@@ -214,9 +226,9 @@ const Gallery = () => {
           </div>
           
           <div className="row g-4">
-            {/* Update onClick handlers for Work in Action images */}
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Rolling Process" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -225,7 +237,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Torch Cutting" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -234,7 +247,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 col-lg-4 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Forging Process" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -256,9 +270,9 @@ const Gallery = () => {
           </div>
           
           <div className="row g-4">
-            {/* Update onClick handlers for Sustainability images */}
             <div className="col-md-6 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Recycling Operations" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -267,7 +281,8 @@ const Gallery = () => {
             </div>
             
             <div className="col-md-6 mt-0">
-              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow"
+                   onClick={(e) => handleImageClick(e.currentTarget.querySelector('img'))}>
                 <img className="card-img-top rounded-4" alt="Environmental Compliance" style={{
                 height: '320px',
                 objectFit: 'cover'
@@ -293,14 +308,14 @@ const Gallery = () => {
       </section>
 
       {/* Image Zoom Dialog */}
-      {/* {selectedImage && <ImageZoom 
+      {selectedImage && <ImageZoom 
         src={selectedImage.src} 
         alt={selectedImage.alt} 
         open={!!selectedImage} 
         onOpenChange={(open) => {
           if (!open) setSelectedImage(null);
         }} 
-      />} */}
+      />}
     </>;
 };
 export default Gallery;
