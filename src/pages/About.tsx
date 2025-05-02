@@ -117,10 +117,10 @@ const About = () => {
                       <path d="M241.775 237.268L256.056 241.927L284.187 190.91L268.108 177.875C270.239 168.779 271.318 159.415 271.318 150C271.318 140.585 270.239 131.22 268.108 122.125L284.187 109.09L256.056 58.0729L236.31 64.5158C221.042 48.9563 202.036 37.7625 181.072 31.9822L177.284 11.7188H118.717L114.928 31.9816C93.9637 37.7619 74.9576 48.9557 59.6898 64.5152L39.9438 58.0723L11.8135 109.09L27.8916 122.125C25.7611 131.221 24.6818 140.585 24.6818 150C24.6818 159.415 25.7611 168.78 27.8916 177.875L11.8135 190.91L39.9438 241.927L59.6898 235.484C74.9576 251.044 93.9637 262.237 114.928 268.018L118.717 288.281H177.284L181.073 268.018C183.288 267.408 185.481 266.736 187.65 266.006" stroke="#B87333" stroke-width="23.4375" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                     </div>
-                    <h4 className="fw-bold mb-2 text-zinc-950">Integration of Partap Iron & Steel</h4>
+                    <h4 className="fw-bold mb-2 text-zinc-950">Integration of the Partap Iron & Steel</h4>
                   </div>
                   <p>
-                    Since 1997, Partap Iron & Steel Rolling Mills has been part of our group, manufacturing MS Bars & Angles in Khanna, Punjab. This integration has strengthened our position in the market as a comprehensive steel solution provider.
+                    Since 1997, the Partap Iron & Steel Rolling Mills has been part of our group, manufacturing MS Bars & Angles in Khanna, Punjab. This integration has strengthened our position in the market as a comprehensive steel solution provider. Both the firms are family owned and we have a team of more than 100 people.
                   </p>
                 </div>
               </div>
@@ -281,19 +281,19 @@ const About = () => {
         </div>
       </section>
 
-      {/* Partap Iron & Steel Rolling Mills */}
+      {/* the Partap Iron & Steel Rolling Mills */}
       <section className="section bg-light pt-2">
         <div className="container">
           <div className={`${isMobile ? 'mb-3' : 'mb-4'} row`}>
             <div className="col-lg-6 mx-auto text-center">
-              <h2 className="fw-bold mb-3">Partap Iron & Steel Rolling Mills</h2>
+              <h2 className="fw-bold mb-3">The Partap Iron & Steel Rolling Mills</h2>
               <p className={`${isMobile ? '' : 'lead'} `}>Excellence in steel manufacturing since 1997</p>
             </div>
           </div>
           <div className="row align-items-center">
             <div className="col-lg-6 order-lg-2 mb-4 mb-lg-0">
               <div className="position-relative">
-                <img alt="Partap Iron & Steel Facility" className="img-fluid rounded-4 shadow" style={{
+                <img alt="the Partap Iron & Steel Facility" className="img-fluid rounded-4 shadow" style={{
                 height: '400px',
                 width: '100%',
                 objectFit: 'cover'
@@ -304,7 +304,7 @@ const About = () => {
               <div className="pe-lg-4">
                 <h4 className="fw-bold mb-4 text-accent">Specialized Steel Manufacturing</h4>
                 <p>
-                  Partap Iron & Steel Rolling Mills has been an integral part of our group since 1997, specializing in the manufacture of MS Bars & Angles at our facility in Khanna, Punjab.
+                  The Partap Iron & Steel Rolling Mills has been an integral part of our group since 1997, specializing in the manufacture of MS and Graded Bars and Angles at our facility in Khanna, Punjab.
                 </p>
                 <p className="mb-3">
                   Known for producing the thinnest angles in India, Partap has established itself as a trusted name in precision steel manufacturing, catering to a wide range of industries with specific requirements.
@@ -332,6 +332,12 @@ const About = () => {
                     <div className="d-flex align-items-center">
                       <span className="me-2 text-accent">✓</span>
                       <p className="mb-0">Custom Profiles</p>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="d-flex align-items-center">
+                      <span className="me-2 text-accent">✓</span>
+                      <p className="mb-0">Graded Bars and Angles</p>
                     </div>
                   </div>
                 </div>

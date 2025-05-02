@@ -202,7 +202,7 @@ const Index = () => {
         <div className="container">
           <div className={`${isMobile ? 'mb-2' : 'mb-4'} row`}>
             <div className="col-lg-6 mx-auto text-center">
-              <h2 className={`${isMobile ? 'mb-2' : 'mb-3'} fw-bold`}>Our Materials</h2>
+              <h2 className={`${isMobile ? 'mb-2' : 'mb-3'} fw-bold`}>Our Products</h2>
               <p className="lead">High-quality materials sourced from trusted suppliers globally.</p>
             </div>
           </div>
@@ -234,7 +234,7 @@ const Index = () => {
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
                   <h4 className="text-xl font-semibold mb-2 text-copper material-points">Billets</h4>
-                  <p className="text-gray-600 mb-1">Premium steel billets for construction and manufacturing.</p>
+                  <p className="text-gray-600 mb-1">Billets-Iron and Steel Billets for industrial use.</p>
                 </CardContent>
               </Card>
             </div>
@@ -263,7 +263,7 @@ const Index = () => {
                   <img alt="Stainless Steel" className="h-full w-full object-cover" src="/lovable-uploads/02426647-1541-42a6-a39d-09f1b4a8e6f8.jpg" />
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
-                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Stainless Steel</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Stainless Steel Scrap</h4>
                   <p className="text-gray-600 mb-1">Premium grade stainless steel for durability and corrosion resistance.</p>
                 </CardContent>
               </Card>
@@ -281,7 +281,7 @@ const Index = () => {
                   <img alt="MS Scrap" className="h-full w-full object-cover" src="/lovable-uploads/a547572c-10b2-4378-9164-925953e5a28b.jpg" />
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
-                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">MS Scrap</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Melting Scrap instead of MS</h4>
                   <p className="text-gray-600 mb-1">Quality mild steel scrap materials for recycling and reprocessing.</p>
                 </CardContent>
               </Card>
@@ -296,7 +296,8 @@ const Index = () => {
                   <img alt="Low Alloy Steel" className="h-full w-full object-cover" src="/lovable-uploads/b6dff390-368c-4782-b60d-4258665dd781.jpg" />
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
-                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Low Alloy Steel</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Low Alloy Steel Scrap
+                  </h4>
                   <p className="text-gray-600 mb-1">Specialized low alloy steel for specific industrial needs.</p>
                 </CardContent>
               </Card>
@@ -311,7 +312,8 @@ const Index = () => {
                   <img alt="Aluminium" className="h-full w-full object-cover" src="/lovable-uploads/dd9eec32-745f-4361-9991-3f6695f6f573.jpg" />
                 </div>
                 <CardContent className={`${isMobile ? 'p-3' : 'p-4'}`}>
-                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Aluminium</h4>
+                  <h4 className="text-xl font-semibold mb-2 text-copper material-points">Aluminium Scrap
+                  </h4>
                   <p className="text-gray-600 mb-1">Lightweight and versatile aluminium products for various applications.</p>
                 </CardContent>
               </Card>
@@ -499,7 +501,7 @@ const Index = () => {
 
                   </span>
                 </div>
-                <h4 className="industry-title">03. Frames</h4>
+                <h4 className="industry-title">03. Automobile</h4>
                 <p className="industry-description">
                   Durable frame solutions for structural needs
                 </p>
@@ -525,10 +527,99 @@ const Index = () => {
 
                   </span>
                 </div>
-                <h4 className="industry-title">04. Trunks</h4>
+                <h4 className="industry-title">04. Engineering </h4>
                 <p className="industry-description">
                   Reliable storage and transport solutions
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      {/* Credibility Section: the Partap Iron & Steel Rolling Mills (Mobile fixes) */}
+      <section className="section-sm credibility-section" style={{
+        backgroundColor: '#f8f9fa',
+        position: 'relative',
+        zIndex: 1
+      }}>
+        <div className="container">
+          <div className="row align-items-center flex-lg-row flex-column-reverse">
+            <div className="col-lg-7">
+              <div className="mb-4 credibility-card p-4 rounded-4 shadow-rich bg-white">
+                <div className="d-flex align-items-center mb-4">
+                  <span className={`me-3 p-3 bg-copper rounded-circle d-flex align-items-center justify-content-center mobile-hidden-svg ${isMobile ? 'mobile-hidden-svg' : ''}`}>
+                    <Factory size={32} className="text-white" />
+                  </span>
+                  <h2 className="fw-bold mb-0" style={{
+                  color: "#B87333",
+                  fontSize: isMobile ? "1.75rem" : "2.1rem",
+                  textAlign: isMobile ? "left" : "inherit"
+                }}><span className="fw-semibold mb-2 d-block text-black" style={{
+                  fontSize: "0.95rem",
+                  letterSpacing: "0.05em"
+                }}>Our Manufacturing Unit</span>
+                    The Partap Iron & Steel Rolling Mills
+                  </h2>
+                </div>
+                <h5 className="text-steel fw-semibold mb-2" style={{
+                textAlign: isMobile ? "left" : "inherit"
+              }}>Precision & Credibility Since 1997</h5>
+                <p className="lead" style={{
+                color: "#6c757d"
+              }}>
+                  The Partap Iron & Steel Rolling Mills, <span className="fw-semibold text-copper">part of our group since 1997</span>, manufactures MS and Graded Bars and Angles at Khanna, Punjab.<br />
+                  Renowned for <span className="fw-semibold">thin-section steel production</span>, Partap supports industries across India with precision-crafted steel products.
+                </p>
+                <div className="d-flex flex-wrap gap-4 mt-4">
+                  <div className="d-flex align-items-center gap-3">
+                    <span className="bg-light border border-silver shadow-rich rounded-3 p-3 d-inline-flex">
+                      <Award size={28} className="text-copper" />
+                    </span>
+                    <div>
+                      <span className="fw-bold d-block text-steel">Trusted since 1997</span>
+                      <span className="text-muted small">Years of steelmaking excellence</span>
+                    </div>
+                  </div>
+                  {/* <div className="d-flex align-items-center gap-3">
+                    <span className="bg-light border border-silver shadow-rich rounded-3 p-3 d-inline-flex">
+                      <BadgeCheck size={28} className="text-copper" />
+                    </span>
+                    <div>
+                      <span className="fw-bold d-block text-steel">Certified Precision</span>
+                      <span className="text-muted small">IS:1786/MS standards</span>
+                    </div>
+                  </div> */}
+                  <div className="d-flex align-items-center gap-3">
+                    <span className="bg-light border border-silver shadow-rich rounded-3 p-3 d-inline-flex">
+                      <Handshake size={28} className="text-copper" />
+                    </span>
+                    <div>
+                      <span className="fw-bold d-block text-steel">Nationwide Trust</span>
+                      <span className="text-muted small">Reliable supply partner</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-5 mb-4 mb-lg-0">
+              <div className="cred-image-container position-relative">
+                <img alt="Steel manufacturing at Partap Mills" className="img-fluid rounded-4 shadow-rich" style={{
+                width: "100%",
+                height: 340,
+                objectFit: "cover",
+                border: '4px solid var(--copper)'
+              }} src="/lovable-uploads/7e84c32b-5c94-4562-b698-1f14a5419361.jpg" />
+                <div className="cred-badge shadow-lg">
+                  <span className="badge bg-copper text-white py-2 px-3 rounded-pill fw-semibold text-uppercase small" style={{
+                  fontWeight: 700,
+                  letterSpacing: ".06em"
+                }}>
+                  ISO & ISI Certified
+                </span>
+                </div>
               </div>
             </div>
           </div>
@@ -605,90 +696,6 @@ const Index = () => {
                     </p>
                     <div className="text-copper fw-bold mt-2">— Dhawan Sustainability Team</div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Credibility Section: Partap Iron & Steel Rolling Mills (Mobile fixes) */}
-      <section className="section-sm credibility-section" style={{
-      backgroundColor: '#f8f9fa',
-      position: 'relative',
-      zIndex: 1
-    }}>
-        <div className="container">
-          <div className="row align-items-center flex-lg-row flex-column-reverse">
-            <div className="col-lg-7">
-              <div className="mb-4 credibility-card p-4 rounded-4 shadow-rich bg-white">
-                <div className="d-flex align-items-center mb-3">
-                  <span className={`me-3 p-3 bg-copper rounded-circle d-flex align-items-center justify-content-center mobile-hidden-svg ${isMobile ? 'mobile-hidden-svg' : ''}`}>
-                    <Factory size={32} className="text-white" />
-                  </span>
-                  <h2 className="fw-bold mb-0" style={{
-                  color: "#B87333",
-                  fontSize: isMobile ? "1.75rem" : "2.1rem",
-                  textAlign: isMobile ? "left" : "inherit"
-                }}>
-                    Partap Iron & Steel Rolling Mills
-                  </h2>
-                </div>
-                <h5 className="text-steel fw-semibold mb-2" style={{
-                textAlign: isMobile ? "left" : "inherit"
-              }}>Precision & Credibility Since 1997</h5>
-                <p className="lead" style={{
-                color: "#6c757d"
-              }}>
-                  Partap Iron & Steel Rolling Mills, <span className="fw-semibold text-copper">part of our group since 1997</span>, manufactures MS Bars & Angles at Khanna, Punjab.<br />
-                  Renowned for <span className="fw-semibold">thin-section steel production</span>, Partap supports industries across India with precision-crafted steel products.
-                </p>
-                <div className="d-flex flex-wrap gap-4 mt-4">
-                  <div className="d-flex align-items-center gap-3">
-                    <span className="bg-light border border-silver shadow-rich rounded-3 p-3 d-inline-flex">
-                      <Award size={28} className="text-copper" />
-                    </span>
-                    <div>
-                      <span className="fw-bold d-block text-steel">Trusted since 1997</span>
-                      <span className="text-muted small">Years of steelmaking excellence</span>
-                    </div>
-                  </div>
-                  <div className="d-flex align-items-center gap-3">
-                    <span className="bg-light border border-silver shadow-rich rounded-3 p-3 d-inline-flex">
-                      <BadgeCheck size={28} className="text-copper" />
-                    </span>
-                    <div>
-                      <span className="fw-bold d-block text-steel">Certified Precision</span>
-                      <span className="text-muted small">IS:1786/MS standards</span>
-                    </div>
-                  </div>
-                  <div className="d-flex align-items-center gap-3">
-                    <span className="bg-light border border-silver shadow-rich rounded-3 p-3 d-inline-flex">
-                      <Handshake size={28} className="text-copper" />
-                    </span>
-                    <div>
-                      <span className="fw-bold d-block text-steel">Nationwide Trust</span>
-                      <span className="text-muted small">Reliable supply partner</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-5 mb-4 mb-lg-0">
-              <div className="cred-image-container position-relative">
-                <img alt="Steel manufacturing at Partap Mills" className="img-fluid rounded-4 shadow-rich" style={{
-                width: "100%",
-                height: 340,
-                objectFit: "cover",
-                border: '4px solid var(--copper)'
-              }} src="/lovable-uploads/7e84c32b-5c94-4562-b698-1f14a5419361.jpg" />
-                <div className="cred-badge shadow-lg">
-                  <span className="badge bg-copper text-white py-2 px-3 rounded-pill fw-semibold text-uppercase small" style={{
-                  fontWeight: 700,
-                  letterSpacing: ".06em"
-                }}>
-                  ISO & ISI Certified
-                </span>
                 </div>
               </div>
             </div>

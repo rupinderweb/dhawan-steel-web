@@ -38,7 +38,7 @@ const Products = () => {
             </div>
           </div>
           
-          <div className={`${isMobile ? 'g-2' : 'g-4'} row`}>
+          <div className={`${isMobile ? 'g-2' : 'g-4'} row justify-content-center`}>
             <div className="col-md-6">
               <div className="card border-0 rounded-4 shadow-sm p-3">
                 <div className="row g-0 align-items-center">
@@ -51,9 +51,9 @@ const Products = () => {
                   </div>
                   <div className="col-9">
                     <div className="card-body">
-                      <h4 className="card-title fw-bold mb-3">MS Ingots</h4>
+                      <h4 className="card-title fw-bold mb-3">MS and Graded Ingots</h4>
                       <p className="card-text">
-                        High-quality mild steel ingots sourced from trusted manufacturers, suitable for various industrial applications.
+                      Semi-finished steel products in various dimensions, perfect for forging, rolling, and extrusion processes.
                       </p>
                     </div>
                   </div>
@@ -175,48 +175,12 @@ const Products = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Non-Ferrous Materials */}
-      <section className="section bg-light pt-2">
-        <div className="container">
-          <div className={`${isMobile ? 'mb-3' : 'mb-4'} row`}>
-            <div className="col-lg-6 mx-auto text-center">
-              <h2 className="fw-bold mb-3">Non-Ferrous Materials</h2>
-              <p className={`${isMobile ? '' : 'lead'} `}>Premium quality non-ferrous metals for specialized applications</p>
-            </div>
-          </div>
-          
-          <div className="row g-4">
-            <div className="col-md-4">
-              <div className="card border-0 rounded-4 shadow-sm p-4 mb-0">
-                <div className="card-body text-center">
-                  <div className="feature-icon mb-1 mx-auto bg-silver">
-                    <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_1155_62)">
-                      <path d="M240.86 39.7376H199.483V32.405C199.483 14.5369 184.947 0 167.078 0H132.921C115.053 0 100.516 14.5369 100.516 32.405V39.7376H59.1398C43.5142 39.7376 30.8013 52.4506 30.8013 68.0762V81.5524C30.8013 91.3844 35.8369 100.06 43.462 105.144V234.008C43.462 270.396 73.0664 300.001 109.456 300.001H190.545C226.934 300.001 256.538 270.396 256.538 234.008V105.144C264.163 100.06 269.199 91.3844 269.199 81.5519V68.0756C269.198 52.45 256.485 39.7376 240.86 39.7376ZM251.61 68.0762V81.5524C251.61 87.4798 246.787 92.3025 240.86 92.3025H223.285V57.3261H240.86C246.787 57.3261 251.61 62.1483 251.61 68.0762ZM205.697 57.3261V92.3025H94.3033V57.3261H205.697ZM118.105 32.405C118.105 24.2351 124.751 17.5885 132.922 17.5885H167.078C175.249 17.5885 181.895 24.2351 181.895 32.405V39.7376H118.105V32.405ZM48.3897 68.0762C48.3897 62.1488 53.2125 57.3261 59.1398 57.3261H76.7148V92.3025H59.1398C53.2125 92.3025 48.3897 87.4798 48.3897 81.5524V68.0762ZM81.3077 158.159C86.1645 158.159 90.102 154.222 90.102 149.365H101.873L108.514 160.866L108.193 161.078C104.139 163.753 103.021 169.208 105.695 173.262C107.387 175.824 110.187 177.214 113.044 177.214C114.498 177.214 115.967 176.853 117.311 176.105L124.86 189.18L118.273 200.587L117.878 200.326C113.825 197.651 108.369 198.769 105.695 202.823C103.02 206.877 104.138 212.332 108.192 215.007L109.464 215.846L101.872 228.995H90.0949C90.0293 224.194 86.1229 220.322 81.3066 220.322C76.4908 220.322 72.5844 224.194 72.5188 228.995H61.0499V149.365H72.5129C72.5135 154.222 76.4504 158.159 81.3077 158.159ZM190.544 282.412H109.455C87.1143 282.412 68.2694 267.194 62.7173 246.583H72.5129V247.273C72.5129 252.13 76.4504 256.068 81.3071 256.068C86.1639 256.068 90.1014 252.13 90.1014 247.273V246.583H106.949C110.091 246.583 112.995 244.907 114.565 242.186L124.201 225.497C125.466 226.144 126.83 226.461 128.182 226.461C131.039 226.461 133.84 225.071 135.531 222.509C138.205 218.455 137.087 213 133.033 210.325L132.98 210.29L142.629 193.576C144.201 190.855 144.201 187.503 142.629 184.782L132.029 166.421L133.033 165.759C137.087 163.084 138.205 157.629 135.531 153.575C132.855 149.521 127.4 148.403 123.347 151.078L123.219 151.163L114.565 136.173C112.993 133.452 110.091 131.776 106.949 131.776H90.1008V131.207C90.1008 126.35 86.1633 122.413 81.3066 122.413C76.4498 122.413 72.5123 126.35 72.5123 131.207V131.776H61.0493V109.89H238.948V234.007C238.949 260.697 217.235 282.412 190.544 282.412Z" fill="#B87333"/>
-                      </g>
-                      <defs>
-                      <clipPath id="clip0_1155_62">
-                      <rect width="300" height="300" fill="white"/>
-                      </clipPath>
-                      </defs>
-                    </svg>
-                  </div>
-                  <h4 className="card-title fw-bold mt-4 mb-3">Stainless Steel Scrap</h4>
-                  <p className="card-text">
-                    Various grades of stainless steel scrap, including 304, 316, and other specialized alloys, perfect for recycling and reuse in manufacturing.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-4">
-              <div className="card border-0 rounded-4 shadow-sm p-4 mb-0">
-                <div className="card-body text-center">
-                  <div className="feature-icon mb-1 mx-auto bg-silver">
-                    <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div className="col-md-6">
+              <div className="card border-0 rounded-4 shadow-sm p-3">
+                <div className="row g-0 align-items-center">
+                  <div className="col-3 text-center">
+                    <div className="feature-icon mx-auto bg-silver">
+                    <svg width="34" height="34" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M88.8 133.199V248.999C88.8 257.399 71.4 264.599 50.4 264.599C29.4 264.599 12 257.999 12 248.999V133.199" stroke="#B87333" stroke-width="12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M50.4 148.8C71.6077 148.8 88.8 141.815 88.8 133.2C88.8 124.584 71.6077 117.6 50.4 117.6C29.1923 117.6 12 124.584 12 133.2C12 141.815 29.1923 148.8 50.4 148.8Z" stroke="#B87333" stroke-width="12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M31.2002 262.8V146.4" stroke="#B87333" stroke-width="12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -238,17 +202,59 @@ const Products = () => {
                         <path d="M120.6 255.6L231.6 222" stroke="#B87333" stroke-width="12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M128.4 273L239.4 239.4" stroke="#B87333" stroke-width="12" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-
+                    </div>
                   </div>
-                  <h4 className="card-title fw-bold mt-4 mb-3">Low Alloy Steel Scrap</h4>
+                  <div className="col-9">
+                    <div className="card-body">
+                      <h4 className="card-title fw-bold mb-3">Low Alloy Steel Scrap
+                      </h4>
+                      <p className="card-text">
+                      Specialized low alloy steel materials with varying compositions of chromium, nickel, and other elements for specific industrial applications.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Non-Ferrous Materials */}
+      <section className="section bg-light pt-2">
+        <div className="container">
+          <div className={`${isMobile ? 'mb-3' : 'mb-4'} row`}>
+            <div className="col-lg-6 mx-auto text-center">
+              <h2 className="fw-bold mb-3">Non-Ferrous Materials</h2>
+              <p className={`${isMobile ? '' : 'lead'} `}>Premium quality non-ferrous metals for specialized applications</p>
+            </div>
+          </div>
+          
+          <div className="row justify-content-center g-4">
+            <div className="col-md-4">
+              <div className="card border-0 rounded-4 shadow-sm p-4 mb-0 h-100">
+                <div className="card-body text-center">
+                  <div className="feature-icon mb-1 mx-auto bg-silver">
+                    <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_1155_62)">
+                      <path d="M240.86 39.7376H199.483V32.405C199.483 14.5369 184.947 0 167.078 0H132.921C115.053 0 100.516 14.5369 100.516 32.405V39.7376H59.1398C43.5142 39.7376 30.8013 52.4506 30.8013 68.0762V81.5524C30.8013 91.3844 35.8369 100.06 43.462 105.144V234.008C43.462 270.396 73.0664 300.001 109.456 300.001H190.545C226.934 300.001 256.538 270.396 256.538 234.008V105.144C264.163 100.06 269.199 91.3844 269.199 81.5519V68.0756C269.198 52.45 256.485 39.7376 240.86 39.7376ZM251.61 68.0762V81.5524C251.61 87.4798 246.787 92.3025 240.86 92.3025H223.285V57.3261H240.86C246.787 57.3261 251.61 62.1483 251.61 68.0762ZM205.697 57.3261V92.3025H94.3033V57.3261H205.697ZM118.105 32.405C118.105 24.2351 124.751 17.5885 132.922 17.5885H167.078C175.249 17.5885 181.895 24.2351 181.895 32.405V39.7376H118.105V32.405ZM48.3897 68.0762C48.3897 62.1488 53.2125 57.3261 59.1398 57.3261H76.7148V92.3025H59.1398C53.2125 92.3025 48.3897 87.4798 48.3897 81.5524V68.0762ZM81.3077 158.159C86.1645 158.159 90.102 154.222 90.102 149.365H101.873L108.514 160.866L108.193 161.078C104.139 163.753 103.021 169.208 105.695 173.262C107.387 175.824 110.187 177.214 113.044 177.214C114.498 177.214 115.967 176.853 117.311 176.105L124.86 189.18L118.273 200.587L117.878 200.326C113.825 197.651 108.369 198.769 105.695 202.823C103.02 206.877 104.138 212.332 108.192 215.007L109.464 215.846L101.872 228.995H90.0949C90.0293 224.194 86.1229 220.322 81.3066 220.322C76.4908 220.322 72.5844 224.194 72.5188 228.995H61.0499V149.365H72.5129C72.5135 154.222 76.4504 158.159 81.3077 158.159ZM190.544 282.412H109.455C87.1143 282.412 68.2694 267.194 62.7173 246.583H72.5129V247.273C72.5129 252.13 76.4504 256.068 81.3071 256.068C86.1639 256.068 90.1014 252.13 90.1014 247.273V246.583H106.949C110.091 246.583 112.995 244.907 114.565 242.186L124.201 225.497C125.466 226.144 126.83 226.461 128.182 226.461C131.039 226.461 133.84 225.071 135.531 222.509C138.205 218.455 137.087 213 133.033 210.325L132.98 210.29L142.629 193.576C144.201 190.855 144.201 187.503 142.629 184.782L132.029 166.421L133.033 165.759C137.087 163.084 138.205 157.629 135.531 153.575C132.855 149.521 127.4 148.403 123.347 151.078L123.219 151.163L114.565 136.173C112.993 133.452 110.091 131.776 106.949 131.776H90.1008V131.207C90.1008 126.35 86.1633 122.413 81.3066 122.413C76.4498 122.413 72.5123 126.35 72.5123 131.207V131.776H61.0493V109.89H238.948V234.007C238.949 260.697 217.235 282.412 190.544 282.412Z" fill="#B87333"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_1155_62">
+                      <rect width="300" height="300" fill="white"/>
+                      </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <h4 className="card-title fw-bold mt-4 mb-3">Stainless Steel Scrap</h4>
                   <p className="card-text">
-                    Specialized low alloy steel materials with varying compositions of chromium, nickel, and other elements for specific industrial applications.
+                    Various grades of stainless steel scrap, including 304, 316, and other specialized alloys, perfect for recycling and reuse in manufacturing.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-md-4">
-              <div className="card border-0 rounded-4 shadow-sm p-4 mb-0">
+              <div className="card border-0 rounded-4 shadow-sm p-4 mb-0 h-100">
                 <div className="card-body text-center">
                   <div className="feature-icon mb-1 mx-auto bg-silver">
                     <svg width="30" height="30" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -389,14 +395,14 @@ const Products = () => {
           <div className={`${isMobile ? 'mb-3' : 'mb-4'} row`}>
             <div className="col-lg-8 mx-auto text-center">
               <h2 className="fw-bold mb-3">Finished Products</h2>
-              <p className={`${isMobile ? '' : 'lead'} `}>Quality finished steel products from Partap Iron & Steel Rolling Mills</p>
+              <p className={`${isMobile ? '' : 'lead'} `}>Quality finished steel products from the Partap Iron & Steel Rolling Mills</p>
             </div>
           </div>
           
           <div className="row align-items-center">
             <div className="col-lg-6 mb-4 mb-lg-0">
               <img alt="Finished Steel Products" className="img-fluid rounded-4 shadow" style={{
-              height: '400px',
+              height: '430px',
               width: '100%',
               objectFit: 'cover'
             }} src="/lovable-uploads/3841a2d4-1980-4be4-a198-15e3c5257c2e.jpg" />
@@ -405,7 +411,7 @@ const Products = () => {
               <div className="ps-lg-4">
                 <h3 className="fw-bold mb-3">Mild Steel Bars & Angles</h3>
                 <p>
-                  Our sister concern, Partap Iron & Steel Rolling Mills, manufactures high-quality MS Bars & Angles at our facility in Khanna, Punjab. With over two decades of experience, we've perfected the art of producing steel products that meet rigorous industry standards.
+                  Our sister concern, the Partap Iron & Steel Rolling Mills, manufactures high-quality MS Bars & Angles at our facility in Khanna, Punjab. With over two decades of experience, we've perfected the art of producing steel products that meet rigorous industry standards.
                 </p>
                 <div className="mt-4">
                   <h5 className="fw-bold mb-3">Available Products:</h5>
@@ -432,6 +438,12 @@ const Products = () => {
                       <div className="d-flex align-items-center">
                         <span className="me-2 text-copper">✓</span>
                         <p className="mb-0">Thin Sections</p>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="d-flex align-items-center">
+                        <span className="me-2 text-copper">✓</span>
+                        <p className="mb-0">Graded Bars and Angles</p>
                       </div>
                     </div>
                   </div>
@@ -472,7 +484,7 @@ const Products = () => {
       </section>
 
       {/* Product Catalog */}
-      <section className="section pt-2">
+      {/* <section className="section pt-2">
         <div className="container">
           <div className="row">
             <div className="col-lg-8 mx-auto text-center">
@@ -490,7 +502,7 @@ const Products = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action */}
       <section className="section-sm help-section  mb-5">

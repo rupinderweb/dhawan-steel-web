@@ -91,7 +91,7 @@ const Contact = () => {
                   <h5 className="fw-bold mb-1">Our Location</h5>
                   <p className="mb-0">
                     Main Yard: Dhawan Ispat Udyog, Punjab, India<br />
-                    Second Yard: Khanna, Punjab, India
+                    Second Yard: The Partap Iron and Steel Rolling Mills, Focal Point, Khanna
                   </p>
                 </div>
               </div>

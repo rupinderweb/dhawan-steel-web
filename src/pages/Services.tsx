@@ -184,7 +184,7 @@ const Services = () => {
                   <div className="col-md-6">
                     <div className="d-flex align-items-center">
                       <span className="me-2 text-copper">✓</span>
-                      <p className="mb-0">Round Bars (multiple diameters)</p>
+                      <p className="mb-0">Round Bars (upto 300mm)</p>
                     </div>
                   </div>
                   <div className="col-md-6">
@@ -209,7 +209,7 @@ const Services = () => {
 
                 <div className="mt-4">
                   <p className="mb-4">
-                    Through our sister concern, Partap Iron & Steel Rolling Mills, we have developed expertise in producing the thinnest angles available in India, catering to specialized industrial requirements.
+                    Through our sister concern, the Partap Iron & Steel Rolling Mills, we have developed expertise in producing the thinnest angles available in India, catering to specialized industrial requirements.
                   </p>
                   <Link to="/contact" className="btn btn-accent">
                     Request Custom Rolling Services <ArrowRight size={18} className="ms-2" />
@@ -396,7 +396,7 @@ const Services = () => {
                       </defs>
                       </svg>
                     </div>
-                    <h4 className="fw-bold mb-2">Pan-India Delivery</h4>
+                    <h4 className="fw-bold mb-3">Pan-India Delivery</h4>
                   </div>
                   <p>
                     We offer comprehensive logistics and delivery services across India. Our established network ensures timely delivery of your materials to any location, helping you maintain production schedules and avoid costly delays.
@@ -419,7 +419,7 @@ const Services = () => {
                         </svg>
 
                     </div>
-                    <h4 className="fw-bold mb-2">Flexible Supply Volumes</h4>
+                    <h4 className="fw-bold mb-3">Flexible Supply Volumes</h4>
                   </div>
                   <p>
                     Whether you need bulk quantities or specialized custom orders, we can accommodate your requirements. Our flexible approach to supply volumes ensures that businesses of all sizes can benefit from our high-quality materials and services.
@@ -491,7 +491,7 @@ const Services = () => {
                       </svg>
 
                     </div>
-                    <h4 className="fw-bold mb-0">Recycling Initiatives</h4>
+                    <h4 className="fw-bold mb-3">Recycling Initiatives</h4>
                   </div>
                   <p>
                     We actively promote the recycling and repurposing of steel and other metals. By processing and grading scrap materials, we help reduce the need for virgin material extraction and minimize industrial waste.
@@ -514,7 +514,7 @@ const Services = () => {
                         </svg>
 
                     </div>
-                    <h4 className="fw-bold mb-0">Circular Economy Contribution</h4>
+                    <h4 className="fw-bold mb-3">Circular Economy Contribution</h4>
                   </div>
                   <p>
                     Our business model supports the circular economy by ensuring that valuable metals are recovered, processed, and reintroduced into the manufacturing cycle. This approach helps conserve natural resources and reduce environmental impact.
@@ -540,7 +540,7 @@ const Services = () => {
                         </svg>
 
                     </div>
-                    <h4 className="fw-bold mb-0">Environmental Compliance</h4>
+                    <h4 className="fw-bold mb-3">Environmental Compliance</h4>
                   </div>
                   <p>
                     All our operations adhere to strict environmental regulations and standards. We continuously invest in improving our processes to minimize our environmental footprint and promote sustainable practices throughout our supply chain.
