@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <nav style={{
       backgroundColor: 'var(--midnight-blue)',
-      padding: '0.5rem 0',
+      padding: '0.2rem 0',
       marginTop: 0,
       position: isMenuOpen ? 'fixed' : 'sticky',
       top: 0,
@@ -29,7 +29,9 @@ const Navbar = () => {
     }} className="navbar navbar-expand-lg navbar-dark bg-zinc-950">
       <div className="container position-relative">
         <Link className="navbar-brand fw-bold" to="/">
-          Dhawan Ispat Udyog
+          <img alt="Logo" style={{
+                width: "140px",
+              }} src="/lovable-uploads/diu-logo.png" />
         </Link>
         
         {isMobile ? (

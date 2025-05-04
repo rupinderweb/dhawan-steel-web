@@ -9,7 +9,11 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 mb-4 mb-lg-0">
-              <h5 className="text-white fw-bold">Dhawan Ispat Udyog</h5>
+              <h5 className="text-white fw-bold">
+                <img alt="Logo" style={{
+                  width: "140px",
+                }} src="/lovable-uploads/diu-logo.png" />
+              </h5>
               <p className="mt-3 text-light">
                 Delivering quality steel solutions across India since 2008. A trusted name in iron, steel, and non-ferrous materials.
               </p>

@@ -513,8 +513,12 @@ h1, h2, h3, h4, h5, h6 {
     min-width: 60px;
   }
   .navbar-toggler{
-    top: 0;
+    top: 50%;
     right: 14px;
+    transform: translateY(-50%);
+  }
+  .navbar-brand img{
+    width: 124px !important;
   }
 }
 

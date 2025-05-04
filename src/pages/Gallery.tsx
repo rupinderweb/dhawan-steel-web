@@ -81,7 +81,7 @@ const Gallery = () => {
                 width: '100%',
                 height: '350px',
                 objectFit: 'cover'
-              }} src="/lovable-uploads/3eef3d40-523c-4573-840d-4be9e5ea37c5.jpg" />
+              }} src="/lovable-uploads/p2.jpg" />
               </div>
             </div>
             <div className="col-md-6 col-lg-4 mt-0">
@@ -127,7 +127,7 @@ const Gallery = () => {
           
           <div className="row g-4">
             {/* Replace all the product image sections with updated onClick handlers */}
-            <div className="col-md-6 col-lg-3 mt-0">
+            <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
                 <img className="card-img-top rounded-4" alt="MS Ingots" style={{
                 height: '300px',
@@ -137,25 +137,25 @@ const Gallery = () => {
             </div>
             
             {/* Repeat the pattern for all other product images with updated onClick */}
-            <div className="col-md-6 col-lg-3 mt-0">
+            <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
                 <img className="card-img-top rounded-4" alt="Steel Billets" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} src="/lovable-uploads/e94862e8-f057-4cba-a658-1592648e385c.jpg" />
+              }} src="/lovable-uploads/p2.jpg" />
               </div>
             </div>
             
-            <div className="col-md-6 col-lg-3 mt-0">
+            <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
                 <img className="card-img-top rounded-4" alt="MS Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} src="/lovable-uploads/fe4a62b2-a0f3-460b-867b-544b698d9711.jpg" />
+              }} src="/lovable-uploads/p3.jpg" />
               </div>
             </div>
             
-            <div className="col-md-6 col-lg-3 mt-0">
+            <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
                 <img className="card-img-top rounded-4" alt="Stainless Steel Scrap" style={{
                 height: '300px',
@@ -164,39 +164,55 @@ const Gallery = () => {
               </div>
             </div>
             
-            <div className="col-md-6 col-lg-3 mt-0">
+            {/* <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
                 <img className="card-img-top rounded-4" alt="MS Angles" style={{
                 height: '300px',
                 objectFit: 'cover'
               }} src="/lovable-uploads/63a2d2ac-f63e-41e9-8ecb-1fa12a960996.jpg" />
               </div>
-            </div>
+            </div> */}
             
-            <div className="col-md-6 col-lg-3 mt-0">
+            <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
                 <img className="card-img-top rounded-4" alt="MS Round Bars" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} src="/lovable-uploads/6500f27c-2b60-41dc-8c94-f299e1c5d7a6.jpg" />
+              }} src="/lovable-uploads/rounds-bars.jpg" />
               </div>
             </div>
             
-            <div className="col-md-6 col-lg-3 mt-0">
+            <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
                 <img className="card-img-top rounded-4" alt="Aluminium Scrap" style={{
                 height: '300px',
                 objectFit: 'cover'
-              }} src="/lovable-uploads/76ab16d7-51eb-4adf-b346-aefea9f14b79.jpg" />
+              }} src="/lovable-uploads/p6.jpg" />
               </div>
             </div>
             
-            <div className="col-md-6 col-lg-3 mt-0">
+            <div className="col-md-6 col-lg-4 mt-0">
               <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
                 <img className="card-img-top rounded-4" alt="Ship Breaking Materials" style={{
                 height: '300px',
                 objectFit: 'cover'
               }} src="/lovable-uploads/662f92b2-45c0-40eb-a3ea-411e35392bbb.jpg" />
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 mt-0">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+                <img className="card-img-top rounded-4" alt="Ship Breaking Materials" style={{
+                height: '300px',
+                objectFit: 'cover'
+              }} src="/lovable-uploads/ignots.jpg" />
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4 mt-0">
+              <div className="card border-0 rounded-4 shadow-sm cursor-pointer hover:shadow-md transition-shadow">
+                <img className="card-img-top rounded-4" alt="Ship Breaking Materials" style={{
+                height: '300px',
+                objectFit: 'cover'
+              }} src="/lovable-uploads/billets.jpg" />
               </div>
             </div>
           </div>
@@ -271,7 +287,7 @@ const Gallery = () => {
                 <img className="card-img-top rounded-4" alt="Environmental Compliance" style={{
                 height: '320px',
                 objectFit: 'cover'
-              }} src="/lovable-uploads/7b3608e5-7641-4bca-a955-001d86074f5e.jpg" />
+              }} src="/lovable-uploads/sustainability-efforts.jpg" />
               </div>
             </div>
           </div>

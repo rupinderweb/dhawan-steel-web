@@ -405,7 +405,7 @@ const Products = () => {
               height: '430px',
               width: '100%',
               objectFit: 'cover'
-            }} src="/lovable-uploads/3841a2d4-1980-4be4-a198-15e3c5257c2e.jpg" />
+            }} src="/lovable-uploads/angles.jpg" />
             </div>
             <div className="col-lg-6">
               <div className="ps-lg-4">

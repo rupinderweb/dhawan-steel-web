@@ -118,7 +118,7 @@ const Contact = () => {
                 <div>
                   <h5 className="fw-bold mb-1">Email</h5>
                   <p className="mb-0">info@dhawanispat.com</p>
-                  <p className="mb-0">sales@dhawanispat.com</p>
+                  <p className="mb-0">partapmill@gmail.com</p>
                 </div>
               </div>
               
@@ -194,7 +194,7 @@ const Contact = () => {
                         <div className="col-md-6">
                           <label htmlFor="inquiryType" className="form-label">Inquiry Type *</label>
                           <select 
-                            className="form-select form-select-md" 
+                            className="form-select form-select-md py-2" 
                             id="inquiryType" 
                             name="inquiryType"
                             value={formData.inquiryType}

@@ -540,7 +540,7 @@ const Index = () => {
       
 
       {/* Credibility Section: the Partap Iron & Steel Rolling Mills (Mobile fixes) */}
-      <section className="section-sm credibility-section" style={{
+      <section className="section-sm credibility-section pt-2" style={{
         backgroundColor: '#f8f9fa',
         position: 'relative',
         zIndex: 1
@@ -612,14 +612,14 @@ const Index = () => {
                 objectFit: "cover",
                 border: '4px solid var(--copper)'
               }} src="/lovable-uploads/7e84c32b-5c94-4562-b698-1f14a5419361.jpg" />
-                <div className="cred-badge shadow-lg">
+                {/* <div className="cred-badge shadow-lg">
                   <span className="badge bg-copper text-white py-2 px-3 rounded-pill fw-semibold text-uppercase small" style={{
                   fontWeight: 700,
                   letterSpacing: ".06em"
                 }}>
                   ISO & ISI Certified
                 </span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

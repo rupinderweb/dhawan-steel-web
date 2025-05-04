@@ -120,7 +120,7 @@ const About = () => {
                     <h4 className="fw-bold mb-2 text-zinc-950">Integration of the Partap Iron & Steel</h4>
                   </div>
                   <p>
-                    Since 1997, the Partap Iron & Steel Rolling Mills has been part of our group, manufacturing MS Bars & Angles in Khanna, Punjab. This integration has strengthened our position in the market as a comprehensive steel solution provider. Both the firms are family owned and we have a team of more than 100 people.
+                    Since 1997, the Partap Iron & Steel Rolling Mills has been part of our group, manufacturing MS and Graded Bars and Angles in Khanna, Punjab. This integration has strengthened our position in the market as a comprehensive steel solution provider. Both the firms are family owned and we have a team of more than 100 people.
                   </p>
                 </div>
               </div>
@@ -297,7 +297,7 @@ const About = () => {
                 height: '400px',
                 width: '100%',
                 objectFit: 'cover'
-              }} src="/lovable-uploads/4717eca1-c854-4c17-b365-67cccc5dff37.jpg" />
+              }} src="/lovable-uploads/rolling-mill.jpg" />
               </div>
             </div>
             <div className="col-lg-6 order-lg-1">
